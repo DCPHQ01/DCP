@@ -40,8 +40,8 @@ const Home = () => {
             {/* section 2 of home page */}
             <section className="section2 sm:px-30 px-8 py-12 sm:py-24" id="about-area">
                 <div className="container mx-auto">
-                    <div className="flex md:flex-row flex-col gap-4 justify-between">
-                        <div className="w-full md:w-5/12">
+                    <div className="flex lg:flex-row flex-col gap-16 lg:gap-4 justify-between items-center">
+                        <div className="w-full md:w-[90%]">
                             <div className="page-title flex flex-col gap-6">
                                 <h2 className="title sm:text-4xl text-2xl font-bold animate__animated animate__fadeInUp">
                                     Quick & Tailored Powerful Business Solutions
@@ -51,7 +51,7 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="w-full md:ml-4 flex items-center justify-center">
+                        <div className="w-full md:ml-4 flex items-center lg:justify-end justify-center">
                             <img src="images/about_r5_c2.png" alt="dcp quote about their solutions"/>
                         </div>
                     </div>
@@ -157,7 +157,7 @@ const Home = () => {
                     <section className="sm:px-30 px-8 sm:py-12 py-6 flex justify-center text-black">
                         <div className="sm:px-10 px-10 sm:py-10 py-6 w-full sm:w-[60%] flex flex-col items-center bg-gray-100 rounded-3xl shadow-xl">
                         <div className="contact text-4xl mb-16 font-bold">Contact Us</div>
-                        <form action="/" method="post" className="flex flex-col w-full gap-6 sm:gap-16">
+                        <form action="https://formsubmit.co/de8845fa25ad6ffb0100fc3fe1eb340c" method="post" className="flex flex-col w-full gap-6 sm:gap-16">
                             <div className="inp-group1 flex sm:flex-row flex-col gap-6 w-full">
                                 <input placeholder="Full Name" type="text" name="name" id="full-name" className={`w-full outline-0 ${inputStyle}`} required/>
                                 <input placeholder="Phone Number" type="tel" name="phone" id="phone" className={`w-full outline-0 ${inputStyle}`} required/>
@@ -170,6 +170,9 @@ const Home = () => {
                                 <textarea name="message" id="message" className="w-full resize-none outline-0 h" placeholder="What would you like to tell us..." required></textarea>
                             </div>
                             <input type="submit" value="Send" className="cursor-pointer hover:bg-red-600 w-auto self-start active:translate-y-2 px-4 sm:px-6 py-2 bg-red-500 rounded-3xl" />
+                            <input type="hidden" name="_autoresponse" value="Thank you for contacting us....we will respond shortly"/>
+                            <input type="hidden" name="_next" value="http://localhost:5173/"/>
+                            <input type="hidden" name="_template" value="table"/>
                         </form>
                         </div>
                     </section>
