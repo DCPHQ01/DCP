@@ -66,4 +66,47 @@
     color: #333; /* Default text color */
 }
 
+.product-bg-dds {
+    background-image: url('../images/dds.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
 
+  .product-bg-ffas {
+    background-image: url('../images/ffas.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+
+  .product-bg-iftm {
+    background-image: url('../images/iftm.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+
+  .product-bg-rso {
+    background-image: url('../images/rso.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+
+  .product-bg-eges {
+    background-image: url('../images/eges.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
