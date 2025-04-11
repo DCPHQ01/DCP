@@ -6,9 +6,15 @@ import Contact from "./pages/Contact"
 import Service from "./pages/Service"
 import Product from "./pages/Product"
 import Project from "./pages/Project"
+
+import Management from "./pages/Management"
+import Test from "./components/Test"
+
+
 import Error from "./pages/Error"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
+
 
 function App() {
 
@@ -26,10 +32,13 @@ function App() {
           <Route path="product" element={<Product />} />
           <Route path="project" element={<Project />} />
           <Route path="*" element={<Error />} />
+           <Route path="management" element={<Management />} />
+          <Route path="test" element={<Test />} />    
         </Routes>
         <Footer/>
       </div>
     </div>
+
     </>
   )
 }
