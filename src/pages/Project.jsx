@@ -26,7 +26,7 @@ const Project = () => {
                         <div className="flex-shrink-0">
                             <BsBank2 size={30} color="red" />
                         </div>
-                        <h3 className="text-lg font-bold text-left">Property Tax Solutions</h3>
+                        <h3  an>Property Tax Solutions</h3>
                     </div>
                     <p className="text-justify text-sm">
                         Prudent assessment, collection, and accounting for property tax pose significant challenges to both
