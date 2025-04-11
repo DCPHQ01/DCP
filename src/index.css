@@ -1,1 +1,69 @@
 @import "tailwindcss";
+
+/* Basic styling for each product feature box */
+
+/* Grid container for the products */
+.section-padding {
+    padding: 50px 50px; /* Top and bottom padding */
+}
+
+.page-title {
+    margin-bottom: 40px;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-content: space-between;
+    gap: 50px; /* spacing between items */
+    padding: 15px;
+}
+
+/* Product box styling */
+.feature-box {
+    width: 350px;
+    height: fit-content;
+    padding: 30px;
+    transition: all 0.3s ease;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* Hover effect */
+.feature-box:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+    background-color: #eeeeee; /* Light gray background on hover */
+}
+
+/* Heading style */
+.feature-box h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Paragraph style */
+.feature-box p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align:left;
+    margin: 0 auto;
+    max-width: 100%;
+    color: #333;
+}
+
+.feature-box:hover h4,
+.feature-box:hover p {
+    color: #000000; /* Text color change to white on hover */
+}
+
+/* Optional: If you want to adjust the text color for normal state */
+.feature-box h4,
+.feature-box p {
+    color: #333; /* Default text color */
+}
+
+

@@ -6,6 +6,7 @@ import Contact from "./pages/Contact"
 import Service from "./pages/Service"
 import Product from "./pages/Product"
 import Project from "./pages/Project"
+import Management from "./pages/Management"
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="service" element={<Service />} />
         <Route path="product" element={<Product />} />
         <Route path="project" element={<Project />} />
+        <Route path="management" element={<Management />} />
       </Routes>
     </>
   )

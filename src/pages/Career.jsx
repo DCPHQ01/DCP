@@ -6,45 +6,6 @@ const Career = () => {
         <div class="spinner"></div>
     </div>
 
-    {/*<!-- Mainmenu-Area -->*/}
-    <nav class="navbar mainmenu-area" data-spy="affix" data-offset-top="197">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div id="search-box" class="collapse">
-                        <form action="#">
-                            <input type="search" class="form-control" placeholder="What do you want to know?" />
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="navbar-header smoth">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainmenu">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span> 
-                        </button>
-                        <a class="navbar-brand" href="#home-area"><img src="images/logo.png" alt="" /></a>
-                    </div>
-                    <div class="collapse navbar-collapse navbar-right" id="mainmenu">
-                       
-                        <ul class="nav navbar-nav primary-menu">
-                            <li class="active"><a href="index.html">Home</a></li>
-                            <li><a href="index.html">Services</a></li>
-                            <li><a href="index.html">projects</a></li>
-                            <li><a href="index.html">Products</a></li>
-                            <li><a href="index.html">csr</a></li>
-                            <li><a href="#Career">Career</a></li>
-                            <li><a href="#contact-area">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-    {/*<!--Mainmenu-Area-->*/}
       {/*<!--Header-Area-->*/}
       <header class="header-area" id="home-area">
         <div class="vcenter">
@@ -126,10 +87,10 @@ const Career = () => {
    
 
     {/*<!--Vendor-JS-->*/}
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
+    {/* <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script> */}
      {/*<!--Plugin-JS-->*/}
-    <script src="js/owl.carousel.min.js"></script>
+    {/* <script src="js/owl.carousel.min.js"></script>
     <script src="js/appear.js"></script>
     <script src="js/bars.js"></script>
     <script src="js/waypoints.min.js"></script>
@@ -139,11 +100,11 @@ const Career = () => {
     <script src="js/contact-form.js"></script>
     <script src="js/scrollUp.min.js"></script>
     <script src="js/magnific-popup.min.js"></script>
-    <script src="js/wow.min.js"></script>
+    <script src="js/wow.min.js"></script> */}
      {/*<!--Main-active-JS-->*/}
-    <script src="js/main.js"></script>
+    {/* <script src="js/main.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXZ3vJtdK6aKAEWBovZFe4YKj1SGo9V20&callback=initMap"></script>
-    <script src="js/maps.js"></script>
+    <script src="js/maps.js"></script> */}
         </>
      );
 }
