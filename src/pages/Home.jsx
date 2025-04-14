@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import { useState } from "react";
+import ImageMarquee from "../components/ImageMarquee";
 
 const sec4H3 = "sm:text-2xl text-xl mb-3 sm:mb-8 font-semibold";
 const sec4p = "sm:text-xl text-base";
@@ -152,6 +153,12 @@ const Home = () => {
                     </div>
                     </section>
 
+                    {/*  CLIENTS/NOTABLE PROJECTS */}
+
+                    <section className="">
+                        <ImageMarquee />
+                    </section>
+
                     {/* contact */}
 
                     <section className="sm:px-30 px-8 sm:py-12 py-6 flex justify-center text-black">
@@ -176,8 +183,7 @@ const Home = () => {
                         </form>
                         </div>
                     </section>
-
-
+            
         </div>
             
         </>

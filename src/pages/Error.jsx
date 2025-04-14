@@ -14,7 +14,6 @@ const Error = () => {
                 </div>
             </div>
             </main>
-
         </>
      );
 }
