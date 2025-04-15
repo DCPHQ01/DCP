@@ -6,9 +6,8 @@ import Contact from "./pages/Contact"
 import Service from "./pages/Service"
 import Product from "./pages/Product"
 import Project from "./pages/Project"
-
-// import Management from "./pages/Management"
-// import Test from "./components/Test"
+import Management from "./pages/Management"
+import Test from "./components/Test"
 
 import Error from "./pages/Error"
 import Navbar from "./components/Navbar"
