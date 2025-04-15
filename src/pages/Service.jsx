@@ -1,5 +1,14 @@
+
 import ServiceCard from "../components/ServiceCard";
 import Test from "../components/Test";
+
+// import Test from "../components/Test";
+import { GiOrganigram } from "react-icons/gi";
+import { RiMoneyDollarBoxFill } from "react-icons/ri";
+import { AiOutlineFileSearch } from "react-icons/ai";
+import { GrTechnology } from "react-icons/gr";
+import { BsClipboard2CheckFill } from "react-icons/bs";
+
 
 const Service = () => {
     return (
@@ -92,9 +101,11 @@ const Service = () => {
                                 </p>
                             </div>
 
+
                             <div className="">
                                 <Test />
                             </div>
+                            
                         </div>
 
                         <div className="w-full lg:w-6/12 flex justify-center items-center">
