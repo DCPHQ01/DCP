@@ -25,21 +25,21 @@ const ServiceCard = ({ image, title, services }) => {
             </div>
             <div className="p-4">
                 <h4 className="text-lg font-bold mb-2">{title}</h4>
-                <button onClick={openModal} className="text-red-600 hover:underline text-sm">
+                <button onClick={openModal} className="text-red-600 hover:underline text-sm cursor-pointer">
                     Click to see list of our services
                 </button>
             </div>
 
             {/* Modal */}
             {isModalOpen && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-30 backdrop-blur-sm">
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 bg-opacity-30 backdrop-blur-sm">
                     <div
                         ref={modalRef}
                         className="bg-white p-6 rounded-lg max-w-md w-full relative shadow-lg animate-fadeZoomIn"
                     >
                         <button
                             onClick={closeModal}
-                            className="absolute top-3 right-3 text-red-600 text-xl"
+                            className="absolute top-3 right-3 text-red-600 text-xl cursor-pointer"
                         >
                             <AiOutlineClose />
                         </button>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Marquee from "react-fast-marquee";
 
 const ImageMarquee = () => {
     const images = [
@@ -47,32 +48,22 @@ const ImageMarquee = () => {
       "/images/marqueepics/stl.jpg",
       "/images/marqueepics/uc.jpg",
       "/images/marqueepics/upu.jpg",
-      "/images/marqueepics/xbg.jpg",
+      "/images/marqueepics/wbg.jpg",
       "/images/marqueepics/zsg.jpg",
     ];
   
     return (
       <div className="w-full overflow-hidden bg-transparent py-4">
-        <div className="flex animate-marquee space-x-12">
+        <Marquee loop={0} autoFill={true}>
           {images.concat(images).map((src, index) => (
             <img
               key={index}
               src={src}
               alt={`marquee-img-${index}`}
-              className="h-22 w-auto object-contain"
+              className="h-22 w-auto object-contain mr-10"
             />
           ))}
-
-        {/* Duplicate for seamless loop */}
-        {images.map((src, index) => (
-          <img
-            key={`clone-${index}`}
-            src={src}
-            alt={`marquee-clone-${index}`}
-            className="h-22 inline-block mx-8"
-          />
-        ))}
-        </div>
+        </Marquee>
       </div>
     );
 };

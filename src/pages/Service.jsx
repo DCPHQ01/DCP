@@ -98,7 +98,7 @@ const Service = () => {
                         </div>
 
                         <div className="w-full lg:w-6/12 flex justify-center items-center">
-                            <img src="images/skill-image.png" alt="Core Competency Illustration" className="max-w-full h-auto" />
+                            <img src="images/DCPServices.png" alt="Core Competency Illustration" className="max-w-full h-100" />
                         </div>
                     </div>
                 </div>

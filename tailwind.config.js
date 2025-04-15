@@ -4,7 +4,6 @@ module.exports = {
     extend: {
       animation: {
         fadeZoomIn: 'fadeZoomIn 0.3s ease-out forwards',
-        marquee: 'marquee 40s linear infinite',
       },
       keyframes: {
         fadeZoomIn: {
@@ -16,10 +15,6 @@ module.exports = {
             opacity: '1',
             transform: 'scale(1)',
           },
-        },
-        marquee: {
-          '0%': { transform: 'translateX(0%)' },
-          '100%': { transform: 'translateX(-50%)' },
         },
       },
     },

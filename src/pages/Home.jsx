@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 import { useState } from "react";
 import ImageMarquee from "../components/ImageMarquee";
+import Marquee from "react-fast-marquee";
 
 const sec4H3 = "sm:text-2xl text-xl mb-3 sm:mb-8 font-semibold";
 const sec4p = "sm:text-xl text-base";
@@ -154,13 +155,18 @@ const Home = () => {
                     </section>
 
                     {/*  CLIENTS/NOTABLE PROJECTS */}
-
-                    <section className="">
-                        <ImageMarquee />
+                    <section className="mt-5 mb-7">
+                        <div className="container mx-auto">
+                            <div className="w-full sm:w-2/3 mx-auto page-title text-center">
+                                <h1 className='sm:text-3xl text-xl mb-3 sm:mb-8 font-bold'>Notable Clients</h1>
+                            </div>
+                            <Marquee>
+                                <ImageMarquee />
+                            </Marquee>
+                        </div>
                     </section>
 
-                    {/* contact */}
-
+                    {/* Contact */}
                     <section className="sm:px-30 px-8 sm:py-12 py-6 flex justify-center text-black">
                         <div className="sm:px-10 px-10 sm:py-10 py-6 w-full sm:w-[60%] flex flex-col items-center bg-gray-100 rounded-3xl shadow-xl">
                         <div className="contact text-4xl mb-16 font-bold">Contact Us</div>

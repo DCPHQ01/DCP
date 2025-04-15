@@ -5,7 +5,7 @@ export default function Management() {
   const accordionItems = [
     {
       id: 1,
-      image: "https://via.placeholder.com/150",
+      image: "../images/management/ceo.jpg",
       name: "Dr. I.B Gashinbaki",
       position: "Founder/CEO Discovery Cycle Professionals",
       description:
@@ -13,7 +13,7 @@ export default function Management() {
     },
     {
       id: 2,
-      image: "https://via.placeholder.com/150",
+      image: "../images/management/coo.jpg",
       name: "Prince Chinedu Obi",
       position: "Chief Operating Officer",
       description:
@@ -21,7 +21,7 @@ export default function Management() {
     },
     {
       id: 3,
-      image: "https://via.placeholder.com/150",
+      image: "../images/management/mbd.jpg",
       name: "Oloje 'Kojo Richards",
       position: "Manager, Business Development",
       description:
@@ -29,7 +29,7 @@ export default function Management() {
     },
     {
       id: 4,
-      image: "https://via.placeholder.com/150",
+      image: "../images/management/mf.jpg",
       name: "Ohaeri Chima Charles",
       position: "Manager, Finance",
       description:
@@ -37,7 +37,7 @@ export default function Management() {
     },
     {
       id: 5,
-      image: "https://via.placeholder.com/150",
+      image: "../images/management/mlcs.jpg",
       name: "Emmanuella Chinonso Eze",
       position: "Manager, Legal & Corporate Services",
       description:
