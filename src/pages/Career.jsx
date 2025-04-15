@@ -83,7 +83,6 @@ const Career = () => {
         </div>
     </div>
     {/*<!--Footer-Area-->*/}   
-
         </>
      );
 }
