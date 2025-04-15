@@ -1,4 +1,4 @@
-import Test from "../components/Test";
+// import Test from "../components/Test";
 import { GiOrganigram } from "react-icons/gi";
 import { RiMoneyDollarBoxFill } from "react-icons/ri";
 import { AiOutlineFileSearch } from "react-icons/ai";
@@ -124,9 +124,9 @@ const Service = () => {
                                 </p>
                             </div>
 
-                            <div className="">
+                            {/* <div className="">
                                <Test />
-                            </div>
+                            </div> */}
                         </div>
 
                         <div className="w-full lg:w-6/12 flex justify-center items-center">

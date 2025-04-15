@@ -1,10 +1,11 @@
 import { Link } from "react-router";
 import { useState } from "react";
+import ContactForm from "../components/ContactForm";
+import Button from "../components/Button";
 
 const sec4H3 = "sm:text-2xl text-xl mb-3 sm:mb-8 font-semibold";
 const sec4p = "sm:text-xl text-base";
 const paddingSec4 = "sm:px-10 px-10 sm:py-10 py-6 transition-transform duration-300 hover:rotate-[2deg] hover:-translate-y-3 bg-gray-100 rounded-3xl shadow-md hover:text-white hover:bg-black/50 hover:shadow-2xl";
-const inputStyle = "border-b active:outline-none"
 
 
 const Home = () => {
@@ -15,10 +16,13 @@ const Home = () => {
         <>
         <div className="home-container">
             {/* section 1 of home page */}
-            <section className="header relative z-0 px-8 sm:px-30 h-screen flex items-center" id="home-area">
-                <div className="header-img absolute top-0 left-0 right-0 bottom-0"></div>
-                <div className="bg-black/50 absolute top-0 left-0 right-0 bottom-0 z-4"></div>
-                <div className="header-text z-10 flex flex-col gap-6">
+            <section className="header relative z-0 h-screen flex items-center" id="home-area">
+            <video autoPlay loop muted className="absolute w-full h-full object-cover z-3">
+                <source src="../../videos/vecteezy_businessman-show-crm-customer-relationship-management-for_36142834.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+                <div className="bg-black/70 absolute top-0 left-0 right-0 bottom-0 z-4"></div>
+                <div className="header-text px-8 sm:px-30 z-10 flex flex-col gap-6">
                     <h2 className="header-text text-white text-2xl md:text-6xl font-bold">Developing Creative Business Solutions </h2>
                     <q className="md:text-2xl text-base text-white">Client centric approach to business solution</q>
                     <div className="wow fadeup" data-wow-delay="0.7s">
@@ -38,7 +42,7 @@ const Home = () => {
             </section>
 
             {/* section 2 of home page */}
-            <section className="section2 sm:px-30 px-8 py-12 sm:py-24" id="about-area">
+            <section className="section2 sm:px-30 px-8 my-12 sm:py-24" id="about-area">
                 <div className="container mx-auto">
                     <div className="flex lg:flex-row flex-col gap-16 lg:gap-4 justify-between items-center">
                         <div className="w-full md:w-[90%]">
@@ -60,7 +64,7 @@ const Home = () => {
 
             {/* section 3  */}
 
-            <section className="section-padding sm:px-30 px-8 py-8">
+            <section className="section-padding sm:px-30 px-8 my-12">
                 <div className="container mx-auto bg-gray-100/50 shadow-2xl sm:py-8 sm:p-12 backdrop-blur-md sm:rounded-3xl rounded-t-2xl sm:overflow-auto overflow-hidden">
                     <div className="flex flex-col sm:gap-2 gap-8 sm:flex-row ">
                     <div className="w-full sm:w-1/2">
@@ -89,14 +93,14 @@ const Home = () => {
                         <div className="tab-content">
                         {activeTab === 'our_mission' && (
                             <div id="our_mission" className="tab-pane">
-                            <h3 className="uppercase text-xl font-bold">
+                            <h3 className="uppercase text-xl text-justify font-semibold">
                                 “To be the biggest consulting company in Africa anchored on value creation, integrity and service excellence”.
                             </h3>
                             </div>
                         )}
                         {activeTab === 'our_vission' && (
                             <div id="our_vission" className="tab-pane">
-                            <h3 className="uppercase text-xl font-bold">
+                            <h3 className="uppercase text-xl text-justify  font-semibold">
                                 “Creating, innovating and investing in exceptional solutions for clients and providing great value-addition for all stakeholders”.
                             </h3>
                             </div>
@@ -109,7 +113,7 @@ const Home = () => {
 
                 {/* section4 */}
 
-                <section className="section-padding p-8 sm:p-30" id="csr">
+                <section className="section-padding px-8 my-12 sm:px-30" id="csr">
                     <div className="container mx-auto">
                         <div className="w-full sm:w-2/3 md:w-1/2 mx-auto p-8">
                             <div className="page-title text-center">
@@ -119,32 +123,32 @@ const Home = () => {
                         </div>
 
                         <div className="w-full text-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
-                        <div className={`single-process ${paddingSec4} feature-box  animate__animated animate__fadeInUp`} data-wow-delay="0.4s">
+                        <div className={`single-process ${paddingSec4}  animate__animated animate__fadeInUp`} data-wow-delay="0.4s">
                             <div className="process-icon text-4xl">
                             <i className="icofont-users-alt-1"></i>
                             </div>
                             <h3 className={`${sec4H3}`}>NYSC</h3>
-                            <p className={sec4p}>
+                            <p className={`${sec4p} text-justify`}>
                                 Discovery Empowerment Scheme for National Youth Service Corps (NYSC): This is a free Capacity Building and Career Guidance support for serving NYSC members. Since its inception, over 900 Corps members have benefited from this scheme in the last three (3) years.
                             </p>
                         </div>
 
-                        <div className={`single-process ${paddingSec4} feature-box  animate__animated animate__fadeInUp`} data-wow-delay="0.6s">
+                        <div className={`single-process ${paddingSec4} animate__animated animate__fadeInUp`} data-wow-delay="0.6s">
                             <div className="process-icon text-4xl">
                             <i className="icofont-brainstorming"></i>
                             </div>
                             <h3 className={`${sec4H3}`}>DCP-Thinking and Learning Lab</h3>
-                            <p className={sec4p}>
+                            <p className={`${sec4p} text-justify`}>
                             The DCP-Thinking and Learning Lab is a leadership and innovation platform that brings together young thought leaders and change agents, through a volunteering route, to co-create ideas and drive transformative business processes for organizational, national, and global growth.
                             </p>
                         </div>
 
-                        <div className={`single-process ${paddingSec4} feature-box  animate__animated animate__fadeInUp`} data-wow-delay="0.8s">
+                        <div className={`single-process ${paddingSec4} animate__animated animate__fadeInUp`} data-wow-delay="0.8s">
                             <div className="process-icon text-4xl">
                             <i className="icofont-settings-alt"></i>
                             </div>
                             <h3 className={`${sec4H3}`}>Internship</h3>
-                            <p className={sec4p}>
+                            <p className={`${sec4p} text-justify`}>
                             The DCP Interns program is a way to get to know how corporate organizations function as a team. It will also help you decide if your potential career is right for you. It gives you day-to-day involvement in actual projects, selected to match your interests and abilities.
                             </p>
                         </div>
@@ -152,30 +156,24 @@ const Home = () => {
                     </div>
                     </section>
 
-                    {/* contact */}
+                    {/* section 5 management link */}
+                        <section className="management my-12 flex justify-center">
+                            <div className="management-container flex md:flex-row flex-col md:gap-16 gap-4 w-[90%] sm:w-[80%]">
+                                <div className="gp-container w-[300px] h-[300px] rounded-full overflow-hidden">
+                                    <img src="../../images/about-3.jpg" className="object-cover" alt="COO image" />
+                                </div>
+                                <div className="gp-description-group flex flex-col gap-4 sm:w-[50%] w-full justify-between">
+                                <h3 className="text-description font-semibold text-3xl">text from urjktsn knsiflkej fnksnkf lsknfjs dnfskdf dkslfjdf d.shbflksbhlgihb libflskdbf kdfbkdfbksn; jbflsfs;ps'ogjrioobtthr oei;ewf0ef;lbjobtb;sjfb;fbnewf;nl</h3>
+                                <div className="self-end">
+                                    <Button text="View Management Team" link="/management" />
+                                </div>
+                                </div>
+                            </div>
+                        </section>
 
-                    <section className="sm:px-30 px-8 sm:py-12 py-6 flex justify-center text-black">
-                        <div className="sm:px-10 px-10 sm:py-10 py-6 w-full sm:w-[60%] flex flex-col items-center bg-gray-100 rounded-3xl shadow-xl">
-                        <div className="contact text-4xl mb-16 font-bold">Contact Us</div>
-                        <form action="https://formsubmit.co/de8845fa25ad6ffb0100fc3fe1eb340c" method="post" className="flex flex-col w-full gap-6 sm:gap-16">
-                            <div className="inp-group1 flex sm:flex-row flex-col gap-6 w-full">
-                                <input placeholder="Full Name" type="text" name="name" id="full-name" className={`w-full outline-0 ${inputStyle}`} required/>
-                                <input placeholder="Phone Number" type="tel" name="phone" id="phone" className={`w-full outline-0 ${inputStyle}`} required/>
-                            </div>
-                            <div className="inp-group2 flex gap-6 sm:flex-row flex-col w-full">
-                                <input placeholder="Email" type="email" name="email" id="email" className={`w-full outline-0 ${inputStyle}`} required/>
-                                <input placeholder="Subject (max char 70)" type="text" name="subject" id="subject" className={`w-full outline-0 ${inputStyle}`} maxLength={50} required/>
-                            </div>
-                            <div className="inp-group3 flex">
-                                <textarea name="message" id="message" className="w-full resize-none outline-0 h" placeholder="What would you like to tell us..." required></textarea>
-                            </div>
-                            <input type="submit" value="Send" className="cursor-pointer hover:bg-red-600 w-auto self-start active:translate-y-2 px-4 sm:px-6 py-2 bg-red-500 rounded-3xl" />
-                            <input type="hidden" name="_autoresponse" value="Thank you for contacting us....we will respond shortly"/>
-                            <input type="hidden" name="_next" value="http://localhost:5173/"/>
-                            <input type="hidden" name="_template" value="table"/>
-                        </form>
-                        </div>
-                    </section>
+                    {/*Section 6 contact */}
+
+                    <ContactForm />
 
 
         </div>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 export default function Management() {
   const accordionItems = [
@@ -79,20 +79,22 @@ export default function Management() {
                 </div>
                 <div className="text-xl">{openIndex === index ? "-" : "+"}</div>
                 </div>
+              <AnimatePresence mode='wait' initial="false">
 
                 {openIndex === index && (
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 0.3 }}
-                    className="p-4 text-gray-700"
-                >
+                  <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.3 }}
+                  className="p-4 text-gray-700"
+                  >
                     <div className="p-4 text-gray-700 whitespace-pre-line text-justify">
                         <p>{item.description}</p>
                     </div>
                 </motion.div>
                 )}
+                </AnimatePresence>
             </motion.div>
             ))}
         </div>
