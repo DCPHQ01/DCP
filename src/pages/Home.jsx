@@ -126,7 +126,7 @@ const Home = () => {
 
                     <div className="w-full text-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
                     <div className={`single-process ${paddingSec4}  animate__animated animate__fadeInUp`} data-wow-delay="0.4s">
-                        <div className="process-icon text-4xl">
+                        <div className="process-icon text-2xl">
                         <i className="icofont-users-alt-1"></i>
                         </div>
                         <h3 className={`${sec4H3}`}>NYSC</h3>

@@ -54,7 +54,7 @@ const ImageMarquee = () => {
   
     return (
       <div className="w-full overflow-hidden bg-transparent py-4">
-        <Marquee loop={0} speed={600}>
+        <Marquee loop={0} speed={100}>
           {images.map((src, index) => (
             <img
               key={index}
@@ -69,4 +69,3 @@ const ImageMarquee = () => {
 };
 
 export default ImageMarquee;
-  
