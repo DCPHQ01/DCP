@@ -3,7 +3,6 @@ import { useState } from "react";
 
 import ImageMarquee from "../components/ImageMarquee";
 import Marquee from "react-fast-marquee";
-import ContactForm from "../components/ContactForm";
 import Button from "../components/Button";
 
 const sec4H3 = "sm:text-2xl text-xl mb-3 sm:mb-8 font-semibold";
@@ -171,22 +170,36 @@ const Home = () => {
             </section>
 
             {/* section 5 management link */}
-            <section className="management my-12 flex justify-center ">
+            <section className="management mt-20 mb-7 flex flex-col items-center">
+                <h2 className="text-3xl font-bold mb-5">Management Team</h2>
+
                 <div className="management-container py-5 flex justify-around md:flex-row flex-col md:gap-16 gap-4 w-[90%] sm:w-[80%]">
-                    <div className="gp-container w-[250px] h-[250px] rounded-full overflow-hidden">
-                        <img src="../../images/management/ceo.jpg" className="object-cover" alt="CEO image" />
+                    
+                    {/* Profile Image */}
+                    <div className="gp-container w-[250px] h-[250px] rounded-full overflow-hidden shadow-lg">
+                    <img
+                        src="../../images/management/ceo.jpg"
+                        className="object-cover w-full h-full"
+                        alt="CEO image"
+                    />
                     </div>
-                    <div className="gp-description-group flex flex-col gap-4 sm:w-[50%] w-full justify-between">
-                        <p className="text-description font-medium text-xl justify-self-center">As the Founder and the Group Country Director of Discovery Circle Practitioners Limited Partners (DCPLP), a management consulting company with vast experience in taxation, audit...</p>
-                        <div className="self-end">
-                            <Button text="View Management Team" link="/management" />
-                        </div>
+
+                    {/* Name and Position */}
+                    <div className="gp-description-group flex flex-col gap-4 sm:w-[50%] w-full justify-center">
+                    <div>
+                        <h3 className="text-2xl font-semibold">Dr. I.B Gashinbaki</h3>
+                        <p className="text-lg text-gray-600">Founder & Group Chief Executive Officer</p>
+                    </div>
+                    <div className="self-start mt-4">
+                        <Button text="View Management Team" link="/management" />
+                    </div>
                     </div>
                 </div>
             </section>
 
-            {/*Section 6 contact */}
-            <ContactForm />
+
+            {/*Section 6 Gallery */}
+            
         </div>
             
         </>
