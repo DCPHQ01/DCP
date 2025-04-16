@@ -14,7 +14,7 @@ const Contact = () => {
                         <div className="flex flex-col gap-4">
                             <div className="address flex gap-4 font-semibold">
                                 <LuMapPinHouse size="40px"/>
-                                <p className="address-name text-lg font-semibold">Plot 2542 Hassan Usman Kaatsina Asokoro, Abuja, FCT.</p>
+                                <p className="address-name text-lg font-semibold">Plot 2542 Hassan Usman Katsina Asokoro, Abuja, FCT.</p>
                             </div>
                             <div className="phone flex gap-4 font-semibold">
                                 <MdPhone size="40px" />

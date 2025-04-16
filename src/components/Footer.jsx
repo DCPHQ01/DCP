@@ -18,20 +18,20 @@ const Footer = () => {
                         </NavLink>
                         <div className="footer-nav flex md:gap-16 gap-4">
                             <div className="footer-nav-section flex flex-col gap-4">
-                                <Link to="/" className="footer-nav-links cursor-pointer home"> Home</Link>
-                                <Link to="/service" className="footer-nav-links cursor-pointer services">Services</Link>
-                                <Link to="/project" className="footer-nav-links cursor-pointer projects">Projects</Link>
+                                <Link to="/" className="footer-nav-links hover:text-red-500 cursor-pointer home"> Home</Link>
+                                <Link to="/service" className="footer-nav-links hover:text-red-500 cursor-pointer services">Services</Link>
+                                <Link to="/project" className="footer-nav-links hover:text-red-500 cursor-pointer projects">Projects</Link>
                             </div>
                             <div className="footer-nav-section2 flex flex-col gap-4">
-                                <Link to="/career" className="footer-nav-links cursor-pointer career">Career</Link>
-                                <Link to="/contact" className="footer-nav-links cursor-pointer contact">Contact</Link>
+                                <Link to="/career" className="footer-nav-links hover:text-red-500 cursor-pointer career">Career</Link>
+                                <Link to="/contact" className="footer-nav-links hover:text-red-500 cursor-pointer contact">Contact</Link>
                             </div>
                         </div>
 
                         <div className="footer-contact flex flex-col gap-4">
                             <div className="email flex items-center gap-2.5 "><span><MdOutlineMail size={20} /></span> <span>info@dcp.com.ng</span> </div>
                             <div className="phone flex items-center gap-2.5 "><span><MdOutlinePhoneAndroid size={20} /></span> <span>+(234) 908 2222 333</span> </div>
-                            <div className="phone flex items-center gap-2.5 "><span><IoLocationOutline size={20} /></span> <span>location</span> </div>
+                            <div className="phone flex items-center gap-2.5 "><span><IoLocationOutline size={20} /></span> <span>Plot 2542 Hassan Usman Kaatsina Asokoro, Abuja, FCT.</span> </div>
                         </div>
 
                         <div className="footer-socials flex sm:flex-row flex-col gap-6">

@@ -19,7 +19,6 @@ const Navbar = () => {
             <li className="active"><NavLink to="/" className={({ isActive }) =>isActive ? "border-b-2 pb-5 border-red-600" : "hover:border-b-2 pb-5 hover:border-red-300"}>HOME</NavLink></li>
             <li><NavLink to="/service" className={({ isActive }) =>isActive ? "border-b-2 pb-5 border-red-600" : "hover:border-b-2 pb-5 hover:border-red-300"}>SERVICES</NavLink></li>
             <li><NavLink to="/project" className={({ isActive }) =>isActive ? "border-b-2 pb-5 border-red-600" : "hover:border-b-2 pb-5 hover:border-red-300"}>PROJECTS</NavLink></li>
-            <li><NavLink to="/product" className={({ isActive }) =>isActive ? "border-b-2 pb-5 border-red-600" : "hover:border-b-2 pb-5 hover:border-red-300"}>PRODUCTS</NavLink></li>
             <li><NavLink to="/career" className={({ isActive }) =>isActive ? "border-b-2 pb-5 border-red-600" : "hover:border-b-2 pb-5 hover:border-red-300"}>CAREER</NavLink></li>
             <li><NavLink to="/contact" className={({ isActive }) =>isActive ? "border-b-2 pb-5 border-red-600" : "hover:border-b-2 pb-5 hover:border-red-300"}>CONTACT</NavLink></li>
           </ul>
