@@ -5,7 +5,7 @@ const GalleryMarquee = () => {
     const images = [
 
     ];
-    
+
 return (
     <div className="w-full overflow-hidden bg-transparent py-4">
       <Marquee loop={0} speed={100}>
@@ -14,7 +14,7 @@ return (
             key={index}
             src={src}
             alt={`marquee-img-${index}`}
-            className="h-22 w-auto object-contain mr-10"
+            className="h-100 w-100 object-contain mr-10"
           />
         ))}
       </Marquee>
@@ -22,3 +22,5 @@ return (
   );
 
 };
+
+export default GalleryMarquee;
