@@ -80,7 +80,7 @@ export default function Management() {
                 </div>
 
                 {openIndex === index && (
-                  <div
+                  <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
@@ -90,7 +90,7 @@ export default function Management() {
                     <div className="p-4 text-gray-700 whitespace-pre-line text-justify">
                         <p>{item.description}</p>
                     </div>
-                </div>
+                </motion.div>
                 )}
             </div>
             ))}

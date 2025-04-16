@@ -1,6 +1,8 @@
 import { IoLogoInstagram } from "react-icons/io5";
 import { FaFacebook, FaXTwitter } from "react-icons/fa6";
 import { MdOutlineMail, MdOutlinePhoneAndroid } from "react-icons/md";
+import { IoLocationOutline } from "react-icons/io5";
+import { FaLinkedin } from "react-icons/fa6";
 import { Link, NavLink } from "react-router";
 
 const Footer = () => {
@@ -29,12 +31,14 @@ const Footer = () => {
                         <div className="footer-contact flex flex-col gap-4">
                             <div className="email flex items-center gap-2.5 "><span><MdOutlineMail size={20} /></span> <span>info@dcp.com.ng</span> </div>
                             <div className="phone flex items-center gap-2.5 "><span><MdOutlinePhoneAndroid size={20} /></span> <span>+(234) 908 2222 333</span> </div>
+                            <div className="phone flex items-center gap-2.5 "><span><IoLocationOutline size={20} /></span> <span>location</span> </div>
                         </div>
 
-                        <div className="footer-socials flex gap-6">
+                        <div className="footer-socials flex sm:flex-row flex-col gap-6">
                             <Link to="/" className="instagram cursor-pointer"><IoLogoInstagram size={20} /></Link>
                             <Link to="/" className="facebook cursor-pointer"><FaFacebook size={20} /></Link>
                             <Link to="/" className="x cursor-pointer"><FaXTwitter size={20} /></Link>
+                            <Link to="/" className="linkedIn cursor-pointer"><FaLinkedin size={20} /></Link>
                         </div>
                     </div>
                 </div>

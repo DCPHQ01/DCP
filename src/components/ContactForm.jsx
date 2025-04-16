@@ -4,11 +4,11 @@ const inputStyle = "border-b active:outline-none"
 
     return ( 
         <>
-        <section className="sm:px-30 px-8 my-12 w-full flex justify-center text-black">
-                        <div className="sm:py-10 py-6 w-full flex md:flex-row flex-col gap-6 md:gap-24 justify-between items-center">
-                            <div className="sm:px-10 px-10 sm:py-10 py-6 contact-wrapper flex flex-col items-center bg-gray-100 rounded-3xl shadow-xl">
+        <section className="my-12 w-full flex justify-center text-black">
+                        <div className="sm:py-10 sm:w-[80%] py-6 w-[90%] flex md:flex-row flex-col gap-6 sm:gap-24 justify-between items-center">
+                            <div className="sm:px-10 px-10 sm:py-10 w-full py-6 contact-wrapper flex flex-col items-center bg-gray-100 rounded-3xl shadow-xl">
                                 <div className="contact text-4xl mb-16 font-bold">Contact Us</div>
-                                <form action="https://formsubmit.co/de8845fa25ad6ffb0100fc3fe1eb340c" method="post" className="flex flex-col w-full gap-6 sm:gap-16">
+                                <form action="https://formsubmit.co/info@dcp.com.ng" method="post" className="flex flex-col w-full gap-6 sm:gap-16">
                                     <div className="inp-group1 flex sm:flex-row flex-col gap-6 w-full">
                                         <input placeholder="Full Name" type="text" name="name" id="full-name" className={`w-full outline-0 ${inputStyle}`} required/>
                                         <input placeholder="Phone Number" type="tel" name="phone" id="phone" className={`w-full outline-0 ${inputStyle}`} required/>
