@@ -19,41 +19,44 @@ const Project = () => {
         
             {/* 🔹 Group 1 */}
             <div className="mb-12">
-                <h3 className="text-2xl font-semibold mb-6 text-center">Tax & Revenue Solutions</h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <h3 className="text-2xl font-semibold mb-6 text-center">Management Consulting and Public Administration Support Projects</h3>
+                <div className="flex justify-between sm:flex-row flex-col gap-4">
                     {/* Card 1 */}
                     <div className="feature-box p-4 shadow-md hover:shadow-xl hover:bg-gray-100 transition-all">
                         <div className="flex items-start gap-3 mb-3">
-                            <BsBank2 size={30} color="red" />
-                            <h4 className="text-lg font-bold">Property Tax Solutions</h4>
+                            <div className="mb-3">
+                                <img src="../../images/marqueepics/efcc.jpg" alt="EFCC" className="w-50 h-20 object-cover rounded-full" />
+                            </div>
+                            <h4 className="text-lg font-bold flex items-start">Economic and Financial Crimes Commission (EFCC)</h4>
                         </div>
                         <p className="text-justify text-sm">
-                            Prudent assessment, collection, and accounting for property tax pose significant challenges to both
-                            the Tax Authorities and the Taxable Entities, especially in developing countries. DCP delivers
-                            end-to-end solutions to its clients for resolving these difficulties.
+                        Technical Assistance and capacity building on Anti Corruption, Fiscal responsibility and effective leadership. Implemented for key officers across the 774 Local Government Councils of Nigeria in conjunction with the Economic and Financial Crimes Commission (EFCC).
                         </p>
                     </div>
         
                     {/* Card 2 */}
                     <div className="feature-box p-4 shadow-md hover:shadow-xl hover:bg-gray-100 transition-all">
                         <div className="flex items-start gap-3 mb-3">
-                            <AiOutlineAreaChart size={40} color="red" />
-                            <h4 className="text-lg font-bold">Customs Revenue Enhancement Project (CREP)</h4>
+                            <div className="mb-3">
+                                <img src="../../images/marqueepics/ksgn.jpg" alt="KSGN" className="w-50 h-25 object-cover rounded-full" />
+                            </div>
+                            <h4 className="text-lg font-bold">Katsina State Government Nigeria</h4>
                         </div>
                         <p className="text-justify text-sm">
-                            Continuous performance improvement in the collection of customs revenue is one of the major
-                            sources of funding government activities around the world.
+                            Katsina State Baseline Survey: Comprehensive Mapping of Revenue Optimization Opportunities and Baseline Survey of Markets, Parks, Agro and Livestock Processing Enterprises, Commodities & Trade Groups in Katsina State, Nigeria.
                         </p>
                     </div>
         
                     {/* Card 3 */}
                     <div className="feature-box p-4 shadow-md hover:shadow-xl hover:bg-gray-100 transition-all">
                         <div className="flex items-start gap-3 mb-3">
-                            <FaChartBar size={40} color="red" />
-                            <h4 className="text-lg font-bold">Sustainable Revenue Enhancement Programme</h4>
+                            <div className="mb-3">
+                                <img src="../../images/marqueepics/ns.jpg" alt="Niger State" className="w-35 h-20 object-cover rounded-full" />
+                            </div>
+                            <h4 className="text-lg font-bold">Niger State Government</h4>
                         </div>
                         <p className="text-justify text-sm">
-                            This project is developed to support Governments at all levels to enhance their Internally Generated Revenue (IGR) portfolios.
+                        DCP Technical support to MECA in partnership with the Government of Niger State: Programme design for Joint Management of Tractor with the Tractors Owners & Operators Association of Nigeria (TOOAN) in Minna, supported by the Niger State Government; Tractors Refurbishment and Redeployment in Niger State.
                         </p>
                     </div>
                 </div>
@@ -62,7 +65,7 @@ const Project = () => {
             {/* 🔹 Group 2 */}
             <div className="mb-12 px-4">
                 <h3 className="text-2xl font-semibold mb-6 text-center">Extractive Sector Projects</h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div className="flex justify-between sm:flex-row flex-col gap-4">
                     {/* Card 4 */}
                     <div className="feature-box p-4 shadow-md hover:shadow-xl hover:bg-gray-100 transition-all">
                         <div className="flex items-start gap-3 mb-3">
@@ -101,7 +104,7 @@ const Project = () => {
             {/* 🔹 Group 3 */}
             <div className="mb-12 px-4">
                 <h3 className="text-2xl font-semibold mb-6 text-center">Governance & Advisory Programmes</h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div className="flex justify-between sm:flex-row flex-col gap-4">
                     {/* Placeholder Card 7 */}
                     <div className="feature-box p-4 shadow-md hover:shadow-xl hover:bg-gray-100 transition-all">
                         <div className="flex items-start gap-3 mb-3">
