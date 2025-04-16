@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import Marquee from "react-fast-marquee";
 
 const ImageMarquee = () => {
-    const images = [
+    const images = useMemo(() => [
       "/images/marqueepics/aicl.jpg",
       "/images/marqueepics/airs.jpg",
       "/images/marqueepics/algon.jpg",
@@ -18,49 +18,26 @@ const ImageMarquee = () => {
       "/images/marqueepics/fara.jpg",
       "/images/marqueepics/fbn.jpg",
       "/images/marqueepics/fbnq.jpg",
-      "/images/marqueepics/firs.jpg",
-      "/images/marqueepics/iasl.jpg",
-      "/images/marqueepics/jap.jpg",
-      "/images/marqueepics/ksg.jpg",
-      "/images/marqueepics/ksgn.jpg",
-      "/images/marqueepics/meca.jpg",
-      "/images/marqueepics/ncc.jpg",
-      "/images/marqueepics/ncdmb.jpg",
-      "/images/marqueepics/ncs.jpg",
-      "/images/marqueepics/nddc.jpg",
-      "/images/marqueepics/ndic.jpg",
-      "/images/marqueepics/neiti.jpg",
-      "/images/marqueepics/ngf.jpg",
-      "/images/marqueepics/nicon.jpg",
-      "/images/marqueepics/nimasa.jpg",
-      "/images/marqueepics/nipost.jpg",
-      "/images/marqueepics/nirsal.jpg",
-      "/images/marqueepics/nis.jpg",
-      "/images/marqueepics/niwa.jpg",
-      "/images/marqueepics/njcn.jpg",
-      "/images/marqueepics/nnpc.jpg",
-      "/images/marqueepics/npa.jpg",
-      "/images/marqueepics/ns.jpg",
-      "/images/marqueepics/pc.jpg",
-      "/images/marqueepics/pefmb.jpg",
-      "/images/marqueepics/pppra.jpg",
-      "/images/marqueepics/secn.jpg",
-      "/images/marqueepics/stl.jpg",
-      "/images/marqueepics/uc.jpg",
-      "/images/marqueepics/upu.jpg",
-      "/images/marqueepics/wbg.jpg",
-      "/images/marqueepics/zsg.jpg",
-    ];
+    ], []);
+
+    // Create a duplicated array of images to ensure continuous scrolling
+    const duplicatedImages = useMemo(() => [...images, ...images, ...images], [images]);
   
     return (
       <div className="w-full overflow-hidden bg-transparent py-4">
-        <Marquee loop={0} autoFill={true}>
-          {images.concat(images).map((src, index) => (
+        <Marquee 
+          gradient={false}
+          pauseOnHover={true}
+          speed={30}
+        >
+          {duplicatedImages.map((src, index) => (
             <img
-              key={index}
+              key={`${index}-${src}`}
               src={src}
               alt={`marquee-img-${index}`}
-              className="h-22 w-auto object-contain mr-10"
+              className="h-22 w-auto object-contain mx-10"
+              loading="lazy"
+              decoding="async"
             />
           ))}
         </Marquee>
@@ -68,5 +45,5 @@ const ImageMarquee = () => {
     );
 };
 
-export default ImageMarquee;
+export default React.memo(ImageMarquee);
   

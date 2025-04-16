@@ -39,7 +39,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="copyright-bar py-3">
+                <div className="copyright-bar pt-3">
                     <hr className="my-4 border border-white" />
                     <div className="copyright text-center">© {year} Discover Circle Practitioner | All Rights Reserved.</div>
                 </div>
