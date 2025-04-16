@@ -11,11 +11,11 @@ export default function test() {
         ];
   return (
     <div>      
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-8">
-            {data.map((item, index) => (
-              <CircularProgress key={index} percent={item.percent} label={item.label} />
-            ))}
-          </div>
+      <div className="flex justify-between items-center gap-10 overflow-x-auto px-4">
+        {data.map((item, index) => (
+          <CircularProgress key={index} percent={item.percent} label={item.label} />
+        ))}
+      </div>
     </div>
   )
 }
