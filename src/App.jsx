@@ -1,5 +1,4 @@
-import { Routes } from "react-router"
-import { Route } from "react-router"
+import { Routes, Route } from "react-router"
 import Home from "./pages/Home"
 import Career from "./pages/Career"
 import Contact from "./pages/Contact"

@@ -21,7 +21,6 @@ const Footer = () => {
                                 <Link to="/project" className="footer-nav-links cursor-pointer projects">Projects</Link>
                             </div>
                             <div className="footer-nav-section2 flex flex-col gap-4">
-                                <Link to="/product" className="footer-nav-links cursor-pointer products">Products</Link>
                                 <Link to="/career" className="footer-nav-links cursor-pointer career">Career</Link>
                                 <Link to="/contact" className="footer-nav-links cursor-pointer contact">Contact</Link>
                             </div>
@@ -29,7 +28,7 @@ const Footer = () => {
 
                         <div className="footer-contact flex flex-col gap-4">
                             <div className="email flex items-center gap-2.5 "><span><MdOutlineMail size={20} /></span> <span>info@dcp.com.ng</span> </div>
-                            <div className="phone flex items-center gap-2.5 "><span><MdOutlinePhoneAndroid size={20} /></span> <span>+234 (908) 2222 333</span> </div>
+                            <div className="phone flex items-center gap-2.5 "><span><MdOutlinePhoneAndroid size={20} /></span> <span>+(234) 908 2222 333</span> </div>
                         </div>
 
                         <div className="footer-socials flex gap-6">
@@ -39,9 +38,9 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="copyright-bar py-3">
+                <div className="copyright-bar pt-3">
                     <hr className="my-4 border border-white" />
-                    <div className="copyright text-center">© {year} Discover Circle Practitioner | All Rights Reserved.</div>
+                    <div className="copyright text-center">© {year} Discovery Circle Practitioner | All Rights Reserved.</div>
                 </div>
             </div>
         </>

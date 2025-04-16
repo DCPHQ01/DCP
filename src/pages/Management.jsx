@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "motion/react";
 
 export default function Management() {
   const accordionItems = [
@@ -55,11 +56,9 @@ export default function Management() {
     <div className="mx-30 my-15">
         <div className="space-y-4">
             {accordionItems.map((item, index) => (
-            <motion.div
+            <div
                 key={item.id}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.3 }}
+                
                 className="bg-white rounded-lg shadow-md overflow-hidden"
             >
                 <div
@@ -79,10 +78,9 @@ export default function Management() {
                 </div>
                 <div className="text-xl">{openIndex === index ? "-" : "+"}</div>
                 </div>
-              <AnimatePresence mode='wait' initial="false">
 
                 {openIndex === index && (
-                  <motion.div
+                  <div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
@@ -92,10 +90,9 @@ export default function Management() {
                     <div className="p-4 text-gray-700 whitespace-pre-line text-justify">
                         <p>{item.description}</p>
                     </div>
-                </motion.div>
+                </div>
                 )}
-                </AnimatePresence>
-            </motion.div>
+            </div>
             ))}
         </div>
     </div>
