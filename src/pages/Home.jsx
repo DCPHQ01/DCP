@@ -162,7 +162,7 @@ const Home = () => {
             <section className="mt-5 mb-7">
                 <div className="container mx-auto">
                     <div className="w-full sm:w-2/3 mx-auto page-title text-center">
-                        <h1 className='sm:text-3xl text-xl mb-3 sm:mb-8 font-bold'>Notable Clients</h1>
+                        <h1 className='sm:text-3xl text-xl mb-3 sm:mb-8 font-bold'>Notable Clients/Partners</h1>
                     </div>
                     <Marquee>
                         <ImageMarquee />
