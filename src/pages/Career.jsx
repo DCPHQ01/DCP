@@ -82,9 +82,10 @@ const Career = () => {
             </p>
         </div>
     </div>
+
     {/*<!--Footer-Area-->*/}   
         </>
-     );
+    );
 }
  
 export default Career;

@@ -17,6 +17,7 @@ const Home = () => {
 
     return ( 
         <>
+
         <div className="home-container">
             {/* section 1 of home page */}
             <section className="header relative z-0 h-screen flex items-center" id="home-area">
@@ -66,7 +67,6 @@ const Home = () => {
             </section>
 
             {/* section 3  */}
-
             <section className="section-padding sm:px-30 px-8 my-12">
                 <div className="container mx-auto bg-gray-100/50 shadow-2xl sm:py-8 sm:p-12 backdrop-blur-md sm:rounded-3xl rounded-t-2xl sm:overflow-auto overflow-hidden">
                     <div className="flex flex-col sm:gap-2 gap-8 sm:flex-row ">
@@ -112,88 +112,85 @@ const Home = () => {
                     </div>
                     </div>
                 </div>
-                </section>
+            </section>
 
-                {/* section4 */}
-
-                <section className="section-padding px-8 my-12 sm:px-30" id="csr">
-                    <div className="container mx-auto">
-                        <div className="w-full sm:w-2/3 md:w-1/2 mx-auto p-8">
-                            <div className="page-title text-center">
-                                <h2 className='sm:text-3xl text-xl mb-3 sm:mb-8 font-bold'>Corporate Social Responsibility (CSR)</h2>
-                                <p className="sm:text-lg text-base">DCP has a strong commitment to CSR projects. Our current schemes are:</p>
-                            </div>
-                        </div>
-
-                        <div className="w-full text-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
-                        <div className={`single-process ${paddingSec4}  animate__animated animate__fadeInUp`} data-wow-delay="0.4s">
-                            <div className="process-icon text-4xl">
-                            <i className="icofont-users-alt-1"></i>
-                            </div>
-                            <h3 className={`${sec4H3}`}>NYSC</h3>
-                            <p className={`${sec4p} text-justify`}>
-                                Discovery Empowerment Scheme for National Youth Service Corps (NYSC): This is a free Capacity Building and Career Guidance support for serving NYSC members. Since its inception, over 900 Corps members have benefited from this scheme in the last three (3) years.
-                            </p>
-                        </div>
-
-                        <div className={`single-process ${paddingSec4} animate__animated animate__fadeInUp`} data-wow-delay="0.6s">
-                            <div className="process-icon text-4xl">
-                            <i className="icofont-brainstorming"></i>
-                            </div>
-                            <h3 className={`${sec4H3}`}>DCP-Thinking and Learning Lab</h3>
-                            <p className={`${sec4p} text-justify`}>
-                            The DCP-Thinking and Learning Lab is a leadership and innovation platform that brings together young thought leaders and change agents, through a volunteering route, to co-create ideas and drive transformative business processes for organizational, national, and global growth.
-                            </p>
-                        </div>
-
-                        <div className={`single-process ${paddingSec4} animate__animated animate__fadeInUp`} data-wow-delay="0.8s">
-                            <div className="process-icon text-4xl">
-                            <i className="icofont-settings-alt"></i>
-                            </div>
-                            <h3 className={`${sec4H3}`}>Internship</h3>
-                            <p className={`${sec4p} text-justify`}>
-                            The DCP Interns program is a way to get to know how corporate organizations function as a team. It will also help you decide if your potential career is right for you. It gives you day-to-day involvement in actual projects, selected to match your interests and abilities.
-                            </p>
-                        </div>
+            {/* section4 */}
+            <section className="section-padding px-8 my-12 sm:px-30" id="csr">
+                <div className="container mx-auto">
+                    <div className="w-full sm:w-2/3 md:w-1/2 mx-auto p-8">
+                        <div className="page-title text-center">
+                            <h2 className='sm:text-3xl text-xl mb-3 sm:mb-8 font-bold'>Corporate Social Responsibility (CSR)</h2>
+                            <p className="sm:text-lg text-base">DCP has a strong commitment to CSR projects. Our current schemes are:</p>
                         </div>
                     </div>
-                    </section>
 
-
-                    {/*  CLIENTS/NOTABLE PROJECTS */}
-                    <section className="mt-5 mb-7">
-                        <div className="container mx-auto">
-                            <div className="w-full sm:w-2/3 mx-auto page-title text-center">
-                                <h1 className='sm:text-3xl text-xl mb-3 sm:mb-8 font-bold'>Notable Clients</h1>
-                            </div>
-                            <Marquee>
-                                <ImageMarquee />
-                            </Marquee>
+                    <div className="w-full text-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                    <div className={`single-process ${paddingSec4}  animate__animated animate__fadeInUp`} data-wow-delay="0.4s">
+                        <div className="process-icon text-4xl">
+                        <i className="icofont-users-alt-1"></i>
                         </div>
-                    </section>
+                        <h3 className={`${sec4H3}`}>NYSC</h3>
+                        <p className={`${sec4p} text-justify`}>
+                            Discovery Empowerment Scheme for National Youth Service Corps (NYSC): This is a free Capacity Building and Career Guidance support for serving NYSC members. Since its inception, over 900 Corps members have benefited from this scheme in the last three (3) years.
+                        </p>
+                    </div>
 
-                    {/* section 5 management link */}
-                        <section className="management my-12 flex justify-center">
-                            <div className="management-container flex md:flex-row flex-col md:gap-16 gap-4 w-[90%] sm:w-[80%]">
-                                <div className="gp-container w-[300px] h-[300px] rounded-full overflow-hidden">
-                                    <img src="../../images/about-3.jpg" className="object-cover" alt="COO image" />
-                                </div>
-                                <div className="gp-description-group flex flex-col gap-4 sm:w-[50%] w-full justify-between">
-                                <h3 className="text-description font-semibold text-3xl">text from urjktsn knsiflkej fnksnkf lsknfjs dnfskdf dkslfjdf d.shbflksbhlgihb libflskdbf kdfbkdfbksn; jbflsfs;ps'ogjrioobtthr oei;ewf0ef;lbjobtb;sjfb;fbnewf;nl</h3>
-                                <div className="self-end">
-                                    <Button text="View Management Team" link="/management" />
-                                </div>
-                                </div>
-                            </div>
-                        </section>
+                    <div className={`single-process ${paddingSec4} animate__animated animate__fadeInUp`} data-wow-delay="0.6s">
+                        <div className="process-icon text-4xl">
+                        <i className="icofont-brainstorming"></i>
+                        </div>
+                        <h3 className={`${sec4H3}`}>DCP-Thinking and Learning Lab</h3>
+                        <p className={`${sec4p} text-justify`}>
+                        The DCP-Thinking and Learning Lab is a leadership and innovation platform that brings together young thought leaders and change agents, through a volunteering route, to co-create ideas and drive transformative business processes for organizational, national, and global growth.
+                        </p>
+                    </div>
 
-                    {/*Section 6 contact */}
+                    <div className={`single-process ${paddingSec4} animate__animated animate__fadeInUp`} data-wow-delay="0.8s">
+                        <div className="process-icon text-4xl">
+                        <i className="icofont-settings-alt"></i>
+                        </div>
+                        <h3 className={`${sec4H3}`}>Internship</h3>
+                        <p className={`${sec4p} text-justify`}>
+                        The DCP Interns program is a way to get to know how corporate organizations function as a team. It will also help you decide if your potential career is right for you. It gives you day-to-day involvement in actual projects, selected to match your interests and abilities.
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </section>
 
-                    <ContactForm />
+            {/*  CLIENTS/NOTABLE PROJECTS */}
+            <section className="mt-5 mb-7">
+                <div className="container mx-auto">
+                    <div className="w-full sm:w-2/3 mx-auto page-title text-center">
+                        <h1 className='sm:text-3xl text-xl mb-3 sm:mb-8 font-bold'>Notable Clients</h1>
+                    </div>
+                    <Marquee>
+                        <ImageMarquee />
+                    </Marquee>
+                </div>
+            </section>
+
+            {/* section 5 management link */}
+            <section className="management my-12 flex justify-center ">
+                <div className="management-container py-5 flex justify-around md:flex-row flex-col md:gap-16 gap-4 w-[90%] sm:w-[80%]">
+                    <div className="gp-container w-[250px] h-[250px] rounded-full overflow-hidden">
+                        <img src="../../images/management/ceo.jpg" className="object-cover" alt="CEO image" />
+                    </div>
+                    <div className="gp-description-group flex flex-col gap-4 sm:w-[50%] w-full justify-between">
+                        <p className="text-description font-medium text-xl justify-self-center">As the Founder and the Group Country Director of Discovery Circle Practitioners Limited Partners (DCPLP), a management consulting company with vast experience in taxation, audit...</p>
+                        <div className="self-end">
+                            <Button text="View Management Team" link="/management" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/*Section 6 contact */}
+            <ContactForm />
         </div>
             
         </>
-     );
+    );
 }
  
 export default Home;

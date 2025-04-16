@@ -21,16 +21,11 @@ const ImageMarquee = () => {
     ], []);
 
     // Create a duplicated array of images to ensure continuous scrolling
-    const duplicatedImages = useMemo(() => [...images, ...images, ...images], [images]);
   
     return (
       <div className="w-full overflow-hidden bg-transparent py-4">
-        <Marquee 
-          gradient={false}
-          pauseOnHover={true}
-          speed={30}
-        >
-          {duplicatedImages.map((src, index) => (
+        <Marquee loop={0} speed={600}>
+          {images.map((src, index) => (
             <img
               key={`${index}-${src}`}
               src={src}
