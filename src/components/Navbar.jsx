@@ -1,29 +1,32 @@
 // eslint-disable-next-line no-unused-vars
-import { AnimatePresence, motion } from 'motion/react';
+import { motion } from 'motion/react';
 import { useState,useEffect } from 'react';
-import { NavLink } from 'react-router';
+import { NavLink,useLocation } from 'react-router';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isNotTop, setIsNotTop] = useState(false);
+  const location = useLocation();
+  const [isHome, setIsHome] = useState(location.pathname === '/');
 
   useEffect(() => {
     const handleScroll = () => {
       setIsNotTop(window.scrollY > 20);
     };
-
+    setIsHome(location.pathname === '/');
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [location]);
   return (
     <>
-    <AnimatePresence>
       <motion.nav
        key="navbar"
-       animate={{paddingTop: isNotTop ? "0.5rem" : "1.25rem", }}
+       animate={{paddingTop: isNotTop || !isHome ? "0.5rem" : "1.25rem", }}
        transition={{ type: "tween", duration: 0.25, ease: "easeInOut", }}
-       className={`navbar w-full fixed top-0 right-0 left-0 transition-all duration-300 z-30  ${
-        isNotTop ? 'text-red-600 shadow-md backdrop-blur-lg bg-white/30' : ' text-white'
+       className={`navbar w-full ${isHome ? "fixed" : "sticky"} top-0 right-0 left-0 transition-all duration-300 z-30  ${ isHome &&
+        isNotTop ? 'text-red-600 shadow-md backdrop-blur-lg bg-white/30' : !isHome
+        ? 'text-red-600 shadow-md backdrop-blur-lg bg-white/30'
+        : 'text-white'
       }`} data-spy="affix" data-offset-top="197">
         <div className="flex justify-between items-center gap-6 sm:py-5 lg:px-30 px-4 py-5">
           <div className="brand">
@@ -86,7 +89,6 @@ const Navbar = () => {
           </div>
         )}
       </motion.nav>
-      </AnimatePresence>
     </>
   );
 };
