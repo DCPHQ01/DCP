@@ -94,15 +94,15 @@ const Home = () => {
                         </div>
                         </div>
                         <div className="tab-content">
-                        {activeTab === 'our_mission' && (
-                            <div id="our_mission" className="tab-pane">
+                        {activeTab === 'our_vission' && (
+                            <div id="our_vission" className="tab-pane">
                             <h3 className="uppercase text-xl text-justify font-semibold">
                                 “To be the biggest consulting company in Africa anchored on value creation, integrity and service excellence”.
                             </h3>
                             </div>
                         )}
-                        {activeTab === 'our_vission' && (
-                            <div id="our_vission" className="tab-pane">
+                        {activeTab === 'our_mission' && (
+                            <div id="our_mission" className="tab-pane">
                             <h3 className="uppercase text-xl text-justify  font-semibold">
                                 “Creating, innovating and investing in exceptional solutions for clients and providing great value-addition for all stakeholders”.
                             </h3>
@@ -164,9 +164,7 @@ const Home = () => {
                     <div className="w-full sm:w-2/3 mx-auto page-title text-center">
                         <h1 className='sm:text-3xl text-xl mb-3 sm:mb-8 font-bold'>Notable Clients/Partners</h1>
                     </div>
-                
-                    <ImageMarquee />
-    
+                        <ImageMarquee />
                 </div>
             </section>
 
@@ -205,9 +203,7 @@ const Home = () => {
                     <div className="w-full sm:w-2/3 mx-auto page-title text-center">
                         <h1 className='sm:text-3xl text-xl mb-3 sm:mb-8 font-bold'>Gallery</h1>
                     </div>
-
                     <GalleryMarquee />
-
                 </div>
             </section>
         </div>
