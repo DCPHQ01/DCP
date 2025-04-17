@@ -7,6 +7,7 @@ import Test from "../components/Test";
 const Service = () => {
     return (
         <>
+        
             {/* Services Section */}
             <section className="py-16" id="service-area">
                 <div className="container mx-auto px-4">
