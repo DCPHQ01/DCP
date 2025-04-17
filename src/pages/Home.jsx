@@ -46,8 +46,8 @@ const Home = () => {
             </section>
 
             {/* section 2 of home page */}
-            <section className="section2 sm:px-30 px-8 my-12 sm:py-24" id="about-area">
-                <div className="container mx-auto">
+            <section className="section2 my-12 sm:py-24" id="about-area">
+                <div className="sec2-container sm:w-[80%] w-[90%] mx-auto">
                     <div className="flex lg:flex-row flex-col gap-16 lg:gap-4 justify-between items-center">
                         <div className="w-full md:w-[90%]">
                             <div className="page-title flex flex-col gap-6">
@@ -68,7 +68,7 @@ const Home = () => {
 
             {/* section 3  */}
             <section className="section-padding sm:px-30 px-8 my-12">
-                <div className="container mx-auto bg-gray-100/50 shadow-2xl sm:py-8 sm:p-12 backdrop-blur-md sm:rounded-3xl rounded-t-2xl sm:overflow-auto overflow-hidden">
+                <div className="sec3-container mx-auto bg-gray-100/50 shadow-2xl sm:py-8 sm:p-12 backdrop-blur-md sm:rounded-3xl rounded-t-2xl sm:overflow-auto overflow-hidden">
                     <div className="flex flex-col sm:gap-2 gap-8 sm:flex-row ">
                     <div className="w-full sm:w-1/2">
                         <div className="video-box">
@@ -77,8 +77,8 @@ const Home = () => {
                     </div>
 
                     <div className="w-full sm:w-1/2 md:w-5/12 md:ml-4 p-8">
-                        <div className="page-title mb-8 sm:block flex justify-center ">
-                        <div className="tabs-list flex">
+                        <div className=" mb-8 sm:block flex justify-center ">
+                        <div className="tabs-list sm:text-2xl text-lg font-bold flex">
                             <button
                             className={`border-b px-3 cursor-pointer ${activeTab === 'our_mission' ? 'font-bold text-red-500 border-red-500 py-3' : 'border-gray-400 py-3'}`}
                             onClick={() => setActiveTab('our_mission')}
@@ -86,7 +86,7 @@ const Home = () => {
                             Our Mission
                             </button>
                             <button
-                            className={`border-b px-3 cursor-pointer ${activeTab === 'our_vission' ? 'font-bold text-red-500 border-red-500 py-3' : 'border-gray-400 py-3'}`}
+                            className={`border-b pl-10 cursor-pointer ${activeTab === 'our_vission' ? 'font-bold text-red-500 border-red-500 py-3' : 'border-gray-400 py-3'}`}
                             onClick={() => setActiveTab('our_vission')}
                             >
                             Our Vision
@@ -116,7 +116,7 @@ const Home = () => {
 
             {/* section4 */}
             <section className="section-padding px-8 my-12 sm:px-30" id="csr">
-                <div className="container mx-auto">
+                <div className="sec4-container mx-auto">
                     <div className="w-full sm:w-2/3 md:w-1/2 mx-auto p-8">
                         <div className="page-title text-center">
                             <h2 className='sm:text-3xl text-xl mb-3 sm:mb-8 font-bold'>Corporate Social Responsibility (CSR)</h2>
@@ -160,7 +160,7 @@ const Home = () => {
 
             {/*  CLIENTS/NOTABLE PROJECTS */}
             <section className="mt-5 mb-7">
-                <div className="container mx-auto">
+                <div className="client-container mx-auto">
                     <div className="w-full sm:w-2/3 mx-auto page-title text-center">
                         <h1 className='sm:text-3xl text-xl mb-3 sm:mb-8 font-bold'>Notable Clients/Partners</h1>
                     </div>
@@ -198,8 +198,8 @@ const Home = () => {
 
 
             {/*Section 6 Gallery */}
-            <section className="mt-20 mb-7">
-                <div className="container mx-auto">
+            <section className="mt-5 mb-7">
+                <div className="sec6-container mx-auto">
                     <div className="w-full sm:w-2/3 mx-auto page-title text-center">
                         <h1 className='sm:text-3xl text-xl mb-3 sm:mb-8 font-bold'>Gallery</h1>
                     </div>

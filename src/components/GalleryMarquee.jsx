@@ -20,7 +20,7 @@ const GalleryMarquee = () => {
 
   return (
     <div className="w-full overflow-hidden py-4">
-      <Marquee loop={0} speed={20}>
+      <Marquee loop={0} speed={100}>
         {images.map((src, index) => (
           <div
             key={index}
