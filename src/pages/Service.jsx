@@ -85,29 +85,22 @@ const Service = () => {
             {/* Core Competencies Section */}
             <section className="section-padding bg-gray-100" id="skill-area">
                 <div className="container mx-auto px-4">
-                    <div className="flex flex-col lg:flex-row gap-10">
-                        <div className="w-full lg:w-5/12">
-                            <div className="mb-6">
-                                <h2 className="text-2xl font-bold wow fadeInUp">Our Core Competencies</h2>
-                                <p className="mt-2 wow fadeInUp">
-                                    DCP works with over 700 staff, Consultants, Associates, Virtual Support, Academics,
-                                    Bureaucrats and Professionals.
-                                </p>
-                            </div>
-
-
-                            <div className="">
-                                <Test />
-                            </div>
-                            
+                    <div className="w-full mx-auto">
+                        <div className="mb-6 text-center">
+                            <h2 className="text-2xl font-bold wow fadeInUp">Our Core Competencies</h2>
+                            <p className="mt-2 wow fadeInUp">
+                            DCP works with multiple Consultants, Associates, Virtual Support, Academics,
+                            Bureaucrats and Professionals.
+                            </p>
                         </div>
 
-                        <div className="w-full lg:w-6/12 flex justify-center items-center">
-                            <img src="images/DCPServices.png" alt="Core Competency Illustration" className="max-w-full h-100" />
-                        </div>
+                    <div>
+                        <Test />
+                    </div>
                     </div>
                 </div>
             </section>
+
         </>
     );
 };
