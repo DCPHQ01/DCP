@@ -161,6 +161,7 @@ const Home = () => {
             {/*  CLIENTS/NOTABLE PROJECTS */}
             <section className="mt-5 mb-7">
                 <div className="client-container mx-auto">
+
                     <div className="w-full sm:w-2/3 mx-auto page-title text-center">
                         <h1 className='sm:text-3xl text-xl mb-3 sm:mb-8 font-bold'>Notable Clients/Partners</h1>
                     </div>
@@ -200,10 +201,11 @@ const Home = () => {
             {/*Section 6 Gallery */}
             <section className="mt-5 mb-7">
                 <div className="sec6-container mx-auto">
+
                     <div className="w-full sm:w-2/3 mx-auto page-title text-center">
                         <h1 className='sm:text-3xl text-xl mb-3 sm:mb-8 font-bold'>Gallery</h1>
                     </div>
-                        <GalleryMarquee />
+                    <GalleryMarquee />
                 </div>
             </section>
         </div>

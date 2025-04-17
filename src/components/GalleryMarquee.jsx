@@ -3,7 +3,7 @@ import Marquee from "react-fast-marquee";
 
 const GalleryMarquee = () => {
   const images = [
-    "/images/gallery/gallery1.jpeg",
+    "/images/gallery/gallery13.jpeg",
     "/images/gallery/gallery2.jpeg",
     "/images/gallery/gallery3.jpeg",
     "/images/gallery/gallery4.jpeg",
@@ -15,7 +15,7 @@ const GalleryMarquee = () => {
     "/images/gallery/gallery10.jpeg",
     "/images/gallery/gallery11.jpeg",
     "/images/gallery/gallery12.jpeg",
-    "/images/gallery/gallery13.jpeg",
+    "/images/gallery/gallery1.jpeg",
   ];
 
   return (
