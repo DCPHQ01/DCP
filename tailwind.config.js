@@ -2,6 +2,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      rotate: {
+        'y-90': 'rotateY(90deg)',
+      },
       animation: {
         fadeZoomIn: 'fadeZoomIn 0.3s ease-out forwards',
       },
@@ -16,7 +19,12 @@ module.exports = {
             transform: 'scale(1)',
           },
         },
-      },
+      }
+    },
+  },
+  variants: {
+    extend: {
+      rotate: ['responsive'],
     },
   },
   plugins: [],

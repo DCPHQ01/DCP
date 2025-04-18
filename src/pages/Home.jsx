@@ -3,18 +3,27 @@ import { useState } from "react";
 
 import ImageMarquee from "../components/ImageMarquee";
 import GalleryMarquee from "../components/GalleryMarquee";
-// import Marquee from "react-fast-marquee";
 import Button from "../components/Button";
+import ImageFlipper from "../components/FlippingCarousel";
 
 const sec4H3 = "sm:text-2xl text-xl mb-3 sm:mb-8 font-semibold";
 const sec4p = "sm:text-xl text-base";
-const paddingSec4 = "sm:px-10 px-10 sm:py-10 py-6 transition-transform duration-300 hover:rotate-[2deg] hover:-translate-y-3 bg-gray-100 rounded-3xl shadow-md hover:text-white hover:bg-black/50 hover:shadow-2xl";
+const paddingSec4 = "px-10 sm:py-10 py-6 transition-transform duration-300 hover:rotate-[2deg] hover:-translate-y-3 bg-gray-100 rounded-3xl shadow-md hover:text-white hover:bg-black/50 hover:shadow-2xl";
 
 
 const Home = () => {
 
     const [activeTab, setActiveTab] = useState('our_mission');
-
+    const images = [
+        "../../images/ServiceCarousel2/4.svg",
+        "../../images/ServiceCarousel2/5.svg",
+        "../../images/ServiceCarousel2/6.svg",
+        "../../images/ServiceCarousel2/7.svg",
+        "../../images/ServiceCarousel2/8.svg",
+        "../../images/ServiceCarousel2/9.svg",
+        "../../images/ServiceCarousel2/10.svg",
+      ];
+      
     return ( 
         <>
 
@@ -38,7 +47,7 @@ const Home = () => {
                                 hover:-translate-y-1 active:translate-y-1
                                 cursor-pointer text-white text-2xl bg-red-500 hover:bg-red-600"
                                 >
-                                    Free Consult
+                                    Consultation
                             </button>
                         </Link>
                     </div>          
@@ -50,17 +59,17 @@ const Home = () => {
                 <div className="container mx-auto">
                     <div className="flex lg:flex-row flex-col gap-16 lg:gap-4 justify-between items-center">
                         <div className="w-full md:w-[90%]">
-                            <div className="page-title flex flex-col gap-6">
+                            <div className="page-title flex flex-col gap-3">
                                 <h2 className="title sm:text-4xl text-2xl font-bold animate__animated animate__fadeInUp">
                                     Quick & Tailored Powerful Business Solutions
                                 </h2>
                                 <div className="animate__animated animate__fadeInUp text-base sm:text-2xl" data-wow-delay="0.5s">
-                                    <p><b>Discovery Cycle Professionals</b> is a global network of experienced consultants, academics, and technocrats assembled to provide world-class knowledge-based services globally. DCP has diverse experience across different professional fields and offers a wide-range of multi-disciplinary professional services.</p>
+                                    <p><b>Discovery Circle Practitioners</b> is a global network of experienced consultants, academics, and technocrats assembled to provide world-class knowledge-based services globally. DCP has diverse experience across different professional fields and offers a wide-range of multi-disciplinary professional services.</p>
                                 </div>
                             </div>
                         </div>
-                        <div className="w-full md:ml-4 flex items-center lg:justify-end justify-center">
-                            <img src="images/about_r5_c2.png" alt="dcp quote about their solutions"/>
+                        <div className="w-full flex items-center lg:justify-end justify-center">
+                            <ImageFlipper images={['../../images/ServiceCarousel/4.png', '../../images/ServiceCarousel/5.png', '../../images/ServiceCarousel/6.png']} flipInterval={5000} />
                         </div>
                     </div>
                 </div>
@@ -160,13 +169,16 @@ const Home = () => {
 
             {/*  CLIENTS/NOTABLE PROJECTS */}
             <section className="mt-5 mb-7 w-full">
-                <div className="container w-full">
-                    <div className="w-full sm:w-2/3 mx-auto page-title text-center">
-                        <h1 className='sm:text-3xl text-xl mb-3 sm:mb-8 font-bold'>Notable Clients/Partners</h1>
+                <div className="w-full">
+                    <div className="w-full sm:w-2/3 mx-auto text-center">
+                        <h1 className="sm:text-3xl text-xl mb-3 sm:mb-8 font-bold">
+                            Notable Clients/Partners
+                        </h1>
                     </div>
-                        <ImageMarquee />
+                    <ImageMarquee />
                 </div>
             </section>
+
 
             {/* section 5 management link */}
             <section className="management mt-20 mb-7 flex flex-col items-center">
@@ -198,16 +210,17 @@ const Home = () => {
 
 
             {/*Section 6 Gallery */}
-            <section className="mt-15 mb-15">
-                <div className="container mx-auto">
-                    <div className="w-full sm:w-2/3 mx-auto page-title text-center">
+            <section className="mt-15 mb-15 w-full">
+                <div className="w-full">
+                    <div className="w-full sm:w-2/3 mx-auto text-center">
                         <h1 className='sm:text-3xl text-xl mb-3 sm:mb-8 font-bold'>Gallery</h1>
                     </div>
                     <GalleryMarquee />
                 </div>
             </section>
+
         </div>
-            
+           
         </>
     );
 }
