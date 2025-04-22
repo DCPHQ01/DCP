@@ -181,7 +181,7 @@ const Home = () => {
             </section>
 
 
-            {/* section 5 management link */}
+            {/* section 5 management */}
             <section className="management mt-20 mb-7 flex flex-col items-center">
                 <h2 className="text-3xl font-bold mb-5">Management Team</h2>
 
