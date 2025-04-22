@@ -14,11 +14,11 @@ const Contact = () => {
                         <div className="flex flex-col gap-4">
                             <div className="address flex gap-4 font-semibold">
                                 <LuMapPinHouse size="40px"/>
-                                <p className="address-name text-lg font-semibold">Plot 2542 Hassan Usman Katsina Asokoro, Abuja, FCT.</p>
+                                <p className="address-name text-lg font-semibold">Plot 2542 Hassan Usman Katsina Street, Asokoro, FCT, Abuja.</p>
                             </div>
                             <div className="phone flex gap-4 font-semibold">
                                 <MdPhone size="40px" />
-                                <p className="phone-numbe text-lg font-semibold">+234-908-3333-444</p>
+                                <p className="phone-numbe text-lg font-semibold">+234-908-222-2333</p>
                             </div>
                             <div className="email flex gap-4 font-semibold">
                                 <MdOutgoingMail size="40px" />

@@ -168,7 +168,7 @@ const Project = () => {
                             <h4 className="text-lg font-bold">Renewable Energy Programme</h4>
                         </div>
                         <p className="text-justify text-sm">
-                            Office of the National Coordinator, Renewable Energy Programme, Federal Ministry of Environment: Development Partner on the Rural Women Energy Security (RUWES) programme in Nigeria: Developed and managed the framework for the participation of Market Women (through the Market Women Association of Nigeria) in the Federal Ministry of Environment - National Renewable Energy Office’s Rural Women Energy Security Project – RUWES with BOI/UNDP’s Access to Renewable Energy (AtRE) Programme as major stakeholders.
+                            Development Partner on the Rural Women Energy Security (RUWES) programme in Nigeria: Developed and managed the framework for the participation of Market Women (through the Market Women Association of Nigeria) in the Federal Ministry of Environment - National Renewable Energy Office’s Rural Women Energy Security Project – RUWES with BOI/UNDP’s Access to Renewable Energy (AtRE) Programme as major stakeholders.
                         </p>
                     </div>
                 </div>

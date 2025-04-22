@@ -30,7 +30,7 @@ const Footer = () => {
 
                         <div className="footer-contact flex flex-col gap-4">
                             <div className="email flex items-center gap-2.5 "><span><MdOutlineMail size={20} /></span> <span>info@dcp.com.ng</span> </div>
-                            <div className="phone flex items-center gap-2.5 "><span><MdOutlinePhoneAndroid size={20} /></span> <span>+(234) 908 2222 333</span> </div>
+                            <div className="phone flex items-center gap-2.5 "><span><MdOutlinePhoneAndroid size={20} /></span> <span>+(234) 908 222 2333</span> </div>
                             <div className="phone flex items-center gap-2.5 "><span><IoLocationOutline size={20} /></span> <span>Plot 2542 Hassan Usman Kaatsina Asokoro, Abuja, FCT.</span> </div>
                         </div>
 
