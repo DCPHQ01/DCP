@@ -6,7 +6,7 @@ const inputStyle = "border-b active:outline-none"
         <>
         <section className="my-12 w-full flex justify-center text-black">
                         <div className="sm:py-10 sm:w-[80%] py-6 w-[90%] flex md:flex-row flex-col gap-6 sm:gap-24 justify-between items-center">
-                            <div className="sm:px-10 px-10 sm:py-10 w-full py-6 contact-wrapper flex flex-col items-center bg-gray-100 rounded-3xl shadow-xl">
+                            <div className="sm:px-10 px-10 sm:py-10 w-full lg:w-[60%] py-6 contact-wrapper flex flex-col items-center bg-gray-100 rounded-3xl shadow-xl">
                                 <div className="contact text-4xl mb-16 font-bold">Contact Us</div>
                                 <form action="https://formsubmit.co/info@dcp.com.ng" method="post" className="flex flex-col w-full gap-6 sm:gap-16">
                                     <div className="inp-group1 flex sm:flex-row flex-col gap-6 w-full">
@@ -26,8 +26,8 @@ const inputStyle = "border-b active:outline-none"
                                     <input type="hidden" name="_template" value="table"/>
                                 </form>
                             </div>
-                            <div className="map">
-                                <iframe className="md:w-[600px] md:h-[500px] w-full h-[300px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.485228607237!2d7.515954675065832!3d9.019422891041518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0d79e7b370cf%3A0x18bc3f82b684d6fa!2sDCP!5e0!3m2!1sen!2sng!4v1744629029364!5m2!1sen!2sng" style={{border:0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                            <div className="map w-full h-[300px] sm:w-[400px] sm:h-[400px] lg:w-[500px] lg:h-[500px] relative overflow-hidden">
+                                <iframe className="absolute top-0 left-0 w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.485228607237!2d7.515954675065832!3d9.019422891041518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0d79e7b370cf%3A0x18bc3f82b684d6fa!2sDCP!5e0!3m2!1sen!2sng!4v1744629029364!5m2!1sen!2sng" style={{border:0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
                     </section>

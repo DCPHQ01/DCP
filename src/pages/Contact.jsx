@@ -31,16 +31,16 @@ const Contact = () => {
                     <div className="naija-office ">
                         <h2 className="office-name text-3xl font-bold mb-8">Country Offices/Representatives</h2>
                         <div className="flex flex-col gap-4">
-                        <div className="address flex gap-4 font-semibold">
-                            <img src="../../images/liberia.png" className="w-[40px]" alt="liberia flag"/>
+                        <div className="address flex items-center gap-4 font-semibold">
+                            <img src="../../images/liberia.png" className="w-[40px] h-[40px]" alt="liberia flag"/>
                             <p className="address-name text-lg font-semibold">Monrovia, Liberia - Registered Office</p>
                         </div>
-                        <div className="phone flex gap-4 font-semibold">
-                            <img src="../../images/canada.png" className="w-[40px]" alt="liberia flag"/>
+                        <div className="phone flex items-center gap-4 font-semibold">
+                            <img src="../../images/canada.png" className="w-[40px] h-[40px]" alt="liberia flag"/>
                             <p className="phone-number text-lg font-semibold">Alberta,Canada - Registered Office</p>
                         </div>
-                        <div className="email flex gap-4 font-semibold">
-                            <img src="../../images/south-africa.png" className="w-[40px]" alt="liberia flag"/>
+                        <div className="email flex items-center gap-4 font-semibold">
+                            <img src="../../images/south-africa.png" className="w-[40px] h-[40px]" alt="liberia flag"/>
                             <p className="email-name text-lg font-semibold">Cape town, South Africa - Registered Office</p>
                         </div>
                         </div>
