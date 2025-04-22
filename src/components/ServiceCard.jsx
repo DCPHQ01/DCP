@@ -1,25 +1,17 @@
-import { useState, useRef, useEffect, useCallback, memo } from "react";
+import { useState, useRef, useCallback, memo } from "react";
 import { AiOutlineClose } from "react-icons/ai";
-//eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from "framer-motion";
 
 const ServiceCard = ({ image, title, services }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isVisible, setIsVisible] = useState(false);
   const modalRef = useRef();
-  const animationRef = useRef();
 
   const closeModal = useCallback(() => {
-    setIsVisible(false);
-    // Delay the state update to allow the animation to complete
-    const timer = setTimeout(() => setIsModalOpen(false), 200);
-    return () => clearTimeout(timer);
+    setIsModalOpen(false);
   }, []);
 
   const openModal = useCallback(() => {
     setIsModalOpen(true);
-    // Trigger the animation on the next frame
-    requestAnimationFrame(() => setIsVisible(true));
   }, []);
 
   return (
@@ -31,6 +23,8 @@ const ServiceCard = ({ image, title, services }) => {
           className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
           loading="lazy"
           decoding="async"
+          width={400}
+          height={300}
         />
       </div>
       <div className="p-4">
@@ -50,8 +44,10 @@ const ServiceCard = ({ image, title, services }) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/50"
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm"
             onClick={closeModal}
+            role="dialog" 
+            aria-modal="true"
           >
             <motion.div
               ref={modalRef}
@@ -72,7 +68,7 @@ const ServiceCard = ({ image, title, services }) => {
               <h4 className="text-lg font-bold mb-4">{title}</h4>
               <ul className="list-disc pl-5 space-y-1 text-sm marker:text-red-600">
                 {services.map((item, index) => (
-                  <li key={index}>{item}</li>
+                  <li key={index}>{item}</li> 
                 ))}
               </ul>
             </motion.div>
