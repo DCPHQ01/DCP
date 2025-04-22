@@ -138,9 +138,9 @@ const Home = () => {
                         <div className="process-icon text-2xl">
                         <i className="icofont-users-alt-1"></i>
                         </div>
-                        <h3 className={`${sec4H3}`}>NYSC</h3>
+                        <h3 className={`${sec4H3}`}>Empowering Future Leaders through Capacity Development</h3>
                         <p className={`${sec4p} text-justify`}>
-                            Discovery Empowerment Scheme for National Youth Service Corps (NYSC): This is a free Capacity Building and Career Guidance support for serving NYSC members. Since its inception, over 900 Corps members have benefited from this scheme in the last three (3) years.
+                            As part of our CSR mandate, we are committed to fostering human capital development through pro bono consulting and tailored training under the DCP Career Development Scheme. Our programs are designed for students, recent graduates, NYSC members, and professionals, delivering practical skills in entrepreneurship, financial literacy, digital proficiency, and technical development. Participants gain real-world exposure that equips them to excel in their careers and contribute meaningfully to national growth.
                         </p>
                     </div>
 
@@ -148,9 +148,9 @@ const Home = () => {
                         <div className="process-icon text-4xl">
                         <i className="icofont-brainstorming"></i>
                         </div>
-                        <h3 className={`${sec4H3}`}>DCP-Thinking and Learning Lab</h3>
+                        <h3 className={`${sec4H3}`}>Strengthening Institutions through Strategic Asset Advisory</h3>
                         <p className={`${sec4p} text-justify`}>
-                        The DCP-Thinking and Learning Lab is a leadership and innovation platform that brings together young thought leaders and change agents, through a volunteering route, to co-create ideas and drive transformative business processes for organizational, national, and global growth.
+                            At DCP, we contribute to institutional resilience and performance improvement by offering strategic technical advisory on the integrity and utilization of public and private sector assets. Our approach involves structured assessments that help clients uncover operational risks, enhance infrastructure reliability, and align asset performance with broader development goals. These interventions empower institutions to make informed decisions, optimize resource use, and deliver sustainable value across their sectors of influence.
                         </p>
                     </div>
 
@@ -158,9 +158,9 @@ const Home = () => {
                         <div className="process-icon text-4xl">
                         <i className="icofont-settings-alt"></i>
                         </div>
-                        <h3 className={`${sec4H3}`}>Internship</h3>
+                        <h3 className={`${sec4H3}`}>Advancing Innovation and Leadership through the DCP Thinking & Learning Lab</h3>
                         <p className={`${sec4p} text-justify`}>
-                        The DCP Interns program is a way to get to know how corporate organizations function as a team. It will also help you decide if your potential career is right for you. It gives you day-to-day involvement in actual projects, selected to match your interests and abilities.
+                            Our flagship CSR platform, the DCP Thinking & Learning Lab, brings together emerging leaders and innovators to tackle real-world challenges. Participants engage in structured volunteering pathways that encourage creative thinking, strategic problem-solving, and sustainable innovation. The Lab has delivered measurable impact through public sector process enhancements and digital transformation solutions for local businesses, while nurturing the leadership potential of its contributors.
                         </p>
                     </div>
                     </div>
