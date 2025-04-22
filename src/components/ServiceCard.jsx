@@ -1,18 +1,13 @@
-import { useState, useRef, useCallback, memo } from "react";
+import React, { useState, useCallback } from "react";
 import { AiOutlineClose } from "react-icons/ai";
+// eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from "framer-motion";
 
 const ServiceCard = ({ image, title, services }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const modalRef = useRef();
 
-  const closeModal = useCallback(() => {
-    setIsModalOpen(false);
-  }, []);
-
-  const openModal = useCallback(() => {
-    setIsModalOpen(true);
-  }, []);
+  const closeModal = useCallback(() => setIsModalOpen(false), []);
+  const openModal = useCallback(() => setIsModalOpen(true), []);
 
   return (
     <div className="relative bg-white shadow-md hover:shadow-xl transition-all rounded-lg overflow-hidden">
@@ -50,7 +45,6 @@ const ServiceCard = ({ image, title, services }) => {
             aria-modal="true"
           >
             <motion.div
-              ref={modalRef}
               initial={{ scale: 0.95, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.95, opacity: 0 }}
@@ -79,4 +73,4 @@ const ServiceCard = ({ image, title, services }) => {
   );
 };
 
-export default memo(ServiceCard);
+export default React.memo(ServiceCard);

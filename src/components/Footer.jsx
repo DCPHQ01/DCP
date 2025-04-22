@@ -9,14 +9,14 @@ const Footer = () => {
     const year = new Date().getFullYear()
     return ( 
         <>
-            <div className="px-10 py-8 w-full bg-gray-700 text-white">
+            <div className="px-10 py-8 w-full bg-[#121212] text-white">
                 <div className="footer-contents w-full sm:w-[80%] flex gap-6">
 
                     <div className="details flex w-[100%] sm:gap-24 gap-6">
                         <NavLink className="brand-link hidden sm:block self-center" to="/">
                             <img src="/images/logo.png" alt="Logo" className="w-[80px] sm:w-[100px] md:w-[120px] lg:w-[150px] object-contain" />
                         </NavLink>
-                        <div className="footer-nav flex lg:flex-row flex-col lg:gap-16 gap-4">
+                        <div className="footer-nav flex xl:flex-row flex-col xl:gap-16 gap-4">
                             <div className="footer-nav-section flex flex-col gap-4">
                                 <Link to="/" className="footer-nav-links hover:text-red-500 cursor-pointer home"> Home</Link>
                                 <Link to="/service" className="footer-nav-links hover:text-red-500 cursor-pointer services">Services</Link>
