@@ -4,7 +4,8 @@ import { useState } from "react";
 import ImageMarquee from "../components/ImageMarquee";
 import GalleryMarquee from "../components/GalleryMarquee";
 import Button from "../components/Button";
-import ImageFlipper from "../components/FlippingCarousel";
+import CardCarousel from "../components/CardCarousel";
+
 
 const sec4H3 = "sm:text-2xl text-xl mb-3 sm:mb-8 font-semibold";
 const sec4p = "sm:text-xl text-base";
@@ -14,15 +15,6 @@ const paddingSec4 = "px-10 sm:py-10 py-6 transition-transform duration-300 hover
 const Home = () => {
 
     const [activeTab, setActiveTab] = useState('our_mission');
-    const images = [
-        "../../images/ServiceCarousel2/4.svg",
-        "../../images/ServiceCarousel2/5.svg",
-        "../../images/ServiceCarousel2/6.svg",
-        "../../images/ServiceCarousel2/7.svg",
-        "../../images/ServiceCarousel2/8.svg",
-        "../../images/ServiceCarousel2/9.svg",
-        "../../images/ServiceCarousel2/10.svg",
-      ];
       
     return ( 
         <>
@@ -59,17 +51,17 @@ const Home = () => {
                 <div className="sec2-container sm:w-[80%] w-[90%] mx-auto">
                     <div className="flex lg:flex-row flex-col gap-16 lg:gap-4 justify-between items-center">
                         <div className="w-full md:w-[90%]">
-                            <div className="page-title flex flex-col gap-3">
-                                <h2 className="title sm:text-4xl text-2xl font-bold animate__animated animate__fadeInUp">
+                            <div className="flex flex-col gap-6">
+                                <h2 className="title sm:text-3xl text-2xl font-bold">
                                     Quick & Tailored Powerful Business Solutions
                                 </h2>
-                                <div className="animate__animated animate__fadeInUp text-base sm:text-2xl" data-wow-delay="0.5s">
-                                    <p><b>Discovery Circle Practitioners</b> is a global network of experienced consultants, academics, and technocrats assembled to provide world-class knowledge-based services globally. DCP has diverse experience across different professional fields and offers a wide-range of multi-disciplinary professional services.</p>
+                                <div className=" text-base sm:text-2xl" data-wow-delay="0.5s">
+                                    <p className="font-medium"><b className="font-bold">Discovery Circle Practitioners</b> is a global network of experienced consultants, academics, and technocrats assembled to provide world-class knowledge-based services globally. DCP has diverse experience across different professional fields and offers a wide-range of multi-disciplinary professional services.</p>
                                 </div>
                             </div>
                         </div>
-                        <div className="w-full flex items-center lg:justify-end justify-center">
-                            <ImageFlipper images={['../../images/ServiceCarousel/4.png', '../../images/ServiceCarousel/5.png', '../../images/ServiceCarousel/6.png']} flipInterval={5000} />
+                        <div className="w-full md:ml-4 flex items-center lg:justify-end justify-center">
+                            <CardCarousel />
                         </div>
                     </div>
                 </div>
@@ -95,7 +87,7 @@ const Home = () => {
                             Our Mission
                             </button>
                             <button
-                            className={`border-b pl-10 cursor-pointer ${activeTab === 'our_vission' ? 'font-bold text-red-500 border-red-500 py-3' : 'border-gray-400 py-3'}`}
+                            className={`border-b pl-10 pr-3 cursor-pointer ${activeTab === 'our_vission' ? 'font-bold text-red-500 border-red-500 py-3' : 'border-gray-400 py-3'}`}
                             onClick={() => setActiveTab('our_vission')}
                             >
                             Our Vision
@@ -128,7 +120,7 @@ const Home = () => {
                 <div className="sec4-container mx-auto">
                     <div className="w-full sm:w-2/3 md:w-1/2 mx-auto p-8">
                         <div className="page-title text-center">
-                            <h2 className='sm:text-3xl text-xl mb-3 sm:mb-8 font-bold'>Corporate Social Responsibility (CSR)</h2>
+                            <h2 className='sm:text-3xl text-2xl mb-3 sm:mb-8 font-bold'>Corporate Social Responsibility (CSR)</h2>
                             <p className="sm:text-lg text-base">DCP has a strong commitment to CSR projects. Our current schemes are:</p>
                         </div>
                     </div>
@@ -183,11 +175,11 @@ const Home = () => {
 
             {/* section 5 management */}
             <section className="management mt-20 mb-7 flex flex-col items-center">
-                <h2 className="text-3xl font-bold mb-5">Management Team</h2>
+                <h2 className="sm:text-3xl text-2xl font-bold mb-5">Management Team</h2>
 
-                <div className="management-container py-5 flex justify-around md:flex-row flex-col md:gap-16 gap-4 w-[90%] sm:w-[80%]">
+                <div className="management-container py-5 flex sm:justify-around sm:flex-row flex-col items-center md:gap-16 gap-4 w-[90%] sm:w-[80%]">
                     
-                    {/* Profile Image */}
+                    {/*  Profile Image */}
                     <div className="gp-container w-[250px] h-[250px] rounded-full overflow-hidden shadow-lg">
                     <img
                         src="../../images/management/gceo.jpg"
@@ -196,13 +188,13 @@ const Home = () => {
                     />
                     </div>
 
-                    {/* Name and Position */}
-                    <div className="gp-description-group flex flex-col gap-4 sm:w-[50%] w-full justify-center">
+                    {/*  Name and Position */}
+                    <div className="gp-description-group flex flex-col items-center sm:items-start gap-4 sm:w-[50%] w-full justify-center">
                     <div>
                         <h3 className="text-2xl font-semibold">Dr. I.B Gashinbaki</h3>
                         <p className="text-lg text-gray-600">Founder & Group Chief Executive Officer</p>
                     </div>
-                    <div className="self-start mt-4">
+                    <div className="sm:self-start mt-4">
                         <Button text="View Management Team" link="/management" />
                     </div>
                     </div>

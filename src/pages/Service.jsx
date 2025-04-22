@@ -1,8 +1,9 @@
-import  serviceData  from '../components/serviceData';
+import serviceData  from '../components/serviceData';
 import ServiceCard from "../components/ServiceCard";
 import Test from "../components/Test";
 
 const Service = () => {
+   
     return (
       <>
         {/* Services Section */}

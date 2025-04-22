@@ -12,9 +12,8 @@ const Test = () => {
   ];
 
   return (
-    <div className="w-full py-4">
-      {/* Improved scrolling container */}
-      <div className="flex justify-between items-center gap-6 px-4">
+    <div className="w-full">      
+      <div className="flex justify-between flex-wrap w-full items-center gap-10 px-4">
         {data.map((item, index) => (
           <div key={index} className="snap-center flex-shrink-0">
             <CircularProgress percent={item.percent} label={item.label} />

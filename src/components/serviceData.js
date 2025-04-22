@@ -1,7 +1,7 @@
 const serviceData = [
     {
       id: 1,
-      image: '/images/servicecard1.jpg',
+      image: '/images/serviceCard/servicecard1.webp',
       title: "Tax, Forensic Accounting, Audit & Asset Recovery Services",
       services: [
         "Asset Tracing & Recovery",
@@ -14,7 +14,7 @@ const serviceData = [
     },
     {
       id: 2,
-      image: '/images/servicecard2.jpg',
+      image: '/images/serviceCard/servicecard2.webp',
       title: "Management Consulting",
       services: [
         "Project Management",
@@ -28,7 +28,7 @@ const serviceData = [
     },
     {
       id: 3,
-      image: '/images/servicecard3.jpg',
+      image: '/images/serviceCard/servicecard3.webp',
       title: "Revenue Optimization",
       services: [
         "Property Tax Solutions",
@@ -39,7 +39,7 @@ const serviceData = [
     },
     {
       id: 4,
-      image: '/images/servicecard4.jpg',
+      image: '/images/serviceCard/servicecard4.webp',
       title: "Monitoring & Evaluation Consulting",
       services: [
         "Project Monitoring & Evaluation",
@@ -50,7 +50,7 @@ const serviceData = [
     },
     {
       id: 5,
-      image: '/images/servicecard5.jpg',
+      image: '/images/serviceCard/servicecard5.webp',
       title: "Technology Innovation",
       services: [
         "ERP Solutions & Bespoke Applications",

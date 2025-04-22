@@ -13,7 +13,7 @@ const Footer = () => {
                 <div className="footer-contents w-full sm:w-[80%] flex gap-6">
 
                     <div className="details flex w-[100%] sm:gap-24 gap-6">
-                        <NavLink className="brand-link self-center" to="/">
+                        <NavLink className="brand-link hidden sm:block self-center" to="/">
                             <img src="/images/logo.png" alt="Logo" className="w-[80px] sm:w-[100px] md:w-[120px] lg:w-[150px] object-contain" />
                         </NavLink>
                         <div className="footer-nav flex md:gap-16 gap-4">
