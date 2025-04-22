@@ -1,54 +1,64 @@
-import { useEffect, useState } from "react";
-import { useInView } from "react-intersection-observer";
+import React, { useRef, useState, useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 const CircularProgress = ({ percent, label }) => {
-  const [progress, setProgress] = useState(0);
   const [ref, inView] = useInView({ triggerOnce: true });
+  const [count, setCount] = useState(0);
+  const circleRef = useRef(null);
+  const animationRef = useRef(null);
 
   useEffect(() => {
     if (inView) {
-      let start = 0;
-      const step = percent / 40; // controls speed
-      const interval = setInterval(() => {
-        start += step;
-        if (start >= percent) {
-          setProgress(percent);
-          clearInterval(interval);
+      const duration = 2000; // 2 seconds
+      const steps = 60; // 60 frames per second
+      const increment = percent / (duration / (1000 / steps));
+      let currentCount = 0;
+
+      const animate = () => {
+        currentCount += increment;
+        if (currentCount < percent) {
+          setCount(Math.ceil(currentCount));
+          animationRef.current = requestAnimationFrame(animate);
         } else {
-          setProgress(Math.ceil(start));
+          setCount(percent);
         }
-      }, 20);
+      };
+
+      animationRef.current = requestAnimationFrame(animate);
+
+      return () => {
+        if (animationRef.current) {
+          cancelAnimationFrame(animationRef.current);
+        }
+      };
     }
   }, [inView, percent]);
 
-  const radius = 50;
-  const stroke = 8;
-  const normalizedRadius = radius - stroke * 0.5;
-  const circumference = 2 * Math.PI * normalizedRadius;
-  const strokeDashoffset = circumference - (progress / 100) * circumference;
-
-    return (
-      <div ref={ref} className="flex flex-col w-[100px] items-center space-y-2">
-      <svg height={radius * 2} width={radius * 2}>
+  return (
+    <div ref={ref} className="flex flex-col w-[100px] items-center space-y-2">
+      <svg height={100} width={100} className="transform -rotate-90">
         <circle
           stroke="#e5e7eb"
           fill="transparent"
-          strokeWidth={stroke}
-          r={normalizedRadius}
-          cx={radius}
-          cy={radius}
+          strokeWidth={8}
+          r={42}
+          cx={50}
+          cy={50}
         />
         <circle
+          ref={circleRef}
           stroke="#ef4444"
           fill="transparent"
-          strokeWidth={stroke}
+          strokeWidth={8}
           strokeLinecap="round"
-          strokeDasharray={circumference}
-          strokeDashoffset={strokeDashoffset}
-          r={normalizedRadius}
-          cx={radius}
-          cy={radius}
-          style={{ transition: "stroke-dashoffset 0.5s ease-out" }}
+          r={42}
+          cx={50}
+          cy={50}
+          className="transition-all duration-2000 ease-out"
+          style={{
+            strokeDasharray: 264,
+            strokeDashoffset: inView ? 264 - (percent / 100) * 264 : 264,
+          }}
         />
         <text
           x="50%"
@@ -56,13 +66,14 @@ const CircularProgress = ({ percent, label }) => {
           textAnchor="middle"
           dy=".3em"
           className="fill-gray-700 text-sm font-bold"
+          style={{ transform: 'rotate(90deg)', transformOrigin: 'center' }}
         >
-          {progress}%
+          {count}%
         </text>
       </svg>
       <p className="text-sm text-center">{label}</p>
     </div>
-    );
-  };
+  );
+};
 
-export default CircularProgress;
+export default React.memo(CircularProgress);

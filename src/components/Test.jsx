@@ -11,7 +11,7 @@ export default function test() {
         ];
   return (
     <div className="w-full">      
-      <div className="flex justify-between flex-wrap w-full items-center gap-10 px-4">
+      <div className="flex justify-between flex-wrap w-full gap-10 px-4">
         {data.map((item, index) => (
           <CircularProgress key={index} percent={item.percent} label={item.label} />
         ))}

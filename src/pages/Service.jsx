@@ -1,6 +1,7 @@
-import serviceData  from '../components/serviceData';
-import ServiceCard from "../components/ServiceCard";
-import Test from "../components/Test";
+import React, { Suspense, lazy } from 'react';
+import serviceData from '../components/serviceData';
+const ServiceCard = lazy(() => import("../components/ServiceCard"));
+const Test = lazy(() => import("../components/Test"));
 
 const Service = () => {
    
@@ -14,14 +15,16 @@ const Service = () => {
             </div>
   
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-              {serviceData.map((service) => (
-                <ServiceCard
-                  key={service.id}
-                  image={service.image}
-                  title={service.title}
-                  services={service.services}
-                />
-              ))}
+              <Suspense fallback={<div className="animate-pulse bg-gray-200 h-48 rounded-lg" />}>
+                {serviceData.map((service) => (
+                  <ServiceCard
+                    key={service.id}
+                    image={service.image}
+                    title={service.title}
+                    services={service.services}
+                  />
+                ))}
+              </Suspense>
             </div>
           </div>
         </section>
@@ -31,15 +34,15 @@ const Service = () => {
           <div className="container mx-auto px-4">
             <div className="w-full mx-auto">
               <div className="mb-6 text-center">
-                <h2 className="text-2xl font-bold wow fadeInUp">Our Core Competencies</h2>
-                <p className="mt-2 wow fadeInUp">
+                <h2 className="text-2xl font-bold">Our Core Competencies</h2>
+                <p className="mt-2">
                   DCP works with multiple Consultants, Associates, Virtual Support, Academics,
                   Bureaucrats and Professionals.
                 </p>
               </div>
-              <div>
+              <Suspense fallback={<div className="animate-pulse bg-gray-200 h-48 rounded-lg" />}>
                 <Test />
-              </div>
+              </Suspense>
             </div>
           </div>
         </section>
@@ -47,4 +50,4 @@ const Service = () => {
     );
   };
   
-  export default Service;
+  export default React.memo(Service);
