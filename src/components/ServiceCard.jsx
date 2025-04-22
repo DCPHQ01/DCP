@@ -21,7 +21,7 @@ const ServiceCard = ({ image, title, services }) => {
     return (
         <div className="relative bg-white shadow-md hover:shadow-xl transition-all rounded-lg overflow-hidden">
             <div className="h-48 overflow-hidden">
-                <img src={image} alt={title} className="w-full h-full object-cover" />
+                <img src={image} alt={title} loading="lazy" className="w-full h-full object-cover" />
             </div>
             <div className="p-4">
                 <h4 className="text-lg font-bold mb-2">{title}</h4>

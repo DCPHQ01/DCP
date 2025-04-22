@@ -5,7 +5,7 @@ import ImageMarquee from "../components/ImageMarquee";
 import GalleryMarquee from "../components/GalleryMarquee";
 // import Marquee from "react-fast-marquee";
 import Button from "../components/Button";
-
+import CardCarousel from "../components/CardCarousel";
 const sec4H3 = "sm:text-2xl text-xl mb-3 sm:mb-8 font-semibold";
 const sec4p = "sm:text-xl text-base";
 const paddingSec4 = "sm:px-10 px-10 sm:py-10 py-6 transition-transform duration-300 hover:rotate-[2deg] hover:-translate-y-3 bg-gray-100 rounded-3xl shadow-md hover:text-white hover:bg-black/50 hover:shadow-2xl";
@@ -38,7 +38,7 @@ const Home = () => {
                                 hover:-translate-y-1 active:translate-y-1
                                 cursor-pointer text-white text-2xl bg-red-500 hover:bg-red-600"
                                 >
-                                    Free Consult
+                                    Consultation
                             </button>
                         </Link>
                     </div>          
@@ -51,7 +51,7 @@ const Home = () => {
                     <div className="flex lg:flex-row flex-col gap-16 lg:gap-4 justify-between items-center">
                         <div className="w-full md:w-[90%]">
                             <div className="page-title flex flex-col gap-6">
-                                <h2 className="title sm:text-4xl text-2xl font-bold animate__animated animate__fadeInUp">
+                                <h2 className="title sm:text-3xl text-2xl font-bold animate__animated animate__fadeInUp">
                                     Quick & Tailored Powerful Business Solutions
                                 </h2>
                                 <div className="animate__animated animate__fadeInUp text-base sm:text-2xl" data-wow-delay="0.5s">
@@ -60,7 +60,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="w-full md:ml-4 flex items-center lg:justify-end justify-center">
-                            <img src="images/about_r5_c2.png" alt="dcp quote about their solutions"/>
+                            <CardCarousel />
                         </div>
                     </div>
                 </div>
@@ -119,7 +119,7 @@ const Home = () => {
                 <div className="sec4-container mx-auto">
                     <div className="w-full sm:w-2/3 md:w-1/2 mx-auto p-8">
                         <div className="page-title text-center">
-                            <h2 className='sm:text-3xl text-xl mb-3 sm:mb-8 font-bold'>Corporate Social Responsibility (CSR)</h2>
+                            <h2 className='sm:text-3xl text-2xl mb-3 sm:mb-8 font-bold'>Corporate Social Responsibility (CSR)</h2>
                             <p className="sm:text-lg text-base">DCP has a strong commitment to CSR projects. Our current schemes are:</p>
                         </div>
                     </div>
@@ -163,7 +163,7 @@ const Home = () => {
                 <div className="client-container mx-auto">
 
                     <div className="w-full sm:w-2/3 mx-auto page-title text-center">
-                        <h1 className='sm:text-3xl text-xl mb-3 sm:mb-8 font-bold'>Notable Clients/Partners</h1>
+                        <h1 className='sm:text-3xl text-2xl mb-3 sm:mb-8 font-bold'>Notable Clients/Partners</h1>
                     </div>
                         <ImageMarquee />
                 </div>
@@ -171,11 +171,11 @@ const Home = () => {
 
             {/* section 5 management link */}
             <section className="management mt-20 mb-7 flex flex-col items-center">
-                <h2 className="text-3xl font-bold mb-5">Management Team</h2>
+                <h2 className="sm:text-3xl text-2xl font-bold mb-5">Management Team</h2>
 
-                <div className="management-container py-5 flex justify-around md:flex-row flex-col md:gap-16 gap-4 w-[90%] sm:w-[80%]">
+                <div className="management-container py-5 flex sm:justify-around sm:flex-row flex-col items-center md:gap-16 gap-4 w-[90%] sm:w-[80%]">
                     
-                    {/* Profile Image */}
+                    {/*  Profile Image */}
                     <div className="gp-container w-[250px] h-[250px] rounded-full overflow-hidden shadow-lg">
                     <img
                         src="../../images/management/ceo.jpg"
@@ -184,13 +184,13 @@ const Home = () => {
                     />
                     </div>
 
-                    {/* Name and Position */}
-                    <div className="gp-description-group flex flex-col gap-4 sm:w-[50%] w-full justify-center">
+                    {/*  Name and Position */}
+                    <div className="gp-description-group flex flex-col items-center sm:items-start gap-4 sm:w-[50%] w-full justify-center">
                     <div>
                         <h3 className="text-2xl font-semibold">Dr. I.B Gashinbaki</h3>
                         <p className="text-lg text-gray-600">Founder & Group Chief Executive Officer</p>
                     </div>
-                    <div className="self-start mt-4">
+                    <div className="sm:self-start mt-4">
                         <Button text="View Management Team" link="/management" />
                     </div>
                     </div>
@@ -203,7 +203,7 @@ const Home = () => {
                 <div className="sec6-container mx-auto">
 
                     <div className="w-full sm:w-2/3 mx-auto page-title text-center">
-                        <h1 className='sm:text-3xl text-xl mb-3 sm:mb-8 font-bold'>Gallery</h1>
+                        <h1 className='sm:text-3xl text-2xl mb-3 sm:mb-8 font-bold'>Gallery</h1>
                     </div>
                     <GalleryMarquee />
                 </div>

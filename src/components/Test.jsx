@@ -10,8 +10,8 @@ export default function test() {
           { percent: 90, label: "Tax Audit & Technical Services" },
         ];
   return (
-    <div>      
-      <div className="flex justify-between items-center gap-10 overflow-x-auto px-4">
+    <div className="w-full">      
+      <div className="flex justify-between flex-wrap w-full items-center gap-10 px-4">
         {data.map((item, index) => (
           <CircularProgress key={index} percent={item.percent} label={item.label} />
         ))}

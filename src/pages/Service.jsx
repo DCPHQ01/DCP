@@ -5,6 +5,43 @@ import Test from "../components/Test";
 // import Test from "../components/Test";
 
 const Service = () => {
+    const serviceData = [
+        {
+          image: "/images/servicecard1.jpg",
+          title: "Tax, Forensic Accounting, Audit & Asset Recovery Services",
+          services: [
+            "Asset Tracing & Recovery",
+            "Forensic Accounting & Auditing",
+            "Tax Advisory, Audit & Assurance Services",
+            "Forensic Data Recovery & Data Analytics",
+            "Investigation, Intelligence & Polygraph Testing",
+            "Documents Examination, Authentication, Verification, Signature & Handwriting Analysis",
+          ],
+        },
+        {
+          image: "/images/servicecard2.jpg",
+          title: "Management Consulting",
+          services: [
+            "Project Management",
+            "Governance & Reforms",
+            "Compliance & Regulation",
+            "Training, Learning & Development",
+            "Process Transformation & Outsourcing",
+            "Corporate Strategy & Communications",
+            "Institutional Strengthening & Capacity Building",
+          ],
+        },
+        {
+          image: "/images/servicecard3.jpg",
+          title: "Revenue Optimization",
+          services: [
+            "Property Tax Solutions",
+            "IGR Enhancement Project",
+            "Customs Revenue Enhancement",
+            "Extractive Industry Revenue Enhancement",
+          ],
+        },
+      ];
     return (
         <>
         
@@ -17,68 +54,15 @@ const Service = () => {
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                         {/* Service Card 1 */}
-                        <ServiceCard
-                            image='/images/servicecard1.jpg'
-                            title="Tax, Forensic Accounting, Audit & Asset Recovery Services"
-                            services={[
-                                "Asset Tracing & Recovery",
-                                "Forensic Accounting & Auditing",
-                                "Tax Advisory, Audit & Assurance Services",
-                                "Forensic Data Recovery & Data Analytics",
-                                "Investigation, Intelligence & Polygraph Testing",
-                                "Documents Examination, Authentication, Verification, Signature & Handwriting Analysis",
-                            ]}
-                        />
-
-                        {/* Service Card 2 */}
-                        <ServiceCard
-                            image="/images/servicecard2.jpg"
-                            title="Management Consulting"
-                            services={[
-                                "Project Management",
-                                "Governance & Reforms",
-                                "Compliance & Regulation",
-                                "Training, Learning & Development",
-                                "Process Transformation & Outsourcing",
-                                "Corporate Strategy & Communications",
-                                "Institutional Strengthening & Capacity Building",
-                            ]}
-                        />
-
-                        {/* Service Card 3 */}
-                        <ServiceCard
-                            image="/images/servicecard3.jpg"
-                            title="Revenue Optimization"
-                            services={[
-                                "Property Tax Solutions",
-                                "IGR Enhancement Project",
-                                "Customs Revenue Enhancement",
-                                "Extractive Industry Revenue Enhancement",
-                            ]}
-                        />
-                        
-                        {/* Service Card 4 */}
-                        <ServiceCard
-                            image="/images/servicecard4.jpg"
-                            title="Monitoring & Evaluation Consulting"
-                            services={[
-                                "Project Monitoring & Evaluation",
-                                "Project Scoping, Analysis & Evaluation",
-                                "Strategy Development and Evaluation",
-                                "Revenue Enhancement Profiling & Review",
-                            ]}
-                        />
-                        
-                        {/* Service Card 5 */}
-                        <ServiceCard
-                            image="/images/servicecard5.jpg"
-                            title="Technology Innovation"
-                            services={[
-                                "ERP Solutions & Bespoke Applications",
-                                "Application Development & Deployment",
-                                "Hardware Preventive & Scheduled Maintenance",
-                            ]}
-                        />
+                        {serviceData.map((item,index)=>(
+                            <ServiceCard
+                            key={index}
+                            image={item.image}
+                            title={item.title}
+                            services={item.services}
+                          />
+                        ))}
+                       
                     </div>
                 </div>
             </section>
@@ -88,8 +72,8 @@ const Service = () => {
                 <div className="container mx-auto px-4">
                     <div className="w-full mx-auto">
                         <div className="mb-6 text-center">
-                            <h2 className="text-2xl font-bold wow fadeInUp">Our Core Competencies</h2>
-                            <p className="mt-2 wow fadeInUp">
+                            <h2 className="text-2xl font-bold fadeInUp">Our Core Competencies</h2>
+                            <p className="mt-2 fadeInUp">
                             DCP works with multiple Consultants, Associates, Virtual Support, Academics,
                             Bureaucrats and Professionals.
                             </p>
