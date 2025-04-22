@@ -31,7 +31,7 @@ const Career = () => {
                             
                         <div className="w-full py-12 px-8 md:px-16">
                             <h3 className="text-3xl font-bold mb-4">Recent Opportunities</h3>
-                            <p className="text-gray-600 text-lg">No jobs available</p>
+                            <p className="text-gray-600 text-lg">No jobs currently available</p>
                         </div>
                         </section>
         </>

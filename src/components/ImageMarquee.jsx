@@ -1,5 +1,6 @@
 import React from 'react';
 import Marquee from "react-fast-marquee";
+import { motion } from "motion/react";
 
 const ImageMarquee = () => {
     const images = [
@@ -53,15 +54,16 @@ const ImageMarquee = () => {
     ];
   
     return (
-      <div className="w-full overflow-hidden bg-transparent py-4">
-
-        <Marquee loop={0} speed={100}>
+      <div className="w-full overflow-hidden bg-transparent">
+        <Marquee loop={0} speed={100} pauseOnHover={true}>
           {images.map((src, index) => (
-            <img
+            <motion.img
+              initial={{ scale: 1 }}
+              whileHover={{ scale: 1.2 }}
               key={index}
               src={src}
               alt={`marquee-img-${index}`}
-              className="h-22 w-auto object-contain mr-10"
+              className="h-22 my-3 w-auto object-contain mr-10"
             />
           ))}
         </Marquee>
