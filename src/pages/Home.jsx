@@ -51,12 +51,12 @@ const Home = () => {
                 <div className="sec2-container sm:w-[80%] w-[90%] mx-auto">
                     <div className="flex lg:flex-row flex-col gap-16 lg:gap-4 justify-between items-center">
                         <div className="w-full md:w-[90%]">
-                            <div className="page-title flex flex-col gap-6">
-                                <h2 className="title sm:text-3xl text-2xl font-bold animate__animated animate__fadeInUp">
+                            <div className="flex flex-col gap-6">
+                                <h2 className="title sm:text-3xl text-2xl font-bold">
                                     Quick & Tailored Powerful Business Solutions
                                 </h2>
-                                <div className="animate__animated animate__fadeInUp text-base sm:text-2xl" data-wow-delay="0.5s">
-                                    <p><b>Discovery Circle Practitioners</b> is a global network of experienced consultants, academics, and technocrats assembled to provide world-class knowledge-based services globally. DCP has diverse experience across different professional fields and offers a wide-range of multi-disciplinary professional services.</p>
+                                <div className=" text-base sm:text-2xl" data-wow-delay="0.5s">
+                                    <p className="font-medium"><b className="font-bold">Discovery Circle Practitioners</b> is a global network of experienced consultants, academics, and technocrats assembled to provide world-class knowledge-based services globally. DCP has diverse experience across different professional fields and offers a wide-range of multi-disciplinary professional services.</p>
                                 </div>
                             </div>
                         </div>
@@ -87,7 +87,7 @@ const Home = () => {
                             Our Mission
                             </button>
                             <button
-                            className={`border-b pl-10 cursor-pointer ${activeTab === 'our_vission' ? 'font-bold text-red-500 border-red-500 py-3' : 'border-gray-400 py-3'}`}
+                            className={`border-b pl-10 pr-3 cursor-pointer ${activeTab === 'our_vission' ? 'font-bold text-red-500 border-red-500 py-3' : 'border-gray-400 py-3'}`}
                             onClick={() => setActiveTab('our_vission')}
                             >
                             Our Vision
