@@ -1,12 +1,24 @@
-import React, { useState, useRef, useEffect, useCallback } from "react";
+import { useState, useRef, useEffect, useCallback, memo } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 
 const ServiceCard = ({ image, title, services }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
   const modalRef = useRef();
+  const animationRef = useRef();
 
-  const closeModal = useCallback(() => setIsModalOpen(false), []);
-  const openModal = useCallback(() => setIsModalOpen(true), []);
+  const closeModal = useCallback(() => {
+    setIsVisible(false);
+    // Delay the state update to allow the animation to complete
+    const timer = setTimeout(() => setIsModalOpen(false), 200);
+    return () => clearTimeout(timer);
+  }, []);
+
+  const openModal = useCallback(() => {
+    setIsModalOpen(true);
+    // Trigger the animation on the next frame
+    requestAnimationFrame(() => setIsVisible(true));
+  }, []);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -29,6 +41,10 @@ const ServiceCard = ({ image, title, services }) => {
       document.removeEventListener("mousedown", handleClickOutside);
       document.removeEventListener("keydown", handleEscape);
       document.body.style.overflow = '';
+      // Clean up any pending animations
+      if (animationRef.current) {
+        cancelAnimationFrame(animationRef.current);
+      }
     };
   }, [isModalOpen, closeModal]);
 
@@ -56,19 +72,21 @@ const ServiceCard = ({ image, title, services }) => {
 
       {/* Modal */}
       {isModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 bg-opacity-30 backdrop-blur-sm">
+        <div 
+          className={`fixed inset-0 z-50 flex items-center justify-center bg-black/50 transition-opacity duration-200 ${
+            isVisible ? 'opacity-100' : 'opacity-0'
+          }`}
+          style={{ backdropFilter: 'blur(4px)' }}
+        >
           <div
             ref={modalRef}
-            className="bg-white p-6 rounded-lg max-w-md w-full relative shadow-lg transition-all duration-300 opacity-0 scale-95"
-            style={{
-              opacity: isModalOpen ? 1 : 0,
-              transform: isModalOpen ? 'scale(1)' : 'scale(0.95)',
-              transition: 'opacity 200ms ease-out, transform 200ms ease-out'
-            }}
+            className={`bg-white p-6 rounded-lg max-w-md w-full relative shadow-lg transition-all duration-200 ${
+              isVisible ? 'scale-100 opacity-100' : 'scale-95 opacity-0'
+            }`}
           >
             <button
               onClick={closeModal}
-              className="absolute top-3 right-3 text-red-600 text-xl cursor-pointer"
+              className="absolute top-3 right-3 text-red-600 text-xl cursor-pointer hover:scale-110 transition-transform"
               aria-label="Close modal"
             >
               <AiOutlineClose />
@@ -86,4 +104,4 @@ const ServiceCard = ({ image, title, services }) => {
   );
 };
 
-export default React.memo(ServiceCard);
+export default memo(ServiceCard);

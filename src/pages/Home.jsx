@@ -190,9 +190,9 @@ const Home = () => {
                     {/* Profile Image */}
                     <div className="gp-container w-[250px] h-[250px] rounded-full overflow-hidden shadow-lg">
                     <img
-                        src="../../images/management/ceo.jpg"
+                        src="../../images/management/gceo.jpg"
                         className="object-cover w-full h-full"
-                        alt="CEO image"
+                        alt="CEO's image"
                     />
                     </div>
 
