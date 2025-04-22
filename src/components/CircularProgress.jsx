@@ -27,8 +27,8 @@ const CircularProgress = ({ percent, label }) => {
   const circumference = 2 * Math.PI * normalizedRadius;
   const strokeDashoffset = circumference - (progress / 100) * circumference;
 
-  return (
-    <div ref={ref} className="flex flex-col w-[100px] items-center space-y-2">
+    return (
+      <div ref={ref} className="flex flex-col w-[100px] items-center space-y-2">
       <svg height={radius * 2} width={radius * 2}>
         <circle
           stroke="#e5e7eb"
@@ -62,7 +62,7 @@ const CircularProgress = ({ percent, label }) => {
       </svg>
       <p className="text-sm text-center">{label}</p>
     </div>
-  );
-};
+    );
+  };
 
 export default CircularProgress;
