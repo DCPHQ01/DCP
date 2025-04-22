@@ -47,7 +47,7 @@ const Home = () => {
             </section>
 
             {/* section 2 of home page */}
-            <section className="section2 my-12 sm:py-24" id="about-area">
+            <section className="section2 my-15 sm:py-15" id="about-area">
                 <div className="sec2-container sm:w-[80%] w-[90%] mx-auto">
                     <div className="flex lg:flex-row flex-col gap-16 lg:gap-4 justify-between items-center">
                         <div className="w-full md:w-[90%]">
@@ -55,8 +55,8 @@ const Home = () => {
                                 <h2 className="title sm:text-3xl text-2xl font-bold">
                                     Quick & Tailored Powerful Business Solutions
                                 </h2>
-                                <div className=" text-base sm:text-2xl" data-wow-delay="0.5s">
-                                    <p className="font-medium"><b className="font-bold">Discovery Circle Practitioners</b> is a global network of experienced consultants, academics, and technocrats assembled to provide world-class knowledge-based services globally. DCP has diverse experience across different professional fields and offers a wide-range of multi-disciplinary professional services.</p>
+                                <div className=" text-base sm:text-xl" data-wow-delay="0.5s">
+                                    <p><b className="font-bold">Discovery Circle Practitioners</b> is a global network of experienced consultants, academics, and technocrats assembled to provide world-class knowledge-based services globally. DCP has diverse experience across different professional fields and offers a wide-range of multi-disciplinary professional services.</p>
                                 </div>
                             </div>
                         </div>
@@ -68,7 +68,7 @@ const Home = () => {
             </section>
 
             {/* section 3  */}
-            <section className="section-padding sm:px-30 px-8 my-12">
+            <section className="section-padding sm:px-30 px-8 my-10">
                 <div className="sec3-container mx-auto bg-gray-100/50 shadow-2xl sm:py-8 sm:p-12 backdrop-blur-md sm:rounded-3xl rounded-t-2xl sm:overflow-auto overflow-hidden">
                     <div className="flex flex-col sm:gap-2 gap-8 sm:flex-row ">
                     <div className="w-full sm:w-1/2">
@@ -125,36 +125,41 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <div className="w-full text-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
-                    <div className={`single-process ${paddingSec4}  animate__animated animate__fadeInUp`} data-wow-delay="0.4s">
-                        <div className="process-icon text-2xl">
-                        <i className="icofont-users-alt-1"></i>
-                        </div>
-                        <h3 className={`${sec4H3}`}>Empowering Future Leaders through Capacity Development</h3>
-                        <p className={`${sec4p} text-justify`}>
+                    <div className="w-full text-center justify-items-center grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8 relative">
+                        {/* First Card */}
+                        <div className={`single-process ${paddingSec4} animate__animated animate__fadeInUp`} data-wow-delay="0.4s">
+                            <div className="process-icon text-2xl">
+                            <i className="icofont-users-alt-1"></i>
+                            </div>
+                            <h3 className={`${sec4H3}`}>Empowering Future Leaders through Capacity Development</h3>
+                            <p className={`${sec4p} text-justify`}>
                             As part of our CSR mandate, we are committed to fostering human capital development through pro bono consulting and tailored training under the DCP Career Development Scheme. Our programs are designed for students, recent graduates, NYSC members, and professionals, delivering practical skills in entrepreneurship, financial literacy, digital proficiency, and technical development. Participants gain real-world exposure that equips them to excel in their careers and contribute meaningfully to national growth.
-                        </p>
-                    </div>
-
-                    <div className={`single-process ${paddingSec4} animate__animated animate__fadeInUp`} data-wow-delay="0.6s">
-                        <div className="process-icon text-4xl">
-                        <i className="icofont-brainstorming"></i>
+                            </p>
                         </div>
-                        <h3 className={`${sec4H3}`}>Strengthening Institutions through Strategic Asset Advisory</h3>
-                        <p className={`${sec4p} text-justify`}>
+
+                        {/* Second Card */}
+                        <div className={`single-process ${paddingSec4} animate__animated animate__fadeInUp`} data-wow-delay="0.6s">
+                            <div className="process-icon text-4xl">
+                            <i className="icofont-brainstorming"></i>
+                            </div>
+                            <h3 className={`${sec4H3}`}>Strengthening Institutions through Strategic Asset Advisory</h3>
+                            <p className={`${sec4p} text-justify`}>
                             At DCP, we contribute to institutional resilience and performance improvement by offering strategic technical advisory on the integrity and utilization of public and private sector assets. Our approach involves structured assessments that help clients uncover operational risks, enhance infrastructure reliability, and align asset performance with broader development goals. These interventions empower institutions to make informed decisions, optimize resource use, and deliver sustainable value across their sectors of influence.
-                        </p>
-                    </div>
-
-                    <div className={`single-process ${paddingSec4} animate__animated animate__fadeInUp`} data-wow-delay="0.8s">
-                        <div className="process-icon text-4xl">
-                        <i className="icofont-settings-alt"></i>
+                            </p>
                         </div>
-                        <h3 className={`${sec4H3}`}>Advancing Innovation and Leadership through the DCP Thinking & Learning Lab</h3>
-                        <p className={`${sec4p} text-justify`}>
+
+                        {/* Third Card */}
+                        <div className="sm:col-span-2 flex w-full sm:w-[50%]">
+                            <div className={`single-process ${paddingSec4} animate__animated animate__fadeInUp`} data-wow-delay="0.8s">
+                            <div className="process-icon text-4xl">
+                                <i className="icofont-settings-alt"></i>
+                            </div>
+                            <h3 className={`${sec4H3}`}>Advancing Innovation and Leadership through the DCP Thinking & Learning Lab</h3>
+                            <p className={`${sec4p} text-justify`}>
                             Our flagship CSR platform, the DCP Thinking & Learning Lab, brings together emerging leaders and innovators to tackle real-world challenges. Participants engage in structured volunteering pathways that encourage creative thinking, strategic problem-solving, and sustainable innovation. The Lab has delivered measurable impact through public sector process enhancements and digital transformation solutions for local businesses, while nurturing the leadership potential of its contributors.
-                        </p>
-                    </div>
+                            </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -182,9 +187,9 @@ const Home = () => {
                     {/*  Profile Image */}
                     <div className="gp-container w-[250px] h-[250px] rounded-full overflow-hidden shadow-lg">
                     <img
-                        src="../../images/management/ceo.jpg"
+                        src="../../images/management/gceo.jpg"
                         className="object-cover w-full h-full"
-                        alt="CEO image"
+                        alt="CEO's image"
                     />
                     </div>
 

@@ -6,11 +6,11 @@ export default function Management() {
   const accordionItems = [
     {
       id: 1,
-      image: "../images/management/ceo.jpg",
-      name: "Dr. I.B Gashinbaki", 
+      image: "../images/management/gceo.jpg",
+      name: "Dr. Iliyasu B. Gashinbaki, B.Sc, PGCC, MLC, DBA, FCNA, FCTI, FCCrFA, FCCFI, CFE", 
       position: "Founder/GCEO Discovery Circle Practitioner",
       description:
-        "As the Founder and the Group Country Director of Discovery Circle Practitioners Limited Partners (DCPLP), a management consulting company with vast experience in taxation, audit, investments, finance, operations, management and policy, he brings over twenty (20) years of experience to the Board and Management of the company. He pioneered the establishment of the DCP Country Offices in Nigeria, Liberia, South Africa and Canada. He was also the lead consultant for the establishment of AMML Microfinance Bank, Abuja -Nigeria and Top Up Africa – (a payment technology company based in Nigeria). He holds a B.Sc. in Accounting and Master’s Degree in Law Enforcement & Criminal Justice (MLC) from Ahmadu Bello University, Zaria – Nigeria. In addition, he holds a postgraduate Certificate in Corruption Studies from Hong Kong University, Hong Kong (SAR). He is a fellow, Chartered Institute of Human Capital Development (FCIHCD); Certified Fraud Examiner (CFE) from Austin, Texas, U.S.A; Certified National Accountant (CNA); Associate, Chartered Institute of Taxation (ACTI); and Associate, Council for Supply Chain Management Professionals, Lombard, Illinois, United States. \n\nHe has served in various capacities in public and private organizations such as; Office of the Chief Economic Adviser to the President of Nigeria, Nigerian Security and Minting Company (NSPMC), Economic and Financial Crimes Commission (EFCC), African Petroleum PLC (formerly British Petroleum BP) and also a Policy Advisor to the Nigeria Governors’ Forum.",
+        "Dr. Iliyasu B. Gashinbaki, is a distinguished consultant, forensic expert, and thought leader with decades of experience in tax, audit, finance, forensics, and public sector advisory. He is the Founder and Chief Executive Officer of Discovery Circle Practitioners (DCP), a multidisciplinary consulting firm committed to delivering high-impact solutions across governance, institutional development, and financial systems. He is the Founder/Pioneer President and Chairman, Governing Council of the Chartered Institute of Forensics and Certified Fraud Investigators of Nigeria (CIFCFIN), and is also the Founder/GCEO of the MECA GROUP, with interests spanning Agri-Tech, Engineering, Energy, and E-Commerce. Dr. Gashinbaki has advised numerous public and private institutions and has held board positions in national and international organizations, including the Nigeria Extractive Industries Transparency Initiative (NEITI), the Abuja Chamber of Commerce and Industry (ACCI), and the African Space Foundation. \n\nDr. Gashinbaki holds a Bachelor’s degree in Accounting, a Master’s degree in Law Enforcement & Criminal Justice (MLC) from Ahmadu Bello University, Zaria, a Postgraduate Certificate in Corruption Studies from Hong Kong University, and a Doctorate in Business Administration (DBA) from Bentwood University, California. He is a Chartered Accountant, Certified Fraud Examiner (CFE), Chartered Tax Practitioner, Chartered Forensic Accountant, and a Fellow of several professional institutes. His expertise blends deep technical knowledge with policy-level insight, positioning him as a leading voice in Nigeria’s consulting and forensic landscape.",
     },
     {
       id: 2,
@@ -68,18 +68,18 @@ export default function Management() {
                 onClick={() => toggleAccordion(index)}
                 className="flex justify-between items-center p-4 cursor-pointer hover:bg-gray-200"
                 >
-                <div className="flex items-center">
-                    <img
-                    src={item.image}
-                    alt={item.name}
-                    className="w-16 h-16 rounded-full mr-4"
-                    />
-                    <div>
-                    <p className="font-semibold text-lg">{item.name}</p>
-                    <p className="text-sm text-gray-500">{item.position}</p>
-                    </div>
-                </div>
-                <div className="text-xl">{openIndex === index ? "-" : "+"}</div>
+                  <div className="flex items-center">
+                      <img
+                      src={item.image}
+                      alt={item.name}
+                      className="w-16 h-16 rounded-full mr-4"
+                      />
+                      <div>
+                      <p className="font-semibold text-lg">{item.name}</p>
+                      <p className="text-sm text-gray-500">{item.position}</p>
+                      </div>
+                  </div>
+                  <div className="text-xl">{openIndex === index ? "-" : "+"}</div>
                 </div>
 
                 {openIndex === index && (
