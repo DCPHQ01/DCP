@@ -49,7 +49,7 @@ const Contact = () => {
             </div>
             <ContactForm />
         </>
-     );
+    );
 }
  
 export default Contact;
