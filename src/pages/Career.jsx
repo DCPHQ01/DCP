@@ -5,7 +5,7 @@ const Career = () => {
                                 <div className="relative w-full h-[60vh]">
                         {/* Background Image */}
                         <img
-                            src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d"
+                            src="../images/Find_Jobs.jpg"
                             alt="Careers at DCP"
                             className="absolute w-full h-full object-cover"
                         />

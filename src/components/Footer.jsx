@@ -38,7 +38,7 @@ const Footer = () => {
                             <Link to="/" className="instagram cursor-pointer"><IoLogoInstagram size={20} /></Link>
                             <Link to="/" className="facebook cursor-pointer"><FaFacebook size={20} /></Link>
                             <Link to="/" className="x cursor-pointer"><FaXTwitter size={20} /></Link>
-                            <Link to="/" className="linkedIn cursor-pointer"><FaLinkedin size={20} /></Link>
+                            <Link to="https://www.linkedin.com/company/discoverycirclepro" className="linkedIn cursor-pointer"><FaLinkedin size={20} /></Link>
                         </div>
                     </div>
                 </div>
