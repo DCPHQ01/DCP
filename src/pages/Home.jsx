@@ -38,7 +38,7 @@ const ourMissionVariants = {
         opacity:1,
         transition:{
             duration:1,
-            delay:0.8,
+            delay:0.4,
             stiffness:100,
         }
     },
@@ -152,7 +152,7 @@ const Home = () => {
                             </button>
                         </div>
                         </div>
-                        <div className="tab-content">
+                        <div className="tab-content font-heading">
                         {activeTab === 'our_vission' && (
                             <motion.div
                             variants={ourMissionVariants}
