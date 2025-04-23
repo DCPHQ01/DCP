@@ -51,7 +51,7 @@ const serviceData = [
     {
       id: 5,
       image: '/images/serviceCard/servicecard5.webp',
-      title: "Technology Innovation",
+      title: "Technology & Innovation",
       services: [
         "ERP Solutions & Bespoke Applications",
         "Application Development & Deployment",

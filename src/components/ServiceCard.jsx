@@ -18,6 +18,8 @@ const ServiceCard = ({ image, title, services }) => {
           className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
           loading="lazy"
           decoding="async"
+          width={400}
+          height={300}
         />
       </div>
       <div className="p-4">
@@ -37,8 +39,10 @@ const ServiceCard = ({ image, title, services }) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/50"
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm"
             onClick={closeModal}
+            role="dialog" 
+            aria-modal="true"
           >
             <motion.div
               initial={{ scale: 0.95, opacity: 0 }}
@@ -58,7 +62,7 @@ const ServiceCard = ({ image, title, services }) => {
               <h4 className="text-lg font-bold mb-4">{title}</h4>
               <ul className="list-disc pl-5 space-y-1 text-sm marker:text-red-600">
                 {services.map((item, index) => (
-                  <li key={index}>{item}</li>
+                  <li key={index}>{item}</li> 
                 ))}
               </ul>
             </motion.div>

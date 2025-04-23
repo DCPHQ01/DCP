@@ -4,7 +4,7 @@ import CircularProgress from "./CircularProgress";
 const Test = () => {
   const data = [
     { percent: 95, label: "Assets Recovery" },
-    { percent: 85, label: "Fraud Examination" },
+    { percent: 95, label: "Fraud Examination" },
     { percent: 90, label: "Forensic Accounting" },
     { percent: 95, label: "Management Consulting" },
     { percent: 85, label: "Revenue Optimization" },

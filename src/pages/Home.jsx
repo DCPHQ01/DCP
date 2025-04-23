@@ -106,7 +106,7 @@ const Home = () => {
                                     Quick & Tailored Powerful Business Solutions
                                 </h2>
                                 <div className=" text-base sm:text-xl" data-wow-delay="0.5s">
-                                    <p><b className="font-bold">Discovery Circle Practitioners</b> is a global network of experienced consultants, academics, and technocrats assembled to provide world-class knowledge-based services globally. DCP has diverse experience across different professional fields and offers a wide-range of multi-disciplinary professional services.</p>
+                                    <p><b className="font-bold">Discovery Circle Practitioners (DCP)</b> is a global network of experienced consultants, academics, and technocrats assembled to provide world-class knowledge-based services globally. DCP has diverse experience across different professional fields and offers a wide-range of multi-disciplinary professional services.</p>
                                 </div>
                             </div>
                         </motion.div>

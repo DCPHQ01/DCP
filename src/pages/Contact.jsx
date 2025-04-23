@@ -14,11 +14,11 @@ const Contact = () => {
                         <div className="flex flex-col gap-4">
                             <div className="address flex gap-4 font-semibold">
                                 <LuMapPinHouse size="40px"/>
-                                <p className="address-name text-lg font-semibold">Plot 2542 Hassan Usman Katsina Asokoro, Abuja, FCT.</p>
+                                <p className="address-name text-lg font-semibold">Plot 2542 Hassan Usman Katsina Street, Asokoro, FCT, Abuja.</p>
                             </div>
                             <div className="phone flex gap-4 font-semibold">
                                 <MdPhone size="40px" />
-                                <p className="phone-numbe text-lg font-semibold">+234-908-3333-444</p>
+                                <p className="phone-numbe text-lg font-semibold">+234-908-222-2333</p>
                             </div>
                             <div className="email flex gap-4 font-semibold">
                                 <MdOutgoingMail size="40px" />
@@ -27,8 +27,7 @@ const Contact = () => {
                         </div>
                     </div>
 
-
-                    <div className="naija-office ">
+                    <div className="naija-office">
                         <h2 className="office-name text-3xl font-bold mb-8">Country Offices/Representatives</h2>
                         <div className="flex flex-col gap-4">
                         <div className="address flex items-center gap-4 font-semibold">
@@ -37,7 +36,7 @@ const Contact = () => {
                         </div>
                         <div className="phone flex items-center gap-4 font-semibold">
                             <img src="../../images/canada.png" className="w-[40px] h-[40px]" alt="liberia flag"/>
-                            <p className="phone-number text-lg font-semibold">Alberta,Canada - Registered Office</p>
+                            <p className="phone-number text-lg font-semibold">Alberta, Canada - Registered Office</p>
                         </div>
                         <div className="email flex items-center gap-4 font-semibold">
                             <img src="../../images/south-africa.png" className="w-[40px] h-[40px]" alt="liberia flag"/>
