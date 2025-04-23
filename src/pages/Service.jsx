@@ -36,8 +36,7 @@ const Service = () => {
               <div className="mb-6 text-center">
                 <h2 className="text-2xl font-bold">Our Core Competencies</h2>
                 <p className="mt-2">
-                  DCP works with multiple Consultants, Associates, Virtual Support, Academics,
-                  Bureaucrats and Professionals.
+                  DCP works with multiple Consultants, Associates, Virtual Support, Academics, Bureaucrats and Professionals.
                 </p>
               </div>
               <Suspense fallback={<div className="animate-pulse bg-gray-200 h-48 rounded-lg" />}>

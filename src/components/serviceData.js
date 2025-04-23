@@ -51,12 +51,18 @@ const serviceData = [
     {
       id: 5,
       image: '/images/serviceCard/servicecard5.webp',
-      title: "Technology & Innovation",
+      title: "Technology & Innovation Services",
       services: [
-        "ERP Solutions & Bespoke Applications",
-        "Application Development & Deployment",
-        "Hardware Preventive & Scheduled Maintenance",
+        "Custom Software Development & Application Deployment",
+        "IT Infrastructure Design, Optimization & Management",
+        "Database Architecture, Design & Administration",
+        "Tech. Advisory & Digital Transformation Consulting",
+        "Cybersecurity & Risk Management Solutions",
+        "Cloud Services & Migration Consulting",
       ],
+    },
+    {
+
     },
   ];
 
