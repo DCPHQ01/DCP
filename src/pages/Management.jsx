@@ -61,7 +61,6 @@ export default function Management() {
             {accordionItems.map((item, index) => (
             <div
                 key={item.id}
-                
                 className="bg-white rounded-lg shadow-md overflow-hidden"
             >
                 <div
