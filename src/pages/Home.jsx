@@ -160,7 +160,7 @@ const Home = () => {
                             animate="shown"
                             id="our_vission" className="tab-pane"
                             >
-                            <h3 className="uppercase text-xl text-justify font-semibold">
+                            <h3 className=" text-xl text-justify font-semibold">
                                 “To be the biggest consulting company in Africa anchored on value creation, integrity and service excellence”.
                             </h3>
                             </motion.div>
@@ -171,13 +171,14 @@ const Home = () => {
                             initial="hidden"
                             animate="shown"
                             id="our_mission" className="tab-pane">
-                            <h3 className="uppercase text-xl text-justify  font-semibold">
+                            <h3 className="text-xl text-justify  font-semibold">
                                 “Creating, innovating and investing in exceptional solutions for clients and providing great value-addition for all stakeholders”.
                             </h3>
                             </motion.div>
                         )}
                         </div>
                     </div>
+                </div>
                 </div>
             </motion.section>
 
