@@ -53,7 +53,7 @@ export default function Management() {
   };
 
   return (
-    <div className="mx-5 md:mx-30 my-10">
+    <div className="mx-5 md:mx-30 my-20">
       <div className="text-3xl font-bold mb-10 flex justify-center">
         <h2>Management</h2>
       </div>

@@ -44,6 +44,7 @@ const ImageMarquee = () => {
       "/images/marqueepics/nnpc.jpg",
       "/images/marqueepics/npa.jpg",
       "/images/marqueepics/ns.jpg",
+      "/images/marqueepics/osg.jpg",
       "/images/marqueepics/pc.jpg",
       "/images/marqueepics/pefmb.jpg",
       "/images/marqueepics/pppra.jpg",

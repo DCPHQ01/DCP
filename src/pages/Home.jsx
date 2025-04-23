@@ -95,7 +95,7 @@ const Home = () => {
             {/* section 2 */}
             <section className="section2 my-5 sm:py-15" id="about-area">
                 <div className="sec2-container sm:w-[80%] w-[90%] mx-auto">
-                    <div className="flex lg:flex-row flex-col gap-16 lg:gap-4 justify-between items-center">
+                    <div className="flex w-[100%] lg:flex-row flex-col gap-16 lg:gap-4 justify-between items-center">
                         <motion.div
                         ref={cardCarouselView}
                         variants={cardcarouselVariants}
@@ -112,7 +112,7 @@ const Home = () => {
                                 </div>
                             </div>
                         </motion.div>
-                        <div className="w-full md:ml-4 flex items-center lg:justify-end justify-center">
+                        <div className="w-full md:ml-4 flex items-center lg:justify-end justify-end">
                             <CardCarousel />
                         </div>
                     </div>
@@ -128,56 +128,56 @@ const Home = () => {
             className="section-padding sm:px-30 px-8 my-10"
             >
                 <div className="sec3-container mx-auto bg-gray-100/50 shadow-2xl sm:py-8 sm:p-12 backdrop-blur-md sm:rounded-3xl rounded-t-2xl sm:overflow-auto overflow-hidden">
-                    <div className="flex flex-col sm:gap-2 gap-8 sm:flex-row ">
-                    <div className="w-full sm:w-1/2">
-                        <div className="video-box">
-                        <img src="images/DCP skyscrapers.jpg" alt="" />
+                    <div className="flex flex-col justify-between items-center sm:flex-row">
+                        <div className="w-full sm:w-1/2">
+                            <div className="video-box">
+                            <img src="images/DCP skyscrapers.jpg" alt="" />
+                            </div>
                         </div>
-                    </div>
 
-                    <div className="w-full sm:w-1/2 md:w-5/12 md:ml-4 p-8">
-                        <div className=" mb-8 sm:block flex justify-center ">
-                        <div className="tabs-list sm:text-2xl text-lg font-bold flex">
-                            <button
-                            className={`border-b px-3 cursor-pointer ${activeTab === 'our_mission' ? 'font-bold text-red-500 border-red-500 py-3' : 'border-gray-400 py-3'}`}
-                            onClick={() => setActiveTab('our_mission')}
-                            >
-                            Our Mission
-                            </button>
-                            <button
-                            className={`border-b pl-10 pr-3 cursor-pointer ${activeTab === 'our_vission' ? 'font-bold text-red-500 border-red-500 py-3' : 'border-gray-400 py-3'}`}
-                            onClick={() => setActiveTab('our_vission')}
-                            >
-                            Our Vision
-                            </button>
+                        <div className="w-full sm:w-1/2 md:w-5/12 md:ml-4 sm:p-0 p-6">
+                            <div className=" mb-8 sm:block flex justify-center ">
+                                <div className="tabs-list sm:text-2xl text-lg font-bold flex">
+                                    <button
+                                    className={`border-b px-3 cursor-pointer ${activeTab === 'our_mission' ? 'font-bold text-red-500 border-red-500 py-3' : 'border-gray-400 py-3'}`}
+                                    onClick={() => setActiveTab('our_mission')}
+                                    >
+                                    Our Mission
+                                    </button>
+                                    <button
+                                    className={`border-b pl-10 pr-3 cursor-pointer ${activeTab === 'our_vission' ? 'font-bold text-red-500 border-red-500 py-3' : 'border-gray-400 py-3'}`}
+                                    onClick={() => setActiveTab('our_vission')}
+                                    >
+                                    Our Vision
+                                    </button>
+                                </div>
+                            </div>
+                            <div className="tab-content">
+                            {activeTab === 'our_vission' && (
+                                <motion.div
+                                variants={ourMissionVariants}
+                                initial="hidden"
+                                animate="shown"
+                                id="our_vission" className="tab-pane"
+                                >
+                                <h3 className="uppercase text-xl text-justify font-semibold">
+                                    “To be the biggest consulting company in Africa anchored on value creation, integrity and service excellence”.
+                                </h3>
+                                </motion.div>
+                            )}
+                            {activeTab === 'our_mission' && (
+                                <motion.div
+                                variants={ourMissionVariants}
+                                initial="hidden"
+                                animate="shown"
+                                id="our_mission" className="tab-pane">
+                                <h3 className="uppercase text-xl text-justify  font-semibold">
+                                    “Creating, innovating and investing in exceptional solutions for clients and providing great value-addition for all stakeholders”.
+                                </h3>
+                                </motion.div>
+                            )}
+                            </div>
                         </div>
-                        </div>
-                        <div className="tab-content">
-                        {activeTab === 'our_vission' && (
-                            <motion.div
-                            variants={ourMissionVariants}
-                            initial="hidden"
-                            animate="shown"
-                            id="our_vission" className="tab-pane"
-                            >
-                            <h3 className="uppercase text-xl text-justify font-semibold">
-                                “To be the biggest consulting company in Africa anchored on value creation, integrity and service excellence”.
-                            </h3>
-                            </motion.div>
-                        )}
-                        {activeTab === 'our_mission' && (
-                            <motion.div
-                            variants={ourMissionVariants}
-                            initial="hidden"
-                            animate="shown"
-                            id="our_mission" className="tab-pane">
-                            <h3 className="uppercase text-xl text-justify  font-semibold">
-                                “Creating, innovating and investing in exceptional solutions for clients and providing great value-addition for all stakeholders”.
-                            </h3>
-                            </motion.div>
-                        )}
-                        </div>
-                    </div>
                     </div>
                 </div>
             </motion.section>

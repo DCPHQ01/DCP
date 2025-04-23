@@ -62,7 +62,17 @@ const serviceData = [
       ],
     },
     {
-
+      id: 6,
+      image: '/images/serviceCard/servicecard6.jpg',
+      title: "Human Resource Consulting Services",
+      services: [
+        "Talent Acquisition & Executive Recruitment",
+        "Workforce Planning & Organizational Structuring",
+        "HR Policy Development & Compliance Advisory",
+        "Employee Performance Management Systems",
+        "Staff Engagement, Retention & Wellness Programs",
+        "HR Technology Implementation & Outsourcing Services",
+      ],
     },
   ];
 
