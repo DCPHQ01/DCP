@@ -250,12 +250,16 @@ const Home = () => {
                 <div className="management-container py-5 flex sm:justify-around sm:flex-row flex-col items-center md:gap-16 gap-4 w-[90%] sm:w-[80%]">
                     
                     {/*  Profile Image */}
-                    <div className="gp-container w-[250px] h-[250px] rounded-full overflow-hidden shadow-lg">
+                    <div className="bg-gradient-to-tr from-red-500 via-pink-500 to-yellow-500 p-1 rounded-full">
+                    <div className="bg-white p-1 rounded-full">
+                    <div className="gp-container bg-white w-[250px] h-[250px] rounded-full overflow-hidden shadow-lg">
                     <img
                         src="../../images/management/gceo.jpg"
-                        className="object-cover w-full h-full"
+                        className="object-cover w-full h-full block"
                         alt="CEO's image"
                     />
+                    </div>
+                    </div>
                     </div>
 
                     {/*  Name and Position */}
