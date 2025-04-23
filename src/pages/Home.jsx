@@ -1,6 +1,8 @@
 import { Link } from "react-router";
-import { useState } from "react";
-
+import { useState, useRef } from "react";
+import { useInView } from "motion/react";
+//eslint-disable-next-line no-unused-vars
+import { motion } from "motion/react";
 import ImageMarquee from "../components/ImageMarquee";
 import GalleryMarquee from "../components/GalleryMarquee";
 import Button from "../components/Button";
@@ -11,8 +13,50 @@ const sec4H3 = "sm:text-2xl text-xl mb-3 sm:mb-8 font-semibold";
 const sec4p = "sm:text-xl text-base";
 const paddingSec4 = "px-10 sm:py-10 py-6 transition-transform duration-300 hover:rotate-[2deg] hover:-translate-y-3 bg-gray-100 rounded-3xl shadow-md hover:text-white hover:bg-black/50 hover:shadow-2xl";
 
+const cardcarouselVariants = {
+    hidden:{
+        x:"-700px"
+    },
+    final:{
+        x:"0px",
+        transition:{
+            type:"spring",
+            delay:0.5,
+            duration:1,
+            stiffness:100,
+        }
+    }
+
+}
+const ourMissionVariants = {
+    hidden:{
+        opacity:0
+    },
+    final:{
+        opacity:1,
+        transition:{
+            duration:1,
+            delay:0.8,
+            stiffness:100,
+        }
+    },
+    shown:{
+        opacity:1,
+        transition:{
+            duration:1,
+            delay:0.3,
+            stiffness:100,
+        }
+    }
+
+}
+
 
 const Home = () => {
+    const cardcarousel = useRef(null)
+    const cardCarouselView = useInView(cardcarousel)
+    const ourMission = useRef(null)
+    const ourMissionView = useInView(ourMission)
 
     const [activeTab, setActiveTab] = useState('our_mission');
       
@@ -50,7 +94,13 @@ const Home = () => {
             <section className="section2 my-15 sm:py-15" id="about-area">
                 <div className="sec2-container sm:w-[80%] w-[90%] mx-auto">
                     <div className="flex lg:flex-row flex-col gap-16 lg:gap-4 justify-between items-center">
-                        <div className="w-full md:w-[90%]">
+                        <motion.div
+                        ref={cardCarouselView}
+                        variants={cardcarouselVariants}
+                        initial="hidden"
+                        whileInView="final"
+                        className="w-full md:w-[90%]"
+                        >
                             <div className="flex flex-col gap-6">
                                 <h2 className="title sm:text-3xl text-2xl font-bold">
                                     Quick & Tailored Powerful Business Solutions
@@ -59,7 +109,7 @@ const Home = () => {
                                     <p><b className="font-bold">Discovery Circle Practitioners</b> is a global network of experienced consultants, academics, and technocrats assembled to provide world-class knowledge-based services globally. DCP has diverse experience across different professional fields and offers a wide-range of multi-disciplinary professional services.</p>
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                         <div className="w-full md:ml-4 flex items-center lg:justify-end justify-center">
                             <CardCarousel />
                         </div>
@@ -68,7 +118,13 @@ const Home = () => {
             </section>
 
             {/* section 3  */}
-            <section className="section-padding sm:px-30 px-8 my-10">
+            <motion.section
+            ref={ourMissionView}
+            variants={ourMissionVariants}
+            initial="hidden"
+            whileInView="final"
+            className="section-padding sm:px-30 px-8 my-10"
+            >
                 <div className="sec3-container mx-auto bg-gray-100/50 shadow-2xl sm:py-8 sm:p-12 backdrop-blur-md sm:rounded-3xl rounded-t-2xl sm:overflow-auto overflow-hidden">
                     <div className="flex flex-col sm:gap-2 gap-8 sm:flex-row ">
                     <div className="w-full sm:w-1/2">
@@ -96,24 +152,33 @@ const Home = () => {
                         </div>
                         <div className="tab-content">
                         {activeTab === 'our_vission' && (
-                            <div id="our_vission" className="tab-pane">
+                            <motion.div
+                            variants={ourMissionVariants}
+                            initial="hidden"
+                            animate="shown"
+                            id="our_vission" className="tab-pane"
+                            >
                             <h3 className="uppercase text-xl text-justify font-semibold">
                                 “To be the biggest consulting company in Africa anchored on value creation, integrity and service excellence”.
                             </h3>
-                            </div>
+                            </motion.div>
                         )}
                         {activeTab === 'our_mission' && (
-                            <div id="our_mission" className="tab-pane">
+                            <motion.div
+                            variants={ourMissionVariants}
+                            initial="hidden"
+                            animate="shown"
+                            id="our_mission" className="tab-pane">
                             <h3 className="uppercase text-xl text-justify  font-semibold">
                                 “Creating, innovating and investing in exceptional solutions for clients and providing great value-addition for all stakeholders”.
                             </h3>
-                            </div>
+                            </motion.div>
                         )}
                         </div>
                     </div>
                     </div>
                 </div>
-            </section>
+            </motion.section>
 
             {/* section4 */}
             <section className="section-padding px-8 my-12 sm:px-30" id="csr">

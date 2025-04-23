@@ -6,10 +6,10 @@ import Service from "./pages/Service"
 import Project from "./pages/Project"
 import Management from "./pages/Management"
 import Test from "./components/Test"
-
 import Error from "./pages/Error"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
+import ScrollToTop from "./components/ScrollToTop"
 
 
 function App() {
@@ -20,6 +20,7 @@ function App() {
 
       <div className="background-pattern relative min-h-screen z-60">
         <Navbar/>
+        <ScrollToTop />
         <Routes>
           <Route index element={<Home />} />
           <Route path="career" element={<Career />} />
