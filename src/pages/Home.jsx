@@ -73,9 +73,9 @@ const Home = () => {
                 Your browser does not support the video tag.
             </video>
                 <div className="bg-black/70 absolute top-0 left-0 right-0 bottom-0 z-4"></div>
-                <div className="header-text px-8 sm:px-30 z-10 flex flex-col gap-6">
-                    <h2 className="header-text text-white text-2xl md:text-6xl font-bold">Developing Creative Business Solutions </h2>
-                    <q className="md:text-2xl text-base text-white">Client centric approach to business solution</q>
+                <div className="header-text px-8 sm:px-30 z-10 flex flex-col gap-6 mt-40">
+                    <h2 className="header-text text-white text-2xl md:text-5xl font-bold">Driving Innovation Through Creative Business Solutions</h2>
+                    <q className="md:text-2xl text-base text-white">We craft tailored strategies that align with your vision, turning challenges into opportunities and ideas into global impact.</q>
                     <div className="wow fadeup" data-wow-delay="0.7s">
                         {/* <Button text="Free Consult" link="/contact"/> */}
 
@@ -92,8 +92,8 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* section 2 of home page */}
-            <section className="section2 my-15 sm:py-15" id="about-area">
+            {/* section 2 */}
+            <section className="section2 my-5 sm:py-15" id="about-area">
                 <div className="sec2-container sm:w-[80%] w-[90%] mx-auto">
                     <div className="flex lg:flex-row flex-col gap-16 lg:gap-4 justify-between items-center">
                         <motion.div
@@ -105,10 +105,10 @@ const Home = () => {
                         >
                             <div className="flex flex-col gap-6">
                                 <h2 className="title sm:text-3xl text-2xl font-bold">
-                                    Quick & Tailored Powerful Business Solutions
+                                    Agile, Tailored & Impact-Driven Business Solutions
                                 </h2>
                                 <div className=" text-base sm:text-xl" data-wow-delay="0.5s">
-                                    <p><b className="font-bold">Discovery Circle Practitioners (DCP)</b> is a global network of experienced consultants, academics, and technocrats assembled to provide world-class knowledge-based services globally. DCP has diverse experience across different professional fields and offers a wide-range of multi-disciplinary professional services.</p>
+                                    <p>At <b className="font-bold">Discovery Circle Practitioners (DCP)</b>, we are a global network of seasoned consultants, thought leaders, and industry experts dedicated to delivering world-class, knowledge-driven services. With cross-sector expertise and a deep understanding of diverse industries, we offer agile, multi-disciplinary solutions designed to solve complex challenges and drive sustainable growth.</p>
                                 </div>
                             </div>
                         </motion.div>
@@ -198,9 +198,9 @@ const Home = () => {
                             <div className="process-icon text-2xl">
                             <i className="icofont-users-alt-1"></i>
                             </div>
-                            <h3 className={`${sec4H3}`}>Empowering Future Leaders through Capacity Development</h3>
+                            <h3 className={`${sec4H3}`}>DCP Leadership, Entrepreneurship & Advancement Program (DCP LEAP)</h3>
                             <p className={`${sec4p} text-justify`}>
-                            As part of our CSR mandate, we are committed to fostering human capital development through pro bono consulting and tailored training under the DCP Career Development Scheme. Our programs are designed for students, recent graduates, NYSC members, and professionals, delivering practical skills in entrepreneurship, financial literacy, digital proficiency, and technical development. Participants gain real-world exposure that equips them to excel in their careers and contribute meaningfully to national growth.
+                                As part of our CSR mandate, DCP is committed to fostering human capital development through DCP LEAP—a structured, hands-on training program designed for students (SIWES), recent graduates, serving corps members, and emerging leaders. The initiative delivers practical skills in entrepreneurship, financial literacy, digital proficiency, technical know-how, and workplace readiness. Participants of the DCP LEAP Program gain real-world exposure and experiential learning that empower them to thrive in their careers and contribute meaningfully to both personal advancement and national development.
                             </p>
                         </div>
 
@@ -209,9 +209,9 @@ const Home = () => {
                             <div className="process-icon text-4xl">
                             <i className="icofont-brainstorming"></i>
                             </div>
-                            <h3 className={`${sec4H3}`}>Strengthening Institutions through Strategic Asset Advisory</h3>
+                            <h3 className={`${sec4H3}`}>Pro-Bono Technical Asset Advisory Initiatives</h3>
                             <p className={`${sec4p} text-justify`}>
-                            At DCP, we contribute to institutional resilience and performance improvement by offering strategic technical advisory on the integrity and utilization of public and private sector assets. Our approach involves structured assessments that help clients uncover operational risks, enhance infrastructure reliability, and align asset performance with broader development goals. These interventions empower institutions to make informed decisions, optimize resource use, and deliver sustainable value across their sectors of influence.
+                                At DCP, our pro bono Technical Asset Advisory Initiative is a Corporate Social Responsibility program designed to enhance institutional efficiency and resilience across public and private sectors. Through expert-led diagnostics, we identify operational risks, assess infrastructure reliability, and align asset performance with broader national and organizational development priorities. This initiative plays a key role in strengthening public service delivery, improving resource utilization, and promoting sustainable development across sectors.
                             </p>
                         </div>
 
@@ -221,9 +221,9 @@ const Home = () => {
                             <div className="process-icon text-4xl">
                                 <i className="icofont-settings-alt"></i>
                             </div>
-                            <h3 className={`${sec4H3}`}>Advancing Innovation and Leadership through the DCP Thinking & Learning Lab</h3>
+                            <h3 className={`${sec4H3}`}>DCP Thinking & Learning Lab</h3>
                             <p className={`${sec4p} text-justify`}>
-                            Our flagship CSR platform, the DCP Thinking & Learning Lab, brings together emerging leaders and innovators to tackle real-world challenges. Participants engage in structured volunteering pathways that encourage creative thinking, strategic problem-solving, and sustainable innovation. The Lab has delivered measurable impact through public sector process enhancements and digital transformation solutions for local businesses, while nurturing the leadership potential of its contributors.
+                                Our flagship CSR platform, the DCP Thinking & Learning Lab, brings together emerging leaders and innovators to co-create solutions for real-world challenges. Through structured volunteering pathways, participants are immersed in experiences that foster creative thinking, strategic problem-solving, and sustainable innovation. The Lab has delivered measurable impact by driving process improvements in the public sector and enabling digital transformation for local businesses, all while nurturing the leadership potential and professional growth of its contributors.
                             </p>
                             </div>
                         </div>

@@ -26,6 +26,7 @@ const ImageMarquee = () => {
       "/images/marqueepics/ksg.jpg",
       "/images/marqueepics/ksgn.jpg",
       "/images/marqueepics/meca.jpg",
+      "/images/marqueepics/naseni.jpg",
       "/images/marqueepics/ncc.jpg",
       "/images/marqueepics/ncdmb.jpg",
       "/images/marqueepics/ncs.jpg",
@@ -64,7 +65,7 @@ const ImageMarquee = () => {
               key={index}
               src={src}
               alt={`marquee-img-${index}`}
-              className="h-22 my-3 w-auto object-contain mr-10"
+              className="h-22 my-3 w-30 object-contain mr-10"
             />
           ))}
         </Marquee>

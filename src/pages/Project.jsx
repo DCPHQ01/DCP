@@ -5,10 +5,7 @@ const Project = () => {
             <div className="container mx-auto px-4 text-center mb-12">
                 <h2 className="title font-bold text-3xl mb-4">Project Portfolio</h2>
                 <p className="max-w-3xl mx-auto">
-                    In supporting economic development in Nigeria, DCP in collaboration with its international partners,
-                    offers purpose-built and solution-focused projects for its clients. These projects are uniquely
-                    developed and designed with a bi-focal vision of both the present and the future. Some of these
-                    customised projects and programmes are:
+                    DCP collaborates with international partners to drive sustainable economic development in Nigeria through purpose-driven, solution-focused projects. Each initiative is meticulously designed with a forward-thinking approach, addressing both immediate needs and long-term growth, while leveraging our expertise to create lasting impact for our clients and communities.
                 </p>
             </div>
         
@@ -107,7 +104,7 @@ const Project = () => {
                             <h4 className="text-lg font-bold">Abuja Investement Company Limited</h4>
                         </div>
                         <p className="text-justify text-sm">
-                            N0.5billion Statutory Capital & Investor Sourcing: Sourced and secured equity investor.
+                            Provided comprehensive technology advisory services to Abuja Investment Company Limited, delivering a full-scale ICT infrastructure assessment and strategic recommendations for optimization. Our engagement included the deployment of scalable IT systems, implementation of cybersecurity and risk management frameworks, and the introduction of innovative digital tools to enhance operational efficiency and data integrity across the organization.
                         </p>
                     </div>
             
@@ -118,7 +115,7 @@ const Project = () => {
                             <h4 className="text-lg font-bold">AMML Microfinance Bank</h4>
                         </div>
                         <p className="text-justify text-sm">
-                            Setup of AMML Microfinance Bank (MFB): Total setup from acquisition of relevant licenses from the CBN, MIS, Recruitment, HR Management, total network infrastructure and statutory integration with relevant authorities in accordance with CBN guidelines.
+                            Offered end-to-end technology consulting services aimed at strengthening their digital foundation. This included an in-depth evaluation of their ICT infrastructure, deployment of secure and efficient IT systems, and the implementation of cybersecurity best practices. Our solutions empowered the bank to improve service delivery, enhance data protection, and align its technology ecosystem with industry regulatory standards.
                         </p>
                     </div>
             
@@ -157,7 +154,7 @@ const Project = () => {
                             <h4 className="text-lg font-bold">AMML Microfinance Bank</h4>
                         </div>
                         <p className="text-justify text-sm">
-                            Business Process & Strategy Development: Developed and deployed strategic business processes and start-up policies. Orchestrated Brand awareness and provided equity sourcing and communication management support.
+                            Setup of AMML Microfinance Bank (MFB): Total setup from acquisition of relevant licenses from the CBN, MIS, Recruitment, HR Management, total network infrastructure and statutory integration with relevant authorities in accordance with CBN guidelines.
                         </p>
                     </div>
             
