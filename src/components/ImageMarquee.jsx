@@ -1,5 +1,6 @@
 import React from 'react';
 import Marquee from "react-fast-marquee";
+//eslint-disable-next-line no-unused-vars
 import { motion } from "motion/react";
 
 const ImageMarquee = () => {

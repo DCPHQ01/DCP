@@ -53,7 +53,7 @@ export default function Management() {
   };
 
   return (
-    <div className="mx-30 my-10">
+    <div className="mx-5 md:mx-30 my-10">
       <div className="text-3xl font-bold mb-10 flex justify-center">
         <h2>Management</h2>
       </div>
@@ -84,11 +84,12 @@ export default function Management() {
 
                 {openIndex === index && (
                   <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 0.3 }}
-                  className="p-4 text-gray-700"
+                  key="content"
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: "auto", opacity: 1 }}
+                  exit={{ height: 0, opacity: 0 }}
+                  transition={{ duration: 0.4, delay:0.2, ease: "easeInOut" }}
+                  className="overflow-hidden"
                   >
                     <div className="p-4 text-gray-700 whitespace-pre-line text-justify">
                         <p>{item.description}</p>
