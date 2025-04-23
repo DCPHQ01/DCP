@@ -28,7 +28,7 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        <div className="footer-contact flex flex-col gap-4">
+                        <div className="footer-contact flex flex-col gap-10">
                             <div className="email flex items-center gap-2.5 "><span><MdOutlineMail size={20} /></span> <span>info@dcp.com.ng</span> </div>
                             <div className="phone flex items-center gap-2.5 "><span><MdOutlinePhoneAndroid size={20} /></span> <span>+(234) 908 222 2333</span> </div>
                             <div className="phone flex items-center gap-2.5 "><span><IoLocationOutline size={20} /></span> <span>Plot 2542 Hassan Usman Kaatsina Asokoro, Abuja, FCT.</span> </div>
@@ -44,7 +44,7 @@ const Footer = () => {
                 </div>
                 <div className="copyright-bar pt-3">
                     <hr className="my-4 border border-white" />
-                    <div className="copyright text-center">© {year} Discovery Circle Practitioners | All Rights Reserved.</div>
+                    <div className="copyright text-center mt-5">© {year} Discovery Circle Practitioners | All Rights Reserved.</div>
                 </div>
             </div>
         </>

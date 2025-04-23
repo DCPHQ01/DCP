@@ -27,8 +27,7 @@ const Contact = () => {
                         </div>
                     </div>
 
-
-                    <div className="naija-office ">
+                    <div className="naija-office">
                         <h2 className="office-name text-3xl font-bold mb-8">Country Offices/Representatives</h2>
                         <div className="flex flex-col gap-4">
                         <div className="address flex items-center gap-4 font-semibold">
@@ -37,7 +36,7 @@ const Contact = () => {
                         </div>
                         <div className="phone flex items-center gap-4 font-semibold">
                             <img src="../../images/canada.png" className="w-[40px] h-[40px]" alt="liberia flag"/>
-                            <p className="phone-number text-lg font-semibold">Alberta,Canada - Registered Office</p>
+                            <p className="phone-number text-lg font-semibold">Alberta, Canada - Registered Office</p>
                         </div>
                         <div className="email flex items-center gap-4 font-semibold">
                             <img src="../../images/south-africa.png" className="w-[40px] h-[40px]" alt="liberia flag"/>
