@@ -15,10 +15,12 @@ const paddingSec4 = "px-10 sm:py-10 py-6 transition-transform duration-300 hover
 
 const cardcarouselVariants = {
     hidden:{
-        x:"-700px"
+        x:"-400px",
+        opacity:"0"
     },
     final:{
         x:"0px",
+        opacity:"1",
         transition:{
             type:"spring",
             delay:0.5,
