@@ -63,7 +63,7 @@ const serviceData = [
     },
     {
       id: 6,
-      image: '/images/serviceCard/servicecard6.jpg',
+      image: '/images/serviceCard/servicecard6.webp',
       title: "Human Resource Consulting Services",
       services: [
         "Talent Acquisition & Executive Recruitment",
