@@ -135,50 +135,74 @@ const Home = () => {
                             </div>
                         </div>
 
-                    <div className="w-full sm:w-1/2 md:w-5/12 md:ml-4 p-8">
-                        <div className=" mb-8 sm:block flex justify-center ">
-                        <div className="tabs-list sm:text-2xl text-lg font-bold flex">
-                            <button
-                            className={`border-b px-3 cursor-pointer ${activeTab === 'our_mission' ? 'font-bold text-red-500 border-red-500 py-3' : 'border-gray-400 py-3'}`}
-                            onClick={() => setActiveTab('our_mission')}
-                            >
-                            Our Mission
-                            </button>
-                            <button
-                            className={`border-b pl-10 pr-3 cursor-pointer ${activeTab === 'our_vission' ? 'font-bold text-red-500 border-red-500 py-3' : 'border-gray-400 py-3'}`}
-                            onClick={() => setActiveTab('our_vission')}
-                            >
-                            Our Vision
-                            </button>
-                        </div>
-                        </div>
-                        <div className="tab-content font-heading">
-                        {activeTab === 'our_vission' && (
-                            <motion.div
-                            variants={ourMissionVariants}
-                            initial="hidden"
-                            animate="shown"
-                            id="our_vission" className="tab-pane"
-                            >
-                            <h3 className=" text-xl text-justify font-semibold">
-                                “To be the biggest consulting company in Africa anchored on value creation, integrity and service excellence”.
-                            </h3>
-                            </motion.div>
-                        )}
-                        {activeTab === 'our_mission' && (
-                            <motion.div
-                            variants={ourMissionVariants}   
-                            initial="hidden"
-                            animate="shown"
-                            id="our_mission" className="tab-pane">
-                            <h3 className="text-xl text-justify  font-semibold">
-                                “Creating, innovating and investing in exceptional solutions for clients and providing great value-addition for all stakeholders”.
-                            </h3>
-                            </motion.div>
-                        )}
+                        <div className="w-full sm:w-1/2 md:w-5/12 md:ml-4 p-8">
+                            {/* Original tabs for small screens (hidden on medium and up) */}
+                            <div className="mb-8 sm:block flex justify-center md:hidden">
+                                <div className="tabs-list sm:text-2xl text-lg font-bold flex">
+                                    <h2
+                                        className={`border-b px-3 cursor-pointer ${activeTab === 'our_mission' ? 'font-bold text-red-500 border-red-500 py-3' : 'border-gray-400 py-3'}`}
+                                        onClick={() => setActiveTab('our_mission')}
+                                    >
+                                        Our Mission
+                                    </h2>
+                                    <button
+                                        className={`border-b pl-10 pr-3 cursor-pointer ${activeTab === 'our_vission' ? 'font-bold text-red-500 border-red-500 py-3' : 'border-gray-400 py-3'}`}
+                                        onClick={() => setActiveTab('our_vission')}
+                                    >
+                                        Our Vision
+                                    </button>
+                                </div>
+                            </div>
+
+                            {/* Layout for medium and large screens (hidden on small screens) */}
+                            <div className="hidden md:block">
+                                {/* Mission section with left-aligned gradient line */}
+                                <div className="relative mb-12 pl-6">
+                                    <div className="absolute left-0 top-0 h-full w-1 bg-red-500 rounded-full"></div>
+                                    <h4 className="text-lg font-bold text-red-500 mt-2">Our Mission</h4>
+                                    <h3 className="text-l text-justify font-semibold">
+                                        "Creating, innovating and investing in exceptional solutions for clients and providing great value-addition for all stakeholders".
+                                    </h3>
+                                </div>
+
+                                {/* Vision section with right-aligned gradient line */}
+                                <div className="relative mt-12 pr-6 text-right">
+                                    <div className="absolute right-0 top-0 h-full w-1 bg-red-500 rounded-full"></div>
+                                    <h4 className="text-lg font-bold text-red-500 mt-2">Our Vision</h4>
+                                    <h3 className="text-l text-justify font-semibold">
+                                        "To be the biggest consulting company in Africa anchored on value creation, integrity and service excellence".
+                                    </h3>
+                                </div>
+                            </div>
+
+                            {/* Tab content for small screens (hidden on medium and up) */}
+                            <div className="tab-content font-heading md:hidden">
+                                {activeTab === 'our_vission' && (
+                                    <motion.div
+                                        variants={ourMissionVariants}
+                                        initial="hidden"
+                                        animate="shown"
+                                        id="our_vission" className="tab-pane"
+                                    >
+                                        <h3 className="text-xl text-justify font-semibold">
+                                            "To be the biggest consulting company in Africa anchored on value creation, integrity and service excellence".
+                                        </h3>
+                                    </motion.div>
+                                )}
+                                {activeTab === 'our_mission' && (
+                                    <motion.div
+                                        variants={ourMissionVariants}   
+                                        initial="hidden"
+                                        animate="shown"
+                                        id="our_mission" className="tab-pane">
+                                        <h3 className="text-xl text-justify font-semibold">
+                                            "Creating, innovating and investing in exceptional solutions for clients and providing great value-addition for all stakeholders".
+                                        </h3>
+                                    </motion.div>
+                                )}
+                            </div>
                         </div>
                     </div>
-                </div>
                 </div>
             </motion.section>
 
