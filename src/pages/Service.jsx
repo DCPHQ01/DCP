@@ -9,7 +9,7 @@ const Service = () => {
       <>
         {/* Services Section */}
         <section className="py-16" id="service-area">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto xl:px-16 px-4">
             <div className="text-center mb-10">
               <h2 className="text-3xl font-bold">Our Services</h2>
             </div>

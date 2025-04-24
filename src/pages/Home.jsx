@@ -167,7 +167,7 @@ const Home = () => {
                         )}
                         {activeTab === 'our_mission' && (
                             <motion.div
-                            variants={ourMissionVariants}
+                            variants={ourMissionVariants}   
                             initial="hidden"
                             animate="shown"
                             id="our_mission" className="tab-pane">
