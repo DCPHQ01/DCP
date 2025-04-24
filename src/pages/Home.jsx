@@ -93,7 +93,7 @@ const Home = () => {
             </section>
 
             {/* section 2 */}
-            <section className="section2 my-5 sm:py-15" id="about-area">
+            <section className="section2 my-10 sm:py-15" id="about-area">
                 <div className="sec2-container sm:w-[80%] w-[90%] mx-auto">
                     <div className="flex w-[100%] lg:flex-row flex-col gap-16 lg:gap-4 justify-between items-center">
                         <motion.div
@@ -104,7 +104,7 @@ const Home = () => {
                         className="w-full md:w-[90%]"
                         >
                             <div className="flex flex-col gap-6">
-                                <h2 className="title sm:text-3xl text-2xl font-bold">
+                                <h2 className="title sm:text-3xl sm:text-start text-center text-2xl font-bold">
                                     Agile, Tailored & Impact-Driven Business Solutions
                                 </h2>
                                 <div className=" text-base sm:text-xl" data-wow-delay="0.5s">
