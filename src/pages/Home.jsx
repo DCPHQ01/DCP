@@ -107,8 +107,8 @@ const Home = () => {
                                 <h2 className="title sm:text-3xl sm:text-start text-center text-2xl font-bold">
                                     Agile, Tailored & Impact-Driven Business Solutions
                                 </h2>
-                                <div className=" text-base sm:text-xl" data-wow-delay="0.5s">
-                                    <p>At <b className="font-bold">Discovery Circle Practitioners (DCP)</b>, we are a global network of seasoned consultants, thought leaders, and industry experts dedicated to delivering world-class, knowledge-driven services. With cross-sector expertise and a deep understanding of diverse industries, we offer agile, multi-disciplinary solutions designed to solve complex challenges and drive sustainable growth.</p>
+                                <div className=" text-base sm:text-xl text-justify" data-wow-delay="0.5s">
+                                    <p>At <b className="font-bold">Discovery Circle Practitioners (DCP)</b>, we are a global network of seasoned consultants, thought leaders, and industry experts dedicated to delivering world-class, knowledge-driven services. With cross-sector expertise and a deep understanding of diverse industries, we offer agile, multi-disciplinary solutions designed to solve complex challenges and drive sustainable growth. In a strategic move to expand our capabilities and deepen our impact, <b className="font-bold">Discovery Circle Practitioners (DCP)</b> has acquired <b className="font-bold">Discovery Cycle Professionals Limited (DCP)</b>, further strengthening our legacy and consolidating our position as a leader in transformative consulting.</p>
                                 </div>
                             </div>
                         </motion.div>
