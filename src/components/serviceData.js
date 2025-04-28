@@ -2,10 +2,10 @@ const serviceData = [
     {
       id: 1,
       image: '/images/serviceCard/servicecard1.webp',
-      title: "Tax, Forensic Accounting, Audit & Asset Recovery Services",
+      title: "Financial, Audit, Tax & Forensic Services",
       services: [
+        "Financial & Forensic Accounting",
         "Asset Tracing & Recovery",
-        "Forensic Accounting & Auditing",
         "Tax Advisory, Audit & Assurance Services",
         "Forensic Data Recovery & Data Analytics",
         "Investigation, Intelligence & Polygraph Testing",
@@ -20,7 +20,7 @@ const serviceData = [
         "Project Management",
         "Governance & Reforms",
         "Compliance & Regulation",
-        "Training, Learning & Development",
+        "Recruitment, Training & Development",
         "Process Transformation & Outsourcing",
         "Corporate Strategy & Communications",
         "Institutional Strengthening & Capacity Building",

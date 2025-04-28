@@ -224,7 +224,7 @@ const Home = () => {
                             </div>
                             <h3 className={`${sec4H3}`}>DCP Leadership, Entrepreneurship & Advancement Program (DCP LEAP)</h3>
                             <p className={`${sec4p} text-justify`}>
-                                As part of our CSR mandate, DCP is committed to fostering human capital development through DCP LEAP—a structured, hands-on training program designed for students (SIWES), recent graduates, serving corps members, and emerging leaders. The initiative delivers practical skills in entrepreneurship, financial literacy, digital proficiency, technical know-how, and workplace readiness. Participants of the DCP LEAP Program gain real-world exposure and experiential learning that empower them to thrive in their careers and contribute meaningfully to both personal advancement and national development.
+                                DCP’s LEAP Program builds human capital by offering practical training in entrepreneurship, digital skills, and workplace readiness for students, graduates, corps members, and emerging leaders. Participants gain real-world experience to boost their careers and support national development.
                             </p>
                         </div>
 
@@ -235,7 +235,7 @@ const Home = () => {
                             </div>
                             <h3 className={`${sec4H3}`}>Pro-Bono Technical Asset Advisory Initiatives</h3>
                             <p className={`${sec4p} text-justify`}>
-                                At DCP, our pro bono Technical Asset Advisory Initiative is a Corporate Social Responsibility program designed to enhance institutional efficiency and resilience across public and private sectors. Through expert-led diagnostics, we identify operational risks, assess infrastructure reliability, and align asset performance with broader national and organizational development priorities. This initiative plays a key role in strengthening public service delivery, improving resource utilization, and promoting sustainable development across sectors.
+                                DCP’s pro bono Technical Asset Advisory Initiative enhances institutional efficiency by diagnosing operational risks, assessing infrastructure, and optimizing asset performance. It strengthens public service delivery, improves resource use, and supports sustainable development across sectors.
                             </p>
                         </div>
 
@@ -247,7 +247,7 @@ const Home = () => {
                             </div>
                             <h3 className={`${sec4H3}`}>DCP Thinking & Learning Lab</h3>
                             <p className={`${sec4p} text-justify`}>
-                                Our flagship CSR platform, the DCP Thinking & Learning Lab, brings together emerging leaders and innovators to co-create solutions for real-world challenges. Through structured volunteering pathways, participants are immersed in experiences that foster creative thinking, strategic problem-solving, and sustainable innovation. The Lab has delivered measurable impact by driving process improvements in the public sector and enabling digital transformation for local businesses, all while nurturing the leadership potential and professional growth of its contributors.
+                                The DCP Thinking & Learning Lab, our flagship CSR platform, connects emerging leaders to co-create solutions through structured volunteering that fosters creativity, problem-solving, and innovation. It drives public sector improvements, supports digital transformation, and nurtures leadership and professional growth.
                             </p>
                             </div>
                         </div>
