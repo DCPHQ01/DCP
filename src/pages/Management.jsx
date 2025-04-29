@@ -23,10 +23,10 @@ export default function Management() {
     {
       id: 3,
       image: "../images/management/mbd.jpg",
-      name: "Oloje 'Kojo Richards",
-      position: "Manager, Business Development",
+      name: "Oloje ‘Kojo Richards, MBA, MNSE, CCFI, MNIM",
+      position: "Senior Manager, Business Development",
       description:
-        "Oloje 'Kojo Richards is a seasoned Innovation, strategy and Implementation professional with extensive background in Strategic Partnership, fostering growth and organizational Expansion. \n\nHe possesses a multidisciplinary industry expertise and cognate experience that cuts across Telecommunication, Consulting and Government sectors. A trained Engineer and a member of the Nigerian society of Engineers. He holds a Master of Business Administration Degree from Afe Babalola University, Nigeria.",
+        "Oloje ‘Kojo Richards is a dynamic business development strategist with over a decade of high-impact experience spanning energy infrastructure, Telecoms, Oil & Gas, institutional strengthening, and value driven consulting, As Senior Manager, Business Development, Kojo leads the firm’s growth architecture shaping bold ideas into actionable strategies that deliver long-term value, bringing a rare combination of technical depth, commercial intelligence, and policy fluency to every engagement. \n\nHe is instrumental in designing and executing enterprise-level initiatives that unlock new markets, deepen stakeholder alliances, and position DCP as a trusted advisor to both governmental and private sector institutions. \n\nKojo is Currently saddled with the responsibility of strategy coordination at DCP, where he has successfully designed and coordinated multi-sectoral growth roadmaps that align with the firm’s long-term vision. Renowned for his clarity of thought and precision in execution, he brings equal strength to high-level strategic dialogue and on-the-ground implementation consistently transforming complex challenges into actionable, high-value opportunities. \n\nHe is recognized for consistently advancing bold ideas into scalable, impact-driven solutions with an unwavering commitment to excellence, sustainable impact, and a reputation for consummate professionalism. \n\nKojo holds a Master’s in Business Administration (MBA) with distinction. He is a Corporate Member of the Nigerian Society of Engineers, a Certified Forensic Investigator, a lettered Project Manager and a Member of the Nigerian Institute of Management.",
     },
     {
       id: 4,
