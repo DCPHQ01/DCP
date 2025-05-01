@@ -173,56 +173,56 @@ const Project = () => {
 
             {/* 🔹 Group 5 */}
             <div className="mb-12 px-4">
-  <h3 className="text-2xl font-semibold mb-6 text-center">
-    Project Management Consulting
-  </h3>
+            <h3 className="text-2xl font-semibold mb-6 text-center ">
+                Project Management Consulting
+            </h3>
 
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-    {/* Card 1 */}
-    <div className="feature-box w-full p-4 shadow-md hover:shadow-xl hover:bg-gray-100 transition-all">
-      <div className="flex items-start gap-3 mb-3">
-        <img src="../../images/marqueepics/ksgn.jpg" alt="Katsina State Government" className="w-50 h-20 object-contain" />
-        <h4 className="text-lg font-bold">Katsina State Government</h4>
-      </div>
-      <p className="text-justify text-sm">
-      The team delivered a quarterly report on the ₦22.1 billion portion of Katsina State's ₦55 billion Development Sukuk, highlighting thorough due diligence, transparent fund use across key sectors, and verification of secure monthly deductions into a sinking fund to ensure timely repayment.
-      </p>
-    </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+                {/* Card 13 */}
+                <div className="feature-box w-full p-4 shadow-md hover:shadow-xl hover:bg-gray-100 transition-all">
+                <div className="flex items-start gap-3 mb-3">
+                    <img src="../../images/marqueepics/ksgn.jpg" alt="Katsina State Government" className="w-50 h-20 object-contain" />
+                    <h4 className="text-lg font-bold">Katsina State Government</h4>
+                </div>
+                <p className="text-justify text-sm">
+                The team delivered a quarterly report on the ₦22.1 billion portion of Katsina State's ₦55 billion Development Sukuk, highlighting thorough due diligence, transparent fund use across key sectors, and verification of secure monthly deductions into a sinking fund to ensure timely repayment.
+                </p>
+                </div>
 
-    {/* Card 2 */}
-    <div className="feature-box w-full p-4 shadow-md hover:shadow-xl hover:bg-gray-100 transition-all">
-      <div className="flex items-start gap-3 mb-3">
-        <img src="../../images/marqueepics/asgn.jpg" alt="Adamawa State Government" className="w-50 h-20 object-contain" />
-        <h4 className="text-lg font-bold">Adamawa State Government</h4>
-      </div>
-      <p className="text-justify text-sm">
-        DCP delivered a quarterly report on the ₦20 billion tranche of Adamawa State's ₦100 billion Development Bond, detailing due diligence, transparent use of funds for key infrastructure and obligations, and a clear reporting framework through 2028 to ensure accountability and support economic growth.
-      </p>
-    </div>
+                {/* Card 14 */}
+                <div className="feature-box w-full p-4 shadow-md hover:shadow-xl hover:bg-gray-100 transition-all">
+                <div className="flex items-start gap-3 mb-3">
+                    <img src="../../images/marqueepics/asgn.jpg" alt="Adamawa State Government" className="w-50 h-20 object-contain" />
+                    <h4 className="text-lg font-bold">Adamawa State Government</h4>
+                </div>
+                <p className="text-justify text-sm">
+                    DCP delivered a quarterly report on the ₦20 billion tranche of Adamawa State's ₦100 billion Development Bond, detailing due diligence, transparent use of funds for key infrastructure and obligations, and a clear reporting framework through 2028 to ensure accountability and support economic growth.
+                </p>
+                </div>
 
-    {/* Card 3 */}
-    <div className="feature-box w-full p-4 shadow-md hover:shadow-xl hover:bg-gray-100 transition-all">
-      <div className="flex items-start gap-3 mb-3">
-        <img src="../../images/marqueepics/bsn.jpg" alt="Bauchi State Government" className="w-50 h-20 object-contain" />
-        <h4 className="text-lg font-bold">Bauchi State Government</h4>
-      </div>
-      <p className="text-justify text-sm">
-        A quarterly report was delivered on Bauchi State’s ₦40.98 billion Series 1 bond under its ₦100 billion private bond programme, highlighting due diligence, transparent use of funds for road projects, and a structured reporting system through 2034 to ensure accountability and effective infrastructure financing.
-      </p>
-    </div>
+                {/* Card 15 */}
+                <div className="feature-box w-full p-4 shadow-md hover:shadow-xl hover:bg-gray-100 transition-all">
+                <div className="flex items-start gap-3 mb-3">
+                    <img src="../../images/marqueepics/bsn.jpg" alt="Bauchi State Government" className="w-50 h-20 object-contain" />
+                    <h4 className="text-lg font-bold">Bauchi State Government</h4>
+                </div>
+                <p className="text-justify text-sm">
+                    A quarterly report was delivered on Bauchi State’s ₦40.98 billion Series 1 bond under its ₦100 billion private bond programme, highlighting due diligence, transparent use of funds for road projects, and a structured reporting system through 2034 to ensure accountability and effective infrastructure financing.
+                </p>
+                </div>
 
-    {/* Card 4 */}
-    <div className="feature-box w-full p-4 shadow-md hover:shadow-xl hover:bg-gray-100 transition-all">
-      <div className="flex items-start gap-3 mb-3">
-        <img src="../../images/marqueepics/osg.jpg" alt="Ogun State Government" className="w-50 h-20 object-contain" />
-        <h4 className="text-lg font-bold">Ogun State Government</h4>
-      </div>
-      <p className="text-justify text-sm">
-        The report outlines due diligence and transparent fund use for key sectors and obligations, explains the legal structures of Ogun State’s Sukuk and bond issuances, confirms secure monthly deductions into sinking funds, and establishes quarterly reporting through 2028 to ensure accountability and effective capital use.
-      </p>
-    </div>
-  </div>
-</div>
+                {/* Card 16 */}
+                <div className="feature-box w-full p-4 shadow-md hover:shadow-xl hover:bg-gray-100 transition-all">
+                <div className="flex items-start gap-3 mb-3">
+                    <img src="../../images/marqueepics/osg.jpg" alt="Ogun State Government" className="w-50 h-20 object-contain" />
+                    <h4 className="text-lg font-bold">Ogun State Government</h4>
+                </div>
+                <p className="text-justify text-sm">
+                    The report outlines due diligence and transparent fund use for key sectors and obligations, explains the legal structures of Ogun State’s Sukuk and bond issuances, confirms secure monthly deductions into sinking funds, and establishes quarterly reporting through 2028 to ensure accountability and effective capital use.
+                </p>
+                </div>
+            </div>
+        </div>
 
         </section>      
     );
