@@ -174,7 +174,7 @@ const Project = () => {
             {/* 🔹 Group 5 */}
             <div className="mb-12 px-4">
   <h3 className="text-2xl font-semibold mb-6 text-center">
-    Project Management Consulting Projects
+    Project Management Consulting
   </h3>
 
   <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -185,7 +185,7 @@ const Project = () => {
         <h4 className="text-lg font-bold">Katsina State Government</h4>
       </div>
       <p className="text-justify text-sm">
-        We delivered the quarterly utilization report on the ₦22.1 billion tranche of the ₦55 billion, seven-year, 15% fixed-rate Development Sukuk for Katsina State via Minaret Sukuk Company Limited—detailing rigorous due diligence and transparent deployment of proceeds across road infrastructure, healthcare, agriculture, and education projects; outlining the private-placement structure (unregistered by the SEC but noted on the FMDQ Private Markets portal for visibility); and verifying the ISPO-secured monthly deductions from internally generated revenues into a trustee-managed sinking fund for timely interest and principal redemption.
+      The team delivered a quarterly report on the ₦22.1 billion portion of Katsina State's ₦55 billion Development Sukuk, highlighting thorough due diligence, transparent fund use across key sectors, and verification of secure monthly deductions into a sinking fund to ensure timely repayment.
       </p>
     </div>
 
@@ -196,7 +196,7 @@ const Project = () => {
         <h4 className="text-lg font-bold">Adamawa State Government</h4>
       </div>
       <p className="text-justify text-sm">
-        We delivered the quarterly utilization report on the ₦20 billion tranche of the ₦100 billion, seven-year, 15% fixed-rate Development Bond Issuance Programme for Adamawa State via ADAS Programme Limited—outlining rigorous due-diligence processes and transparent deployment of proceeds toward priority infrastructural projects and outstanding obligations designed to boost internally generated revenues and socio-economic development; detailing the private-company bond structure registered under the Nigeria Debt Management Agency Law 2011; and establishing a clear quarterly reporting framework through 2028 to ensure accountability, compliance, and optimal capital utilization.
+        DCP delivered a quarterly report on the ₦20 billion tranche of Adamawa State's ₦100 billion Development Bond, detailing due diligence, transparent use of funds for key infrastructure and obligations, and a clear reporting framework through 2028 to ensure accountability and support economic growth.
       </p>
     </div>
 
@@ -207,7 +207,7 @@ const Project = () => {
         <h4 className="text-lg font-bold">Bauchi State Government</h4>
       </div>
       <p className="text-justify text-sm">
-        Delivering quarterly utilization report on the Series 1 ₦40,975,000,000.00, 25% fixed-rate bond under the ₦100,000,000,000.00, 10-year Private Bond Issuance Programme for Bauchi State Government—facilitated through a Senior Guaranteed Bond SPV—detailing rigorous due diligence and transparent deployment of proceeds toward the construction of new roads and rehabilitation of existing ones, clarifying that as a Private Company Bond the issuance is not SEC-registered, and establishing a robust quarterly reporting cadence through the 2034 maturity to ensure accountability, compliance, and effective management of infrastructure financing.
+        A quarterly report was delivered on Bauchi State’s ₦40.98 billion Series 1 bond under its ₦100 billion private bond programme, highlighting due diligence, transparent use of funds for road projects, and a structured reporting system through 2034 to ensure accountability and effective infrastructure financing.
       </p>
     </div>
 
@@ -218,7 +218,7 @@ const Project = () => {
         <h4 className="text-lg font-bold">Ogun State Government</h4>
       </div>
       <p className="text-justify text-sm">
-        Detailing rigorous due-diligence processes and transparent deployment of proceeds toward priority road infrastructure, healthcare, agriculture, education projects, and outstanding obligations to boost internally generated revenues and socio-economic development; clarifying the private-company Sukuk structure (unregistered by the SEC but noted on FMDQ) and private-company bond structures registered under the Nigeria Debt Management Agency Law 2011; verifying ISPO-secured monthly deductions from state revenues into trustee-managed sinking funds; and establishing clear quarterly reporting frameworks through their respective maturities (2028 for Ogun) to ensure accountability, compliance, and optimal capital utilization.
+        The report outlines due diligence and transparent fund use for key sectors and obligations, explains the legal structures of Ogun State’s Sukuk and bond issuances, confirms secure monthly deductions into sinking funds, and establishes quarterly reporting through 2028 to ensure accountability and effective capital use.
       </p>
     </div>
   </div>
