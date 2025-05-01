@@ -107,8 +107,8 @@ const Home = () => {
                                 <h2 className="title sm:text-3xl sm:text-start text-center text-2xl font-bold">
                                     Agile, Tailored & Impact-Driven Business Solutions
                                 </h2>
-                                <div className=" text-base sm:text-xl" data-wow-delay="0.5s">
-                                    <p>At <b className="font-bold">Discovery Circle Practitioners (DCP)</b>, we are a global network of seasoned consultants, thought leaders, and industry experts dedicated to delivering world-class, knowledge-driven services. With cross-sector expertise and a deep understanding of diverse industries, we offer agile, multi-disciplinary solutions designed to solve complex challenges and drive sustainable growth.</p>
+                                <div className=" text-base sm:text-xl text-justify" data-wow-delay="0.5s">
+                                    <p>At <b className="font-bold">Discovery Circle Practitioners (DCP)</b>, we are a global network of seasoned consultants, thought leaders, and industry experts dedicated to delivering world-class, knowledge-driven services. With cross-sector expertise and a deep understanding of diverse industries, we offer agile, multi-disciplinary solutions designed to solve complex challenges and drive sustainable growth. In a strategic move to expand our capabilities and deepen our impact, <b className="font-bold">Discovery Circle Practitioners (DCP)</b> has acquired <b className="font-bold">Discovery Cycle Professionals Limited (DCP)</b>, further strengthening our legacy and consolidating our position as a leader in transformative consulting.</p>
                                 </div>
                             </div>
                         </motion.div>
@@ -135,50 +135,74 @@ const Home = () => {
                             </div>
                         </div>
 
-                    <div className="w-full sm:w-1/2 md:w-5/12 md:ml-4 p-8">
-                        <div className=" mb-8 sm:block flex justify-center ">
-                        <div className="tabs-list sm:text-2xl text-lg font-bold flex">
-                            <button
-                            className={`border-b px-3 cursor-pointer ${activeTab === 'our_mission' ? 'font-bold text-red-500 border-red-500 py-3' : 'border-gray-400 py-3'}`}
-                            onClick={() => setActiveTab('our_mission')}
-                            >
-                            Our Mission
-                            </button>
-                            <button
-                            className={`border-b pl-10 pr-3 cursor-pointer ${activeTab === 'our_vission' ? 'font-bold text-red-500 border-red-500 py-3' : 'border-gray-400 py-3'}`}
-                            onClick={() => setActiveTab('our_vission')}
-                            >
-                            Our Vision
-                            </button>
-                        </div>
-                        </div>
-                        <div className="tab-content font-heading">
-                        {activeTab === 'our_vission' && (
-                            <motion.div
-                            variants={ourMissionVariants}
-                            initial="hidden"
-                            animate="shown"
-                            id="our_vission" className="tab-pane"
-                            >
-                            <h3 className=" text-xl text-justify font-semibold">
-                                “To be the biggest consulting company in Africa anchored on value creation, integrity and service excellence”.
-                            </h3>
-                            </motion.div>
-                        )}
-                        {activeTab === 'our_mission' && (
-                            <motion.div
-                            variants={ourMissionVariants}   
-                            initial="hidden"
-                            animate="shown"
-                            id="our_mission" className="tab-pane">
-                            <h3 className="text-xl text-justify  font-semibold">
-                                “Creating, innovating and investing in exceptional solutions for clients and providing great value-addition for all stakeholders”.
-                            </h3>
-                            </motion.div>
-                        )}
+                        <div className="w-full sm:w-1/2 md:w-5/12 md:ml-4 p-8">
+                            {/* Original tabs for small screens (hidden on medium and up) */}
+                            <div className="mb-8 sm:block flex justify-center md:hidden">
+                                <div className="tabs-list sm:text-2xl text-lg font-bold flex">
+                                    <h2
+                                        className={`border-b px-3 cursor-pointer ${activeTab === 'our_mission' ? 'font-bold text-red-500 border-red-500 py-3' : 'border-gray-400 py-3'}`}
+                                        onClick={() => setActiveTab('our_mission')}
+                                    >
+                                        Our Mission
+                                    </h2>
+                                    <button
+                                        className={`border-b pl-10 pr-3 cursor-pointer ${activeTab === 'our_vission' ? 'font-bold text-red-500 border-red-500 py-3' : 'border-gray-400 py-3'}`}
+                                        onClick={() => setActiveTab('our_vission')}
+                                    >
+                                        Our Vision
+                                    </button>
+                                </div>
+                            </div>
+
+                            {/* Layout for medium and large screens (hidden on small screens) */}
+                            <div className="hidden md:block">
+                                {/* Mission section with left-aligned gradient line */}
+                                <div className="relative mb-12 pl-6">
+                                    <div className="absolute left-0 top-0 h-full w-1 bg-red-500 rounded-full"></div>
+                                    <h4 className="text-lg font-bold text-red-500 mt-2">Our Mission</h4>
+                                    <h3 className="text-l text-justify font-semibold">
+                                        "Creating, innovating and investing in exceptional solutions for clients and providing great value-addition for all stakeholders".
+                                    </h3>
+                                </div>
+
+                                {/* Vision section with right-aligned gradient line */}
+                                <div className="relative mt-12 pr-6 text-right">
+                                    <div className="absolute right-0 top-0 h-full w-1 bg-red-500 rounded-full"></div>
+                                    <h4 className="text-lg font-bold text-red-500 mt-2">Our Vision</h4>
+                                    <h3 className="text-l text-justify font-semibold">
+                                        "To be the biggest consulting company in Africa anchored on value creation, integrity and service excellence".
+                                    </h3>
+                                </div>
+                            </div>
+
+                            {/* Tab content for small screens (hidden on medium and up) */}
+                            <div className="tab-content font-heading md:hidden">
+                                {activeTab === 'our_vission' && (
+                                    <motion.div
+                                        variants={ourMissionVariants}
+                                        initial="hidden"
+                                        animate="shown"
+                                        id="our_vission" className="tab-pane"
+                                    >
+                                        <h3 className="text-xl text-justify font-semibold">
+                                            "To be the biggest consulting company in Africa anchored on value creation, integrity and service excellence".
+                                        </h3>
+                                    </motion.div>
+                                )}
+                                {activeTab === 'our_mission' && (
+                                    <motion.div
+                                        variants={ourMissionVariants}   
+                                        initial="hidden"
+                                        animate="shown"
+                                        id="our_mission" className="tab-pane">
+                                        <h3 className="text-xl text-justify font-semibold">
+                                            "Creating, innovating and investing in exceptional solutions for clients and providing great value-addition for all stakeholders".
+                                        </h3>
+                                    </motion.div>
+                                )}
+                            </div>
                         </div>
                     </div>
-                </div>
                 </div>
             </motion.section>
 
@@ -200,7 +224,7 @@ const Home = () => {
                             </div>
                             <h3 className={`${sec4H3}`}>DCP Leadership, Entrepreneurship & Advancement Program (DCP LEAP)</h3>
                             <p className={`${sec4p} text-justify`}>
-                                As part of our CSR mandate, DCP is committed to fostering human capital development through DCP LEAP—a structured, hands-on training program designed for students (SIWES), recent graduates, serving corps members, and emerging leaders. The initiative delivers practical skills in entrepreneurship, financial literacy, digital proficiency, technical know-how, and workplace readiness. Participants of the DCP LEAP Program gain real-world exposure and experiential learning that empower them to thrive in their careers and contribute meaningfully to both personal advancement and national development.
+                                DCP’s LEAP Program builds human capital by offering practical training in entrepreneurship, digital skills, and workplace readiness for students, graduates, corps members, and emerging leaders. Participants gain real-world experience to boost their careers and support national development.
                             </p>
                         </div>
 
@@ -211,7 +235,7 @@ const Home = () => {
                             </div>
                             <h3 className={`${sec4H3}`}>Pro-Bono Technical Asset Advisory Initiatives</h3>
                             <p className={`${sec4p} text-justify`}>
-                                At DCP, our pro bono Technical Asset Advisory Initiative is a Corporate Social Responsibility program designed to enhance institutional efficiency and resilience across public and private sectors. Through expert-led diagnostics, we identify operational risks, assess infrastructure reliability, and align asset performance with broader national and organizational development priorities. This initiative plays a key role in strengthening public service delivery, improving resource utilization, and promoting sustainable development across sectors.
+                                DCP’s pro bono Technical Asset Advisory Initiative enhances institutional efficiency by diagnosing operational risks, assessing infrastructure, and optimizing asset performance. It strengthens public service delivery, improves resource use, and supports sustainable development across sectors.
                             </p>
                         </div>
 
@@ -223,7 +247,7 @@ const Home = () => {
                             </div>
                             <h3 className={`${sec4H3}`}>DCP Thinking & Learning Lab</h3>
                             <p className={`${sec4p} text-justify`}>
-                                Our flagship CSR platform, the DCP Thinking & Learning Lab, brings together emerging leaders and innovators to co-create solutions for real-world challenges. Through structured volunteering pathways, participants are immersed in experiences that foster creative thinking, strategic problem-solving, and sustainable innovation. The Lab has delivered measurable impact by driving process improvements in the public sector and enabling digital transformation for local businesses, all while nurturing the leadership potential and professional growth of its contributors.
+                                The DCP Thinking & Learning Lab, our flagship CSR platform, connects emerging leaders to co-create solutions through structured volunteering that fosters creativity, problem-solving, and innovation. It drives public sector improvements, supports digital transformation, and nurtures leadership and professional growth.
                             </p>
                             </div>
                         </div>
