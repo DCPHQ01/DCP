@@ -82,7 +82,6 @@ const Navbar = () => {
               <li className="py-2 border-b"><NavLink to="/" onClick={() => setIsOpen(false)}>HOME</NavLink></li>
               <li className="py-2 border-b"><NavLink to="/service" onClick={() => setIsOpen(false)}>SERVICES</NavLink></li>
               <li className="py-2 border-b"><NavLink to="/project" onClick={() => setIsOpen(false)}>PROJECTS</NavLink></li>
-              <li className="py-2 border-b"><NavLink to="/product" onClick={() => setIsOpen(false)}>PRODUCTS</NavLink></li>
               <li className="py-2 border-b"><NavLink to="/career" onClick={() => setIsOpen(false)}>CAREER</NavLink></li>
               <li className="py-2"><NavLink to="/contact" onClick={() => setIsOpen(false)}>CONTACT</NavLink></li>
             </ul>
