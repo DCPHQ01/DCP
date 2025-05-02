@@ -189,13 +189,13 @@ const Project = () => {
                 </div>
             </div>
 
-            {/* 🔹 Group 5 - FIXED: Changed responsive grid layout for better rendering on medium screens */}
+            {/* 🔹 Group 5 */}
             <div className="mb-8 md:mb-12">
                 <h3 className="text-xl md:text-2xl font-semibold mb-4 md:mb-6 text-center">
                     Project Management Consulting
                 </h3>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     {/* Card 13 */}
                     <div className="feature-box p-4 shadow-md hover:shadow-xl hover:bg-gray-100 transition-all">
                         <div className="flex flex-col md:flex-row items-start gap-3 mb-3">
