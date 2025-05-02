@@ -20,32 +20,98 @@ const Navbar = () => {
   return (
     <>
       <motion.nav
-       key="navbar"
-       animate={{paddingTop: isNotTop || !isHome ? "0.5rem" : "1.25rem", }}
-       transition={{ type: "tween", duration: 0.25, ease: "easeInOut", }}
-       className={`navbar w-full ${isHome ? "fixed" : "sticky"} top-0 right-0 left-0 transition-all duration-300 z-30  ${ isHome &&
-        isNotTop ? 'text-red-600 shadow-md backdrop-blur-lg bg-white/30' : !isHome
-        ? 'text-red-600 shadow-md backdrop-blur-lg bg-white/30'
-        : 'text-white'
-      }`} data-spy="affix" data-offset-top="197">
+        key="navbar"
+        animate={{ paddingTop: isNotTop || !isHome ? "0.5rem" : "1.25rem" }}
+        transition={{ type: "tween", duration: 0.25, ease: "easeInOut" }}
+        className={`navbar w-full ${
+          isHome ? "fixed" : "sticky"
+        } top-0 right-0 left-0 transition-all duration-300 z-30  ${
+          isHome && isNotTop
+            ? "text-red-600 shadow-md backdrop-blur-lg bg-white/30"
+            : !isHome
+            ? "text-red-600 shadow-md backdrop-blur-lg bg-white/30"
+            : "text-white"
+        }`}
+        data-spy="affix"
+        data-offset-top="197"
+      >
         <div className="flex justify-between items-center gap-6 sm:py-5 lg:px-30 px-4 py-5">
           <div className="brand">
             <NavLink className="brand-link" to="/">
-              <img src="/images/logo.png" alt="Logo" className="w-[80px] sm:w-100px] md:w-[120px] lg:w-[150px] object-contain" />
+              <img
+                src="/images/logo.png"
+                alt="Logo"
+                className="w-[80px] sm:w-100px] md:w-[120px] lg:w-[150px] object-contain"
+              />
             </NavLink>
           </div>
 
           {/* Desktop Menu */}
           <ul className="hidden md:flex text-base lg:text-xl gap-10">
-            <li className="active"><NavLink to="/" className={({ isActive }) =>isActive ? "border-b-2 pb-5 border-red-600" : "hover:border-b-2 pb-5 hover:border-red-300"}>HOME</NavLink></li>
-            <li><NavLink to="/service" className={({ isActive }) =>isActive ? "border-b-2 pb-5 border-red-600" : "hover:border-b-2 pb-5 hover:border-red-300"}>SERVICES</NavLink></li>
-            <li><NavLink to="/project" className={({ isActive }) =>isActive ? "border-b-2 pb-5 border-red-600" : "hover:border-b-2 pb-5 hover:border-red-300"}>PROJECTS</NavLink></li>
-            <li><NavLink to="/career" className={({ isActive }) =>isActive ? "border-b-2 pb-5 border-red-600" : "hover:border-b-2 pb-5 hover:border-red-300"}>CAREER</NavLink></li>
-            <li><NavLink to="/contact" className={({ isActive }) =>isActive ? "border-b-2 pb-5 border-red-600" : "hover:border-b-2 pb-5 hover:border-red-300"}>CONTACT</NavLink></li>
+            <li className="active">
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive
+                    ? "border-b-2 pb-5 border-red-600"
+                    : "hover:border-b-2 pb-5 hover:border-red-300"
+                }
+              >
+                HOME
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/service"
+                className={({ isActive }) =>
+                  isActive
+                    ? "border-b-2 pb-5 border-red-600"
+                    : "hover:border-b-2 pb-5 hover:border-red-300"
+                }
+              >
+                SERVICES
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/project"
+                className={({ isActive }) =>
+                  isActive
+                    ? "border-b-2 pb-5 border-red-600"
+                    : "hover:border-b-2 pb-5 hover:border-red-300"
+                }
+              >
+                PROJECTS
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/career"
+                className={({ isActive }) =>
+                  isActive
+                    ? "border-b-2 pb-5 border-red-600"
+                    : "hover:border-b-2 pb-5 hover:border-red-300"
+                }
+              >
+                CAREER
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive
+                    ? "border-b-2 pb-5 border-red-600"
+                    : "hover:border-b-2 pb-5 hover:border-red-300"
+                }
+              >
+                CONTACT
+              </NavLink>
+            </li>
           </ul>
 
           {/* Mobile Hamburger Button */}
-          <button 
+          <button
             className="md:hidden focus:outline-none cursor-pointer"
             onClick={() => setIsOpen(!isOpen)}
           >
@@ -77,14 +143,26 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden bg-white/30 w-full">
+          <div className="md:hidden bg-white/90 text-red-600 w-full">
             <ul className="flex flex-col text-base p-4">
-              <li className="py-2 border-b"><NavLink to="/" onClick={() => setIsOpen(false)}>HOME</NavLink></li>
-              <li className="py-2 border-b"><NavLink to="/service" onClick={() => setIsOpen(false)}>SERVICES</NavLink></li>
-              <li className="py-2 border-b"><NavLink to="/project" onClick={() => setIsOpen(false)}>PROJECTS</NavLink></li>
-              <li className="py-2 border-b"><NavLink to="/product" onClick={() => setIsOpen(false)}>PRODUCTS</NavLink></li>
-              <li className="py-2 border-b"><NavLink to="/career" onClick={() => setIsOpen(false)}>CAREER</NavLink></li>
-              <li className="py-2"><NavLink to="/contact" onClick={() => setIsOpen(false)}>CONTACT</NavLink></li>
+              <NavLink to="/" onClick={() => setIsOpen(false)}>
+                <li className="py-2 border-b">HOME</li>
+              </NavLink>
+              <NavLink to="/service" onClick={() => setIsOpen(false)}>
+                <li className="py-2 border-b">SERVICES</li>
+              </NavLink>
+              <NavLink to="/project" onClick={() => setIsOpen(false)}>
+                <li className="py-2 border-b">PROJECTS</li>
+              </NavLink>
+              <NavLink to="/product" onClick={() => setIsOpen(false)}>
+                <li className="py-2 border-b">PRODUCTS</li>
+              </NavLink>
+              <NavLink to="/career" onClick={() => setIsOpen(false)}>
+                <li className="py-2 border-b">CAREER</li>
+              </NavLink>
+              <NavLink to="/contact" onClick={() => setIsOpen(false)}>
+                <li className="py-2">CONTACT</li>
+              </NavLink>
             </ul>
           </div>
         )}
