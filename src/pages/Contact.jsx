@@ -2,8 +2,12 @@ import ContactForm from "../components/ContactForm";
 import { LuMapPinHouse } from "react-icons/lu";
 import { MdPhone } from "react-icons/md";
 import { MdOutgoingMail } from "react-icons/md";
+import { useEffect } from "react";
 
 const Contact = () => {
+    useEffect(() => {
+        document.title = "Contact | DCP";
+      }, []);
 
     return ( 
         <>

@@ -1,6 +1,11 @@
 import { Link } from "react-router";
+import { useEffect } from "react";
 
 const Error = () => {
+    useEffect(() => {
+        document.title = "Error | DCP";
+      }, []);
+
     return ( 
         <>
         

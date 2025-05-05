@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { useState, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { useInView } from "motion/react";
 //eslint-disable-next-line no-unused-vars
 import { motion } from "motion/react";
@@ -60,7 +60,9 @@ const Home = () => {
     const ourMission = useRef(null)
     const ourMissionView = useInView(ourMission)
 
-    const [activeTab, setActiveTab] = useState('our_mission');
+    useEffect(() => {
+      document.title = "Home | DCP";
+    }, []);
       
     return ( 
         <>
@@ -93,124 +95,77 @@ const Home = () => {
             </section>
 
             {/* Section 2 - About Area */}
-<section className="section2 my-10 sm:py-15" id="about-area">
-  <div className="sec2-container sm:w-[80%] w-[90%] mx-auto">
-    <div className="flex flex-col lg:flex-row gap-10 lg:gap-4 justify-between items-center">
-      {/* Text Block */}
-      <motion.div
-        ref={cardCarouselView}
-        variants={cardcarouselVariants}
-        initial="hidden"
-        whileInView="final"
-        className="w-full md:w-[90%]"
-      >
-        <div className="flex flex-col gap-6 text-center sm:text-left">
-          <h2 className="title text-2xl sm:text-3xl font-bold">
-            Agile, Tailored & Impact-Driven Business Solutions
-          </h2>
-          <div className="text-base sm:text-xl text-justify">
-            <p>
-              At <b className="font-bold text-red-500">Discovery Circle Practitioners (DCP)</b>, we are a global network of seasoned consultants, thought leaders, and industry experts dedicated to delivering world-class, knowledge-driven services. With cross-sector expertise and a deep understanding of diverse industries, we offer agile, multi-disciplinary solutions designed to solve complex challenges and drive sustainable growth. In a strategic move to expand our capabilities and deepen our impact, <b className="font-bold">Discovery Circle Practitioners (DCP)</b> has acquired <b className="font-bold">Discovery Cycle Professionals Limited (DCP)</b>, further strengthening our legacy and consolidating our position as a leader in transformative consulting.
-            </p>
-          </div>
-        </div>
-      </motion.div>
+            <section className="section2 my-10 sm:py-15" id="about-area">
+              <div className="sec2-container sm:w-[80%] w-[90%] mx-auto">
+                <div className="flex flex-col lg:flex-row gap-10 lg:gap-4 justify-between items-center">
+                  {/* Text Block */}
+                  <motion.div
+                    ref={cardCarouselView}
+                    variants={cardcarouselVariants}
+                    initial="hidden"
+                    whileInView="final"
+                    className="w-full md:w-[90%]"
+                  >
+                    <div className="flex flex-col gap-6 text-center sm:text-left">
+                      <h2 className="title text-2xl sm:text-3xl font-bold">
+                        Agile, Tailored & Impact-Driven Business Solutions
+                      </h2>
+                      <div className="text-base sm:text-xl text-justify">
+                        <p>
+                          At <b className="font-bold text-red-500">Discovery Circle Practitioners (DCP)</b>, we are a global network of seasoned consultants, thought leaders, and industry experts dedicated to delivering world-class, knowledge-driven services. With cross-sector expertise and a deep understanding of diverse industries, we offer agile, multi-disciplinary solutions designed to solve complex challenges and drive sustainable growth. In a strategic move to expand our capabilities and deepen our impact, <b className="font-bold">Discovery Circle Practitioners (DCP)</b> has acquired <b className="font-bold">Discovery Cycle Professionals Limited (DCP)</b>, further strengthening our legacy and consolidating our position as a leader in transformative consulting.
+                        </p>
+                      </div>
+                    </div>
+                  </motion.div>
 
-      {/* Carousel Block */}
-      <div className="w-full flex justify-center lg:justify-end">
-        <CardCarousel />
-      </div>
-    </div>
-  </div>
-</section>
+                  {/* Carousel Block */}
+                  <div className="w-full flex justify-center lg:justify-end">
+                    <CardCarousel />
+                  </div>
+                </div>
+              </div>
+            </section>
 
-{/* Section 3 - Mission & Vision */}
-<motion.section
-  ref={ourMissionView}
-  variants={ourMissionVariants}
-  initial="hidden"
-  whileInView="final"
-  className="section-padding sm:px-30 px-6 my-10"
->
-  <div className="sec3-container mx-auto bg-gray-100/50 shadow-2xl sm:py-8 sm:p-12 p-6 backdrop-blur-md sm:rounded-3xl rounded-t-2xl sm:overflow-auto overflow-hidden">
-    <div className="flex flex-col items-center sm:flex-row gap-10">
-      {/* Image */}
-      <div className="w-full sm:w-1/2 flex justify-center">
-        <div className="video-box w-full max-w-sm sm:max-w-full">
-          <img src="images/DCP skyscrapers.jpg" alt="DCP Skyscrapers" className="w-full h-auto rounded-md" />
-        </div>
-      </div>
-
-      {/* Text + Tabs */}
-      <div className="w-full sm:w-1/2 md:w-5/12">
-        {/* Tabs for small screens */}
-        <div className="mb-6 flex justify-center md:hidden">
-          <div className="tabs-list text-lg font-bold flex gap-6">
-            <h2
-              className={`border-b cursor-pointer ${activeTab === 'our_mission' ? 'text-red-500 border-red-500 py-2' : 'border-gray-400 py-2'}`}
-              onClick={() => setActiveTab('our_mission')}
-            >
-              Our Mission
-            </h2>
-            <h2
-              className={`border-b cursor-pointer ${activeTab === 'our_vission' ? 'text-red-500 border-red-500 py-2' : 'border-gray-400 py-2'}`}
-              onClick={() => setActiveTab('our_vission')}
-            >
-              Our Vision
-            </h2>
-          </div>
-        </div>
-
-        {/* Tab content for small screens */}
-        <div className="tab-content md:hidden text-center">
-          {activeTab === 'our_mission' && (
-            <motion.div
+            {/* Section 3 - Mission & Vision */}
+            <motion.section
+              ref={ourMissionView}
               variants={ourMissionVariants}
               initial="hidden"
-              animate="shown"
+              whileInView="final"
+              className="section-padding sm:px-30 px-6 my-10"
             >
-              <h3 className="text-xl font-semibold text-justify">
-                "Creating, innovating and investing in exceptional solutions for clients and providing great value-addition for all stakeholders".
-              </h3>
-            </motion.div>
-          )}
-          {activeTab === 'our_vission' && (
-            <motion.div
-              variants={ourMissionVariants}
-              initial="hidden"
-              animate="shown"
-            >
-              <h3 className="text-xl font-semibold text-justify">
-                "To be the biggest consulting company in Africa anchored on value creation, integrity and service excellence".
-              </h3>
-            </motion.div>
-          )}
-        </div>
+              <div className="sec3-container mx-auto bg-gray-100/50 shadow-2xl sm:py-8 sm:p-12 p-6 backdrop-blur-md sm:rounded-3xl rounded-t-2xl sm:overflow-auto overflow-hidden">
+                <div className="flex flex-col items-center sm:flex-row gap-10">
+                  {/* Image */}
+                  <div className="w-full sm:w-1/2 flex justify-center">
+                    <div className="video-box w-full max-w-sm sm:max-w-full">
+                      <img src="images/DCP skyscrapers.jpg" alt="DCP Skyscrapers" className="w-full h-auto rounded-md" />
+                    </div>
+                  </div>
 
-        {/* Mission/Vision for desktop */}
-        <div className="hidden md:block">
-          {/* Mission */}
-          <div className="relative mb-12 pl-6">
-            <div className="absolute left-0 top-0 h-full w-1 bg-red-500 rounded-full"></div>
-            <h4 className="text-lg font-bold text-red-500 mt-2">Our Mission</h4>
-            <h3 className="text-l text-justify font-semibold">
-              "Creating, innovating and investing in exceptional solutions for clients and providing great value-addition for all stakeholders".
-            </h3>
-          </div>
+                {/* Text + Tabs */}
+                  <div className="w-full sm:w-1/2 md:w-5/12">
+                    {/* Mission - Always left-aligned */}
+                    <div className="relative mb-8 sm:mb-12 pl-4 sm:pl-6">
+                      <div className="absolute left-0 top-0 h-full w-1 bg-red-500 rounded-full"></div>
+                      <h4 className="text-lg font-bold text-red-500 mt-2">Our Mission</h4>
+                      <h3 className="text-base sm:text-l text-justify font-semibold">
+                        "Creating, innovating and investing in exceptional solutions for clients and providing great value-addition for all stakeholders".
+                      </h3>
+                    </div>
 
-          {/* Vision */}
-          <div className="relative mt-12 pr-6 text-right">
-            <div className="absolute right-0 top-0 h-full w-1 bg-red-500 rounded-full"></div>
-            <h4 className="text-lg font-bold text-red-500 mt-2">Our Vision</h4>
-            <h3 className="text-l text-justify font-semibold">
-              "To be the biggest consulting company in Africa anchored on value creation, integrity and service excellence".
-            </h3>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</motion.section>
+                    {/* Vision - Always right-aligned */}
+                    <div className="relative mt-8 sm:mt-12 pr-4 sm:pr-6 text-right">
+                      <div className="absolute right-0 top-0 h-full w-1 bg-red-500 rounded-full"></div>
+                      <h4 className="text-lg font-bold text-red-500 mt-2">Our Vision</h4>
+                      <h3 className="text-base sm:text-l text-justify font-semibold">
+                        "To be the biggest consulting company in Africa anchored on value creation, integrity and service excellence".
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.section>
 
             {/* section4 */}
             <section className="section-padding px-8 my-12 sm:px-30" id="csr">
@@ -281,35 +236,34 @@ const Home = () => {
 
                 <div className="management-container py-5 flex sm:justify-around sm:flex-row flex-col items-center md:gap-16 gap-4 w-[90%] sm:w-[80%]">
                     
-                    {/*  Profile Image */}
-                    <div className="bg-gradient-to-tr from-red-500 via-pink-500 to-yellow-500 p-1 rounded-full">
-                    <div className="bg-white p-1 rounded-full">
-                    <div className="gp-container bg-white w-[250px] h-[250px] rounded-full overflow-hidden shadow-lg">
-                    <img
-                        src="../../images/management/gceo.jpg"
-                        className="object-cover w-full h-full block"
-                        alt="CEO's image"
-                    />
-                    </div>
-                    </div>
-                    </div>
+                  {/*  Profile Image */}
+                  <div className="bg-gradient-to-tr from-red-500 via-pink-500 to-yellow-500 p-1 rounded-full">
+                  <div className="bg-white p-1 rounded-full">
+                  <div className="gp-container bg-white w-[250px] h-[250px] rounded-full overflow-hidden shadow-lg">
+                  <img
+                      src="../../images/management/gceo.jpg"
+                      className="object-cover w-full h-full block"
+                      alt="CEO's image"
+                  />
+                  </div>
+                  </div>
+                  </div>
 
-                    {/*  Name and Position */}
-                    <div className="gp-description-group flex flex-col items-center sm:items-start gap-4 sm:w-[50%] w-full justify-center">
+                  {/*  Name and Position */}
+                  <div className="gp-description-group flex flex-col items-center sm:items-start gap-4 sm:w-[50%] w-full justify-center text-center sm:text-left">
                     <div>
-                        <h3 className="text-2xl font-semibold">Dr. I.B Gashinbaki</h3>
-                        <p className="text-lg text-gray-600">Founder & Group Chief Executive Officer</p>
+                      <h3 className="text-2xl font-semibold">Dr. I.B Gashinbaki</h3>
+                      <p className="text-lg text-gray-600">Founder & Group Chief Executive Officer</p>
                     </div>
-                    <div className="sm:self-start mt-4">
-                        <Button text="View Management Team" link="/management" />
+                    <div className="mt-4 w-full flex justify-center sm:justify-start">
+                      <Button text="View Management Team" link="/management" />
                     </div>
-                    </div>
+                  </div>
                 </div>
             </section>
 
 
             {/*Section 6 Gallery */}
-
             <section className="mt-15 mb-15 w-full">
                 <div className="w-full">
                     <div className="w-full sm:w-2/3 mx-auto text-center">

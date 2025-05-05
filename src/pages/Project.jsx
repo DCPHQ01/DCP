@@ -1,4 +1,11 @@
+import { useEffect } from 'react';
+
 const Project = () => {
+
+    useEffect(() => {
+        document.title = "Projects | DCP";
+      }, []);
+
     return (
         <section className="section-padding px-4" id="portfolio-area">
             {/* 🌟 Main Title */}

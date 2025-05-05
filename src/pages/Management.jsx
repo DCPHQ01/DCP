@@ -1,8 +1,12 @@
-import { useState } from "react";
 // eslint-disable-next-line no-unused-vars
+import { useState, useEffect } from "react";
 import { motion } from "motion/react";
 
 export default function Management() {
+  useEffect(() => {
+    document.title = "Management | DCP";
+  }, []);
+
   const accordionItems = [
     {
       id: 1,

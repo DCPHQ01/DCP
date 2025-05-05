@@ -1,5 +1,10 @@
+import { useEffect } from "react";
 
 const Career = () => {
+    useEffect(() => {
+        document.title = "Carrer | DCP";
+      }, []);
+
     return ( 
         <>
             <div className="relative w-full h-[60vh]">

@@ -1,11 +1,17 @@
 import React, { Suspense, lazy } from 'react';
 import serviceData from '../components/serviceData';
+import { useEffect } from 'react';
 
 
 const ServiceCard = lazy(() => import("../components/ServiceCard"));
 const Test = lazy(() => import("../components/Test"));
 
 const Service = () => {
+
+  useEffect(() => {
+    document.title = "Services | DCP";
+  }, []);
+
   return (
     <>
       {/* Services Section */}
