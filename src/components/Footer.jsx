@@ -29,9 +29,32 @@ const Footer = () => {
                         </div>
 
                         <div className="footer-contact flex flex-col gap-10">
-                            <div className="email flex items-center gap-2.5 "><span><MdOutlineMail size={20} /></span> <span>info@dcp.com.ng</span> </div>
-                            <div className="phone flex items-center gap-2.5 "><span><MdOutlinePhoneAndroid size={20} /></span> <span>+(234) 908 222 2333</span> </div>
-                            <div className="phone flex items-center gap-2.5 "><span><IoLocationOutline size={20} /></span> <span>Plot 2542 Hassan Usman Katsina Asokoro, Abuja, FCT.</span> </div>
+                            <a 
+                                href="mailto:info@dcp.com.ng" 
+                                className="email flex items-center gap-2.5 hover:text-red-500 cursor-pointer transition-colors duration-200"
+                            >
+                                <span><MdOutlineMail size={20} /></span> 
+                                <span>info@dcp.com.ng</span> 
+                            </a>
+                            
+                            <a 
+                                href="tel:+2349082222333" 
+                                className="phone flex items-center gap-2.5 hover:text-red-500 cursor-pointer transition-colors duration-200"
+                                title="Call +(234) 908 222 2333"
+                            >
+                                <span><MdOutlinePhoneAndroid size={20} /></span> 
+                                <span>+(234) 908 222 2333</span> 
+                            </a>
+                            
+                            <a 
+                                href="https://www.google.com/maps/search/?api=1&query=Plot+2542+Hassan+Usman+Katsina+Asokoro,+Abuja,+FCT" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="location flex items-center gap-2.5 hover:text-red-500 cursor-pointer transition-colors duration-200"
+                            >
+                                <span><IoLocationOutline size={20} /></span> 
+                                <span>Plot 2542 Hassan Usman Katsina Asokoro, Abuja, FCT.</span> 
+                            </a>
                         </div>
 
                         <div className="footer-socials flex sm:flex-row flex-col gap-6">
