@@ -10,9 +10,20 @@ import Error from "./pages/Error"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 import ScrollToTop from "./components/ScrollToTop"
+import { initGA, pageview } from './gtag'
 
 
 function App() {
+
+  const location = useLocation();
+
+  useEffect(() => {
+    initGA();
+  }, []);
+
+  useEffect(() => {
+    pageview(location.pathname);
+  }, [location]);
 
   return (
     <>
